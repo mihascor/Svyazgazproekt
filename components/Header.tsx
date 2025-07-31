@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Header() {
@@ -8,6 +8,32 @@ export default function Header() {
   const [isCompanyDropdownOpen, setIsCompanyDropdownOpen] = useState(false);
   const [isActivitiesDropdownOpen, setIsActivitiesDropdownOpen] = useState(false);
   const [contactMode, setContactMode] = useState<'phone' | 'email'>('phone');
+  const companyRef = useRef<HTMLDivElement>(null);
+  const activitiesRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        companyRef.current &&
+        !companyRef.current.contains(event.target as Node)
+      ) {
+        setIsCompanyDropdownOpen(false);
+      }
+
+      if (
+        activitiesRef.current &&
+        !activitiesRef.current.contains(event.target as Node)
+      ) {
+        setIsActivitiesDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
 
   const navigationItems = [
     { name: 'Главная', href: '/' },
@@ -53,7 +79,7 @@ export default function Header() {
             </Link>
             
             {/* Company Dropdown */}
-            <div className="relative">
+            <div className="relative" ref={companyRef}>
               <button
                 onClick={() => setIsCompanyDropdownOpen(!isCompanyDropdownOpen)}
                 className="text-gray-100 px-6 py-2 rounded-lg bg-slate-700/70 shadow-lg border border-slate-600/50 hover:text-white hover:bg-slate-600/80 hover:shadow-xl hover:border-slate-500 hover:scale-105 hover:animate-pulse transition-all duration-200 whitespace-nowrap cursor-pointer flex items-center justify-center min-w-[140px]"
@@ -81,7 +107,7 @@ export default function Header() {
             </div>
             
             {/* Activities Dropdown */}
-            <div className="relative">
+            <div className="relative" ref={activitiesRef}>
               <button
                 onClick={() => setIsActivitiesDropdownOpen(!isActivitiesDropdownOpen)}
                 className="text-gray-100 px-6 py-2 rounded-lg bg-slate-700/70 shadow-lg border border-slate-600/50 hover:text-white hover:bg-slate-600/80 hover:shadow-xl hover:border-slate-500 hover:scale-105 hover:animate-pulse transition-all duration-200 whitespace-nowrap cursor-pointer flex items-center justify-center min-w-[140px]"
