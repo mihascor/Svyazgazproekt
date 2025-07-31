@@ -50,7 +50,7 @@ export default function ContactsMap() {
     script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full';
     script.async = true;
     script.onload = () => {
-      window.ymaps.ready(initMap);
+      (window as any).ymaps.ready(initMap);
     };
     document.head.appendChild(script);
 
