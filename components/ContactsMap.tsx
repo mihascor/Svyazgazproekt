@@ -2,11 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 
-declare global {
-  interface Window {
-    ymaps: any;
-  }
-}
 
 export default function ContactsMap() {
   const [mapLoaded, setMapLoaded] = useState(false);
