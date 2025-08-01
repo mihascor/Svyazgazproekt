@@ -30,8 +30,8 @@ export default function About() {
           {/* White Block - Activities */}
           <div className="mb-12">
             <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100 mx-auto hover:scale-105 transition-transform duration-300 cursor-pointer">
-              <div className="flex items-center justify-center gap-8">
-                <div className="flex-1 flex items-center justify-center">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-center">
+                <div className="w-full sm:flex-1 flex justify-center items-center">
                   <div className="text-center">
                     <h3 className="text-2xl font-bold text-gray-900 mb-8">
                       Виды деятельности
@@ -68,7 +68,7 @@ export default function About() {
                   <img 
                     src="/images/239353a834de296f55a9137c893f9245.jpg"
                     alt="Схема projetirovaniya"
-                    className="w-full h-auto max-w-md rounded-lg object-top"
+                    className="hidden sm:block w-full max-w-md h-auto rounded-xl shadow-lg object-top"
                   />
                 </div>
               </div>
@@ -78,12 +78,12 @@ export default function About() {
           {/* White Block - Our Team */}
           <div className="mb-12">
             <div className="bg-white rounded-2xl p-10 shadow-xl mx-auto hover:scale-105 transition-transform duration-300 cursor-pointer">
-              <div className="flex items-center justify-center gap-8">
-                <div className="flex-1 flex justify-center items-center">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-center">
+                <div className="w-full sm:flex-1 flex justify-center items-center">
                   <img 
                     src="/images/0c3bf666ed7b3f72b2883e0649e5d7c3.jpg"
                     alt="Схема komandy"
-                    className="w-full h-auto max-w-md rounded-lg object-top"
+                    className="hidden sm:block w-full max-w-md h-auto rounded-xl shadow-lg object-top"
                   />
                 </div>
                 <div className="flex-1 flex items-center justify-center">
@@ -104,8 +104,8 @@ export default function About() {
           {/* White Block - Our Geography */}
           <div className="mb-12">
             <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100 mx-auto hover:scale-105 transition-transform duration-300 cursor-pointer">
-              <div className="flex items-center justify-center gap-8">
-                <div className="flex-1 flex items-center justify-center">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-center">
+                <div className="w-full sm:flex-1 flex justify-center items-center">
                   <div className="text-center">
                     <h3 className="text-2xl font-bold text-gray-900 mb-8">
                       Наша география
@@ -122,7 +122,7 @@ export default function About() {
                   <img 
                     src="/images/f286cbd305d2ff080311b2d8fb9f4530.jpg" 
                     alt="Карта России"
-                    className="w-full max-w-md h-auto rounded-xl shadow-lg object-top"
+                    className="hidden sm:block w-full max-w-md h-auto rounded-xl shadow-lg object-top"
                   />
                 </div>
               </div>
