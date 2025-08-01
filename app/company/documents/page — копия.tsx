@@ -52,29 +52,29 @@ export default function DocumentsPage() {
       file: 'certificate-union.pdf',
     },
   ].map((doc, index) => (
-  <div
-    key={index}
-    className="flex flex-col sm:flex-row justify-between sm:items-center gap-4 p-4 rounded-xl bg-white shadow-md min-h-[120px]"
-  >
-    <p className="text-gray-800 sm:max-w-[60%]">{doc.title}</p>
-    <div className="flex space-x-4 sm:justify-end">
-      <a
-        href={`/documents/${doc.file}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md"
-      >
-        Просмотреть
-      </a>
-      <a
-        href={`/documents/${doc.file}`}
-        download
-        className="bg-white hover:bg-gray-100 text-blue-600 font-medium py-2 px-4 border border-blue-600 rounded-md"
-      >
-        Скачать PDF
-      </a>
+    <div
+      key={index}
+      className="flex justify-between items-center p-4 rounded-xl bg-white shadow-md"
+    >
+      <p className="text-gray-800">{doc.title}</p>
+      <div className="flex space-x-4">
+        <a
+          href={`/documents/${doc.file}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md"
+        >
+          Просмотреть
+        </a>
+        <a
+          href={`/documents/${doc.file}`}
+          download
+          className="bg-white hover:bg-gray-100 text-blue-600 font-medium py-2 px-4 border border-blue-600 rounded-md"
+        >
+          Скачать PDF
+        </a>
+      </div>
     </div>
-  </div>
   ))}
           </div>
         </div>
