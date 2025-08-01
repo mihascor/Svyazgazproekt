@@ -14,7 +14,6 @@ export default function PrivacyPolicyPage() {
     fetch('/policies/privacy.md')
       .then((res) => res.text())
       .then((text) => {
-        console.log('ЗАГРУЖЕННЫЙ ТЕКСТ:', text.slice(0, 200));
         setMarkdown(text);
       });
   }, []);
