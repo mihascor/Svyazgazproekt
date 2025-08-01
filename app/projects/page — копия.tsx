@@ -142,7 +142,7 @@ export default function Projects() {
             </button>
 
             <div className="overflow-hidden rounded-2xl bg-slate-50 p-8 shadow-xl mx-16">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-3 gap-6">
                 {getVisibleProjects().map((project) => (
                   <div
                     key={project.id}
