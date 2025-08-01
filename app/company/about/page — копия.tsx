@@ -17,7 +17,7 @@ export default function About() {
           {/* Page Title */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              О нас
+              О компании
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Компания ООО «Связьгазпроект» образована в 2015 году в г. Вологде.
@@ -104,12 +104,12 @@ export default function About() {
           {/* White Block - Our Geography */}
           <div className="mb-12">
             <div className="bg-white rounded-2xl p-10 shadow-xl border border-gray-100 mx-auto hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+                Наша география
+              </h3>
               <div className="flex items-center justify-center gap-8">
                 <div className="flex-1 flex items-center justify-center">
                   <div className="text-center">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-8">
-                      Наша география
-                    </h3>
                     <p className="text-gray-700 text-lg leading-relaxed">
                       Главный офис расположен <strong>в Вологде</strong>.
                       <br /><br />
