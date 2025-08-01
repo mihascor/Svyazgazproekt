@@ -94,7 +94,7 @@ export default function Projects() {
       <Header />
 
       {/* メインコンテンツ */}
-      <main className="pt-32 pb-16">
+      <main className="pt-40 pb-16">
         <div className="max-w-6xl mx-auto px-6">
           {/* ページタイトル */}
           <div className="text-center mb-16">
