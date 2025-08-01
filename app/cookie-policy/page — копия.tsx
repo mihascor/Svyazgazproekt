@@ -8,10 +8,10 @@ export default function CookiePolicyPage() {
   return (
     <>
       <Header />
-    <main className="min-h-screen bg-white pt-24 sm:pt-28 md:pt-32">
+    <main className="min-h-screen bg-white">
       <div className="container mx-auto px-4 py-16 lg:py-24">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
+          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
             Политика использования cookie
           </h1>
           <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">

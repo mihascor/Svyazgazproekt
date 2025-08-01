@@ -38,7 +38,7 @@ export default function CookieNotice() {
           onClick={handleAccept}
           className="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition"
         >
-          Понимаю
+          Понятно
         </button>
       </div>
     </div>
