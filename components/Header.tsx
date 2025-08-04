@@ -61,7 +61,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <div className="bg-slate-900/95 p-1 rounded-lg">
               <img 
-                src="https://static.readdy.ai/image/0a4f24831a0a653766528683e0f81486/66a14c06af1f02ef383a4351444b7a6d.png"
+                src="/images/logo.svg"
                 alt="СвязьГазПроект"
                 className="h-16 w-auto"
               />
