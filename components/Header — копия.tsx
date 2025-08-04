@@ -59,11 +59,13 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
+            <div className="bg-slate-900/95 p-1 rounded-lg">
               <img 
                 src="/images/logo.svg"
                 alt="СвязьГазПроект"
                 className="h-16 w-auto"
               />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
