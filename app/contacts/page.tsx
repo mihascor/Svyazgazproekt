@@ -274,7 +274,7 @@ export default function ContactsPage() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `url(https://readdy.ai/api/search-image?query=futuristic%20office%20building%20with%20holographic%20communication%20systems%20and%20digital%20contact%20interface%2C%20modern%20corporate%20headquarters%20with%20neon%20blue%20and%20cyan%20lighting%2C%20advanced%20communication%20center%20with%20floating%20displays%20and%20quantum%20networking%20technology%2C%20next-generation%20business%20facility%20with%20transparent%20glass%20architecture&width=1920&height=800&seq=contacts-hero-future&orientation=landscape)`,
+              backgroundImage: `url(https://readdy.ai/api/search-image?query=abstract%20futuristic%20technology%20background%20with%20glowing%20blue%20and%20cyan%20neon%20lights%20digital%20network%20connections%20and%20geometric%20patterns%20modern%20minimalist%20tech%20design%20with%20flowing%20energy%20lines%20and%20particles%20dark%20background%20with%20luminous%20technological%20elements&width=1920&height=800&seq=contacts-hero-tech-bg-v2&orientation=landscape)`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               opacity: '0.3'
@@ -515,7 +515,7 @@ export default function ContactsPage() {
 
             <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-4 lg:p-6">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-orange-500 to-red-400 bg-opacity-20 rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-orange-500 to-red-40 bg-opacity-20 rounded-xl flex items-center justify-center">
                   <i className="ri-calendar-line text-orange-400 text-lg lg:text-xl"></i>
                 </div>
                 <h3 className="text-lg lg:text-xl font-semibold text-white">Выходные</h3>

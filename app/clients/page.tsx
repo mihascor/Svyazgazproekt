@@ -88,7 +88,7 @@ export default function ClientsPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
           <div className="absolute inset-0"
                style={{
-                 backgroundImage: `url(https://readdy.ai/api/search-image?query=modern%20corporate%20office%20buildings%20and%20industrial%20facilities%20representing%20major%20Russian%20energy%20companies%2C%20professional%20business%20environment%20with%20glass%20facades%20and%20steel%20structures%2C%20corporate%20headquarters%20complex%20in%20evening%20lighting&width=1920&height=1080&seq=clients-corporate&orientation=landscape)`,
+                 backgroundImage: `url(https://readdy.ai/api/search-image?query=modern%20glass%20office%20buildings%20and%20skyscrapers%20without%20any%20text%20or%20company%20names%2C%20clean%20architectural%20photography%20of%20corporate%20business%20district%20with%20reflective%20glass%20facades%20and%20steel%20structures%2C%20contemporary%20urban%20skyline%20in%20evening%20blue%20hour%20lighting%2C%20no%20signage%20or%20lettering%20visible&width=1920&height=1080&seq=clients-glass-buildings&orientation=landscape)`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                  opacity: '0.2'
@@ -96,7 +96,6 @@ export default function ClientsPage() {
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
         </div>
-        
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-12 md:mb-16">
@@ -105,7 +104,7 @@ export default function ClientsPage() {
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
               <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent">
-                32 ВЕДУЩИЕ КОМПАНИИ
+                ВЕДУЩИЕ КОМПАНИИ
               </span>
             </h1>
             <p className="text-lg md:text-2xl text-white/70 max-w-3xl mx-auto px-4">

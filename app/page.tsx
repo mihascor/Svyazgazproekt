@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -212,13 +213,14 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute inset-0" 
-               style={{
-                 backgroundImage: `url(https://readdy.ai/api/search-image?query=futuristic%20engineering%20holographic%20interface%20with%20floating%20digital%20blueprints%2C%203D%20technical%20projections%20and%20data%20visualizations%2C%20advanced%20AI-powered%20construction%20planning%2C%20holographic%20building%20models%20with%20neon%20blue%20and%20cyan%20lighting%2C%20next-generation%20smart%20city%20infrastructure%20visualization%2C%20quantum%20computing%20engineering%20workspace%2C%20ultra-modern%20transparent%20displays&width=1920&height=1080&seq=hero-future-2030&orientation=landscape)`,
-                 backgroundSize: 'cover',
-                 backgroundPosition: 'center',
-                 opacity: '0.3'
-               }}>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(https://readdy.ai/api/search-image?query=futuristic%20engineering%20holographic%20interface%20with%20floating%20digital%20blueprints%20and%203D%20technical%20projections%20in%20white%20and%20light%20blue%20tones%20with%20neon%20purple%20accents%2C%20holographic%20building%20models%20with%20bright%20purple%20neon%20lighting%20on%20white-blue%20background%2C%20next-generation%20smart%20city%20infrastructure%20visualization%20in%20light%20blue%20and%20white%20colors%20with%20violet%20neon%20highlights%2C%20quantum%20computing%20workspace%20for%20engineering%20with%20white%20light%20blue%20and%20purple%20neon%20glow%2C%20ultra-modern%20transparent%20displays%20with%20white%20light-blue%20color%20scheme%20and%20purple%20neon%20accents%2C%20no%20text%20no%20letters%20no%20writing%20whatsoever&width=1920&height=1080&seq=hero-white-lightblue-purple-v1&orientation=landscape)`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: '0.4'
+            }}>
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
         </div>
@@ -228,19 +230,16 @@ export default function Home() {
           <div className="space-y-4 lg:space-y-8 mb-8 lg:mb-12">
             <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black leading-none tracking-tight">
               <span className="block bg-gradient-to-r from-white via-blue-100 to-cyan-300 bg-clip-text text-transparent">
-                ПРОЕКТНО-
-              </span>
-              <span className="block bg-gradient-to-r from-cyan-300 via-blue-400 to-blue-500 bg-clip-text text-transparent transform -skew-x-6">
                 ИЗЫСКАТЕЛЬСКИЕ
               </span>
-              <span className="block bg-gradient-to-r from-blue-500 via-cyan-300 to-white bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-cyan-300 via-blue-400 to-blue-500 bg-clip-text text-transparent transform -skew-x-6">
                 РАБОТЫ
               </span>
             </h1>
             <div className="max-w-4xl mx-auto space-y-4">
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl px-4 lg:px-8 py-4 lg:py-6">
                 <p className="text-base sm:text-lg lg:text-2xl text-white font-light leading-relaxed">
-                  Выполняем весь цикл проектно-изыскательских работ для систем охраны объектов
+                  Выполняем весь цикл проектно-изыскательских работ для систем по безопасности объектов
                   <span className="text-cyan-400"> топливно-энергетического комплекса</span>
                 </p>
               </div>
@@ -297,7 +296,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-indigo-900"></div>
         <div className="absolute inset-0"
              style={{
-               backgroundImage: `url(https://readdy.ai/api/search-image?query=cyberpunk%20contact%20interface%20with%20holographic%20communication%20systems%2C%20futuristic%20office%20building%20with%20neon%20lighting%2C%20advanced%20digital%20communication%20center%20with%20purple%20and%20cyan%20glows%2C%20next-generation%20corporate%20headquarters%20with%20floating%20displays%2C%20quantum%20communication%20facility&width=1920&height=1080&seq=contact-cyberpunk&orientation=landscape)`,
+               backgroundImage: `url(https://readdy.ai/api/search-image?query=abstract%20futuristic%20technology%20background%20with%20glowing%20blue%20and%20cyan%20neon%20lights%20digital%20network%20connections%20and%20geometric%20patterns%20modern%20minimalist%20tech%20design%20with%20flowing%20energy%20lines%20and%20particles%20dark%20background%20with%20luminous%20technological%20elements%20no%20text%20no%20letters%20no%20writing%20whatsoever&width=1920&height=1080&seq=contact-tech-abstract-notext-v3&orientation=landscape)`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
                opacity: '0.2'
@@ -397,6 +396,7 @@ export default function Home() {
                         </tr>
                       </thead>
                       <tbody>
+                        {/* First row remains unchanged */}
                         <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
                           <td className="p-3">
                             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
@@ -416,6 +416,8 @@ export default function Home() {
                             </a>
                           </td>
                         </tr>
+
+                        {/* Modified rows start here */}
                         <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
                           <td className="p-3">
                             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
@@ -430,14 +432,12 @@ export default function Home() {
                           </td>
                           <td className="p-3 text-white/70 hidden lg:table-cell">ул. Урицкого, д. 151</td>
                           <td className="p-3">
-                            <a href="tel:+78172239695" className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm">
-                              +7 (817) 223-96-95
-                            </a>
+                            <span className="text-white/50 text-sm">—</span>
                           </td>
                         </tr>
                         <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
                           <td className="p-3">
-                            <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
+                            <div className="flex flex-col lg:flex-row lg:space-x-2">
                               <div className="flex items-center space-x-2 mb-1 lg:mb-0">
                                 <div className="w-2 h-2 rounded-full bg-blue-400"></div>
                                 <span className="text-white font-medium">Ставрополь</span>
@@ -449,9 +449,7 @@ export default function Home() {
                           </td>
                           <td className="p-3 text-white/70 hidden lg:table-cell">пр-кт Кулакова, д. 7Г, пом. 33</td>
                           <td className="p-3">
-                            <a href="tel:+78172239695" className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm">
-                              +7 (817) 223-96-95
-                            </a>
+                            <span className="text-white/50 text-sm">—</span>
                           </td>
                         </tr>
                         <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
@@ -468,9 +466,7 @@ export default function Home() {
                           </td>
                           <td className="p-3 text-white/70 hidden lg:table-cell">ул. Дзержинского, д. 8</td>
                           <td className="p-3">
-                            <a href="tel:+78172239695" className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm">
-                              +7 (817) 223-96-95
-                            </a>
+                            <span className="text-white/50 text-sm">—</span>
                           </td>
                         </tr>
                         <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
@@ -487,9 +483,7 @@ export default function Home() {
                           </td>
                           <td className="p-3 text-white/70 hidden lg:table-cell">Пулковское шоссе, д. 28А оф. 805</td>
                           <td className="p-3">
-                            <a href="tel:+78172239695" className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm">
-                              +7 (817) 223-96-95
-                            </a>
+                            <span className="text-white/50 text-sm">—</span>
                           </td>
                         </tr>
                         <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
@@ -506,8 +500,7 @@ export default function Home() {
                           </td>
                           <td className="p-3 text-white/70 hidden lg:table-cell">ул. Новая, д. 10, пом. П10</td>
                           <td className="p-3">
-                            <a href="tel:+78172239695" className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm">
-                              +7 (817) 223-96-95</a>
+                            <span className="text-white/50 text-sm">—</span>
                           </td>
                         </tr>
                         <tr className="hover:bg-white/5 transition-colors">
@@ -518,27 +511,23 @@ export default function Home() {
                                 <span className="text-white font-medium">Казань</span>
                               </div>
                               <div className="text-xs text-white/70 lg:hidden break-words">
-                                пр-кт Победы, д. 173, оф. 114
+                                пр-kt Победы, д. 173, оф. 114
                               </div>
                             </div>
                           </td>
-                          <td className="p-3 text-white/70 hidden lg:table-cell">пр-кт Победы, д. 173, оф. 114</td>
+                          <td className="p-3 text-white/70 hidden lg:table-cell">pr-kt Победы, д. 173, оф. 114</td>
                           <td className="p-3">
-                            <a href="tel:+78172239695" className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm">
-                              +7 (817) 223-96-95
-                            </a>
+                            <span className="text-white/50 text-sm">—</span>
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
+                {/* End of Offices Table */}
               </div>
-
             </div>
-
           </div>
-
         </div>
       </section>
 

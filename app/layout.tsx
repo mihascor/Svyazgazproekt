@@ -20,8 +20,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Svyazgazproekt",
-  description: "Svyazgazproekt website",
+  title: "Svyazgazproekt Site",
+  description: "Изготовлено для Svyazgazproekt",
 };
 
 export default function RootLayout({

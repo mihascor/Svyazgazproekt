@@ -151,7 +151,7 @@ export default function ProjectsPage() {
               <i className="ri-building-4-line text-xl md:text-2xl text-green-400"></i>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-green-300 bg-clip-text text-transparent mb-4">
-              Типы объектов
+              Объекты
             </h2>
           </div>
 
@@ -295,7 +295,7 @@ export default function ProjectsPage() {
             </p>
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500/20 to-cyan-400/20 backdrop-blur-sm border border-blue-400/30 text-cyan-300 px-4 md:px-6 py-2 md:py-3 rounded-full">
               <i className="ri-building-4-line text-lg md:text-xl"></i>
-              <span className="font-semibold text-xs sm:text-sm md:text-base">Более 100 реализованных проектов</span>
+              <span className="font-semibold text-xs sm:text-sm md:text-base">Более 1000 реализованных проектов</span>
             </div>
           </div>
 
@@ -311,7 +311,7 @@ export default function ProjectsPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid grid-cols-2 gap-6 md:gap-8 max-w-2xl mx-auto">
             {[
               {
                 icon: 'ri-trophy-line',
@@ -321,21 +321,9 @@ export default function ProjectsPage() {
               },
               {
                 icon: 'ri-building-4-line',
-                value: '100+',
+                value: '1000+',
                 label: 'реализованных проектов',
                 color: 'green-400'
-              },
-              {
-                icon: 'ri-team-line',
-                value: '32',
-                label: 'крупных заказчика',
-                color: 'purple-400'
-              },
-              {
-                icon: 'ri-map-pin-line',
-                value: '7',
-                label: 'регионов России',
-                color: 'orange-400'
               }
             ].map((stat, index) => (
               <div key={index} className="group text-center bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 cursor-pointer">
@@ -351,6 +339,7 @@ export default function ProjectsPage() {
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
