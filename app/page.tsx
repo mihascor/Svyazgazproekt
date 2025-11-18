@@ -359,7 +359,7 @@ export default function Home() {
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A5266c7a3390faf2a2084190b476b8d868496880856d137e2d785ef6e280974b9&amp;source=constructor" 
                     width="100%" 
                     height="300" 
-                    frameborder="0"
+                    frameBorder="0"
                     className="w-full lg:h-[400px]"
                     title="Яндекс Карта - Региональные офисы Связьгазпроект"
                   ></iframe>
