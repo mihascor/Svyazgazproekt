@@ -398,7 +398,7 @@ export default function Home() {
                     <div className="overflow-hidden">
                       <div className="space-y-1 p-4">
                         {[
-                          { city: 'Вологда', address: '160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9', isMain: true },
+                          { city: 'Вологда', address: 'ул. Козленская, д. 119а, оф. 308/9', isMain: true },
                           { city: 'Воронеж', address: 'ул. Урицкого, д. 151', isMain: false },
                           { city: 'Ставрополь', address: 'пр-кт Кулакова, д. 7Г, пом. 33', isMain: false },
                           { city: 'Томск', address: 'ул. Дзержинского, д. 8', isMain: false },
