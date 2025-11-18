@@ -302,7 +302,7 @@ export default function Home() {
                   icon: 'ri-map-pin-line',
                   label: 'Юридический адрес',
                   value: '160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9',
-                  link: '#',
+                  link: 'https://yandex.ru/maps/21/vologda/house/kozlyonskaya_ulitsa_119a/Z0AYfwVhSUwCQFtjfX14eHprbQ==/?ll=39.925602%2C59.199689&source=serp_navig&z=16',
                   gradient: 'from-green-400 to-cyan-400'
                 },
                 {
