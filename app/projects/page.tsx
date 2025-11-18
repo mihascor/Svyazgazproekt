@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -7,6 +6,7 @@ import { useState } from 'react';
 export default function ProjectsPage() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const toggleDropdown = (menu: string) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
@@ -14,6 +14,14 @@ export default function ProjectsPage() {
 
   const closeDropdowns = () => {
     setActiveDropdown(null);
+  };
+
+  const openImageModal = (imageSrc: string) => {
+    setSelectedImage(imageSrc);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
   };
 
   return (
@@ -24,12 +32,10 @@ export default function ProjectsPage() {
           <div className="flex items-center space-x-6">
             <div className="relative">
               <img 
-                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
+                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
                 alt="СГП Связьгазпроект"
-                className="h-12 md:h-16 w-auto"
-                style={{ transform: 'scaleX(1.2)' }}
+                className="h-16 w-auto rounded-lg"
               />
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
             </div>
           </div>
           
@@ -128,13 +134,13 @@ export default function ProjectsPage() {
                   <i className="ri-trophy-line text-2xl md:text-3xl text-cyan-400"></i>
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent mb-4 md:mb-6">
-                  Опыт работы с крупнейшими объектами
+                  Опыт работы
                 </h2>
               </div>
               
               <div className="prose prose-lg max-w-none text-center">
                 <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">
-                  ООО «Связьгазпроект» обладает большим опытом разработки проектов по комплексам инженерно-технических средств охраны следующих объектов:
+                  ООО «Связьгазпроект» обладает большим опытом разработки проектов по оснащению объектов комплексами инженерно-технических средств охраны. Реализованный портфель заказов более 1000 проектов
                 </p>
               </div>
             </div>
@@ -142,8 +148,49 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* Object Types Section */}
+      {/* Experience Stats */}
       <section className="py-16 md:py-20 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent mb-4">
+              Наш опыт в цифрах
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6 md:gap-8 max-w-2xl mx-auto">
+            {[
+              {
+                icon: 'ri-trophy-line',
+                value: '10+',
+                label: 'лет опыта',
+                color: 'blue-400'
+              },
+              {
+                icon: 'ri-building-4-line',
+                value: '1000+',
+                label: 'реализованных проектов',
+                color: 'green-400'
+              }
+            ].map((stat, index) => (
+              <div key={index} className="group text-center bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 cursor-pointer">
+                <div className={`w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-${stat.color}/20 to-${stat.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-${stat.color}/30`}>
+                  <i className={`${stat.icon} text-2xl md:text-3xl text-${stat.color}`}></i>
+                </div>
+                <div className={`text-2xl sm:text-3xl md:text-4xl font-black text-${stat.color} mb-2 group-hover:text-cyan-300 transition-colors`}>
+                  {stat.value}
+                </div>
+                <div className="text-xs sm:text-sm md:text-lg font-medium text-white/80 group-hover:text-white transition-colors">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* Object Types Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-gray-900 to-black">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           
           <div className="text-center mb-12 md:mb-16">
@@ -194,7 +241,7 @@ export default function ProjectsPage() {
               },
               {
                 icon: 'ri-building-line',
-                title: 'Объекты спорта и прочие',
+                title: 'Объекты спорта',
                 color: 'indigo-400'
               }
             ].map((type, index) => (
@@ -218,130 +265,85 @@ export default function ProjectsPage() {
           
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent mb-4">
-              Крупные реализованные проекты
+              Реализованные проекты
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
-              Примеры масштабных объектов, для которых мы разработали комплексы инженерно-технических средств охраны
+              Примеры крупных объектов, оснащенных по нашим проектам комплексами инженерно-технических средств охраны
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12 lg:mb-16">
             {[
               {
-                title: 'Газопровод «Сила Сибири»',
-                placeholder: 'Здесь будет изображение газопровода «Сила Сибири»'
+                id: 1,
+                title: 'Система видеонаблюдения промышленного объекта',
+                category: 'Видеонаблюдение',
+                image: 'https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/ee7a67e2b8c152b244b4fd3b3dcb62c2.jpeg',
+                description: 'Комплексная система видеонаблюдения для промышленного предприятия с интеграцией систем безопасности'
               },
               {
-                title: 'Ковыктинское газоконденсатное месторождение',
-                placeholder: 'Здесь будет изображение Ковыктинского месторождения'
+                id: 2,
+                title: 'Центр мониторинга и управления',
+                category: 'Диспетчерские системы',
+                image: 'https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/ddde60ae81c74385c2463a92b905d3da.jpeg',
+                description: 'Современный центр управления с многоэкранными системами мониторинга и контроля'
               },
               {
-                title: 'Амурский газоперерабатывающий завод',
-                placeholder: 'Здесь будет изображение Амурского ГПЗ'
+                id: 3,
+                title: 'Зимний промышленный комплекс',
+                category: 'Промышленные объекты',
+                image: 'https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/e7322b215c8c6acc7fd8d0094d33dbdd.jpeg',
+                description: 'Система безопасности для промышленного комплекса в условиях крайнего севера'
               },
               {
-                title: 'Московский нефтеперерабатывающий завод',
-                placeholder: 'Здесь будет изображение Московского НПЗ'
-              },
-              {
-                title: 'Омский нефтеперерабатывающий завод',
-                placeholder: 'Здесь будет изображение Омского НПЗ'
-              },
-              {
-                title: 'Система магистральных газопроводов «Восточная система газоснабжения»',
-                placeholder: 'Здесь будет изображение Восточной системы газоснабжения'
-              },
-              {
-                title: 'Дополнительный крупный проект №1',
-                placeholder: 'Здесь будет изображение крупного энергетического объекта'
-              },
-              {
-                title: 'Дополнительный крупный проект №2',
-                placeholder: 'Здесь будет изображение промышленного комплекса'
-              },
-              {
-                title: 'Дополнительный крупный проект №3',
-                placeholder: 'Здесь будет изображение инфраструктурного объекта'
+                id: 4,
+                title: 'Система контроля доступа',
+                category: 'Контроль доступа',
+                image: 'https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/dcd8d69d3893c3ef75ed525e95ff74d6.jpeg',
+                description: 'Интегрированная система контроля и управления доступом с биометрической идентификацией'
               }
-            ].map((project, index) => (
-              <div key={index} className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-3xl hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 overflow-hidden cursor-pointer">
-                <div className="relative h-32 md:h-48 bg-gradient-to-br from-gray-800/50 to-gray-900/50 flex items-center justify-center">
-                  <div className="text-center p-4 md:p-6">
-                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-500/20 to-cyan-400/20 rounded-2xl flex items-center justify-center mx-auto mb-3 md:mb-4 backdrop-blur-sm border border-blue-400/30">
-                      <i className="ri-image-line text-xl md:text-2xl text-blue-400"></i>
-                    </div>
-                    <p className="text-xs md:text-sm text-white/50 italic">
-                      {project.placeholder}
-                    </p>
-                  </div>
+            ].map((project) => (
+              <div key={project.id} className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-3xl hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 overflow-hidden cursor-pointer"
+                   onClick={() => openImageModal(project.image)}>
+                <div className="relative h-80 md:h-96 overflow-hidden">
+                  <img 
+                    src={project.image}
+                    alt={`Проект ${project.id}`}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="p-4 md:p-6">
-                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-white/90 leading-tight mb-3 group-hover:text-cyan-300 transition-colors">
-                    {project.title}
-                  </h3>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs md:text-sm text-cyan-400 font-medium bg-cyan-400/10 px-2 md:px-3 py-1 rounded-full">Проект реализован</span>
-                    <i className="ri-check-line text-green-400 text-lg md:text-xl"></i>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                      <i className="ri-zoom-in-line text-xl text-white"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-
-          <div className="text-center mt-8 md:mt-12">
-            <p className="text-sm sm:text-base md:text-lg text-white/70 mb-6 md:mb-8">
-              и другие крупные объекты топливно-энергетического комплекса
-            </p>
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500/20 to-cyan-400/20 backdrop-blur-sm border border-blue-400/30 text-cyan-300 px-4 md:px-6 py-2 md:py-3 rounded-full">
-              <i className="ri-building-4-line text-lg md:text-xl"></i>
-              <span className="font-semibold text-xs sm:text-sm md:text-base">Более 1000 реализованных проектов</span>
-            </div>
-          </div>
-
         </div>
       </section>
 
-      {/* Experience Stats */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent mb-4">
-              Наш опыт в цифрах
-            </h2>
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+             onClick={closeImageModal}>
+          <div className="relative max-w-6xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <img 
+              src={selectedImage}
+              alt="Увеличенное изображение проекта"
+              className="max-w-full max-h-full object-contain rounded-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <button 
+              onClick={closeImageModal}
+              className="absolute top-4 right-4 w-10 h-10 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors">
+              <i className="ri-close-line text-xl"></i>
+            </button>
           </div>
-
-          <div className="grid grid-cols-2 gap-6 md:gap-8 max-w-2xl mx-auto">
-            {[
-              {
-                icon: 'ri-trophy-line',
-                value: '10+',
-                label: 'лет опыта',
-                color: 'blue-400'
-              },
-              {
-                icon: 'ri-building-4-line',
-                value: '1000+',
-                label: 'реализованных проектов',
-                color: 'green-400'
-              }
-            ].map((stat, index) => (
-              <div key={index} className="group text-center bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 cursor-pointer">
-                <div className={`w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-${stat.color}/20 to-${stat.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-${stat.color}/30`}>
-                  <i className={`${stat.icon} text-2xl md:text-3xl text-${stat.color}`}></i>
-                </div>
-                <div className={`text-2xl sm:text-3xl md:text-4xl font-black text-${stat.color} mb-2 group-hover:text-cyan-300 transition-colors`}>
-                  {stat.value}
-                </div>
-                <div className="text-xs sm:text-sm md:text-lg font-medium text-white/80 group-hover:text-white transition-colors">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-
         </div>
-      </section>
+      )}
 
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 relative overflow-hidden">
@@ -377,9 +379,9 @@ export default function ProjectsPage() {
       <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="border-t border-white/10 pt-6 md:pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between text-sm md:text-base text-white/50 space-y-4 md:space-y-0">
-              <div>© 2025 ООО «Связьгазпроект». Все права защищены.</div>
-              <div className="hover:text-cyan-400 transition-colors cursor-pointer">Политика конфиденциальности</div>
+            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/50 space-y-4 md:space-y-0">
+              <div>© 2025 ООО «Связьгазпроект»</div>
+              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>

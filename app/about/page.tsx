@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -25,12 +24,10 @@ export default function AboutPage() {
           <Link href="/" className="flex items-center space-x-6">
             <div className="relative">
               <img 
-                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
+                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
                 alt="СГП Связьгазпроект"
-                className="h-16 w-auto"
-                style={{ transform: 'scaleX(1.2)' }}
+                className="h-16 w-auto rounded-lg"
               />
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
             </div>
           </Link>
           
@@ -61,12 +58,10 @@ export default function AboutPage() {
         <div className="flex items-center justify-between">
           <Link href="/" className="relative">
             <img 
-              src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
+              src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
               alt="СГП Связьгазпроект"
-              className="h-12 w-auto"
-              style={{ transform: 'scaleX(1.2)' }}
+              className="h-12 w-auto rounded-lg"
             />
-            <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
           </Link>
           
           <button 
@@ -129,6 +124,9 @@ export default function AboutPage() {
                     <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Авторский надзор
                     </Link>
+                    <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
+                      Сбор исходных данных
+                    </Link>
                   </div>
                 )}
               </div>
@@ -184,23 +182,34 @@ export default function AboutPage() {
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 lg:p-8">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-cyan-400 mb-4">Наш опыт</h2>
                 <p className="text-sm sm:text-base lg:text-lg text-white/80 leading-relaxed">
-                  Текст
+                  Компания «Связьгазпроект» работает с 2015 года и за это время реализовала более 1000 проектов.
+Мы специализируемся на проектировании комплексных систем инженерно-технической охраны для крупных и стратегически важных объектов.
                 </p>
               </div>
 
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 lg:p-8">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-400 mb-4">Виды деятельности</h2>
-                <p className="text-sm sm:text-base lg:text-lg text-white/80 leading-relaxed">
-                  Текст
-                </p>
+                <ul className="space-y-3 text-sm sm:text-base lg:text-lg text-white/80">
+                  <li className="flex items-start space-x-3">
+                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <span>выполнение сбора исходных данных, комплексных инженерных изысканий</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <span>проектирование комплексов инженерно-технических средств охраны</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <span>осуществление авторского надзора за строительством</span>
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div className="space-y-4 lg:space-y-6">
               {[
-                { icon: 'ri-team-line', title: 'Наша команда', desc: 'Текст' },
-                { icon: 'ri-global-line', title: 'Наша география', desc: 'Текст' },
-                { icon: 'ri-building-line', title: 'Членство в саморегулируемых организациях', desc: 'Текст' }
+                { icon: 'ri-team-line', title: 'Наша команда', desc: 'В компании работает более 400 высококвалифицированных специалистов — коллектив опытных профессионалов, способный качественно и в установленные сроки решить любую поставленную задачу.' },
+                { icon: 'ri-global-line', title: 'Наша география', desc: 'Главный офис компании находится в Вологде. Обособленные подразделения «Связьгазпроекта» работают в семи регионах России: Санкт-Петербурге, Воронеже, Ставрополе, Рязани, Томске, Казани и Нижнем Новгороде.' }
               ].map((item, index) => (
                 <div key={index} className="flex items-start space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 lg:p-6 hover:border-cyan-400/30 transition-all duration-300">
                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -212,6 +221,63 @@ export default function AboutPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* SRO Membership Section */}
+          <div className="mt-12 lg:mt-16">
+            <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 lg:p-8">
+              <div className="flex items-start space-x-4 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i className="ri-building-line text-xl text-cyan-400"></i>
+                </div>
+                <div>
+                  <h2 className="text-xl lg:text-2xl font-bold text-white mb-2">Членство в саморегулируемых организациях</h2>
+                  <p className="text-sm lg:text-base text-white/70">ООО «Связьгазпроект» входит в ряд профильных СРО, подтверждающих право на выполнение проектных и изыскательских работ:</p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-4 lg:p-6">
+                  <div className="flex items-start space-x-3 mb-3">
+                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <div>
+                      <h3 className="text-base lg:text-lg font-semibold text-white mb-2">Ассоциация «Объединение проектировщиков „УниверсалПроект"»</h3>
+                      <p className="text-sm lg:text-base text-white/70 mb-2">Право подготовки проектной документации</p>
+                      <div className="space-y-1 text-xs lg:text-sm">
+                        <div className="text-white/60">СРО: <span className="text-cyan-400 font-mono">СРО-П-179-12122012</span></div>
+                        <div className="text-white/60">Регистрационный номер: <span className="text-cyan-400 font-mono">П-179-003525341140-0598</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white/5 border border-white/10 rounded-xl p-4 lg:p-6">
+                  <div className="flex items-start space-x-3 mb-3">
+                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <div>
+                      <h3 className="text-base lg:text-lg font-semibold text-white mb-2">Ассоциация «Национальный Альянс изыскателей „ГеоЦентр"»</h3>
+                      <p className="text-sm lg:text-base text-white/70 mb-2">Право выполнения инженерных изысканий</p>
+                      <div className="space-y-1 text-xs lg:text-sm">
+                        <div className="text-white/60">СРО: <span className="text-cyan-400 font-mono">СРО-И-037-18122012</span></div>
+                        <div className="text-white/60">Регистрационный номер: <span className="text-cyan-400 font-mono">И-037-003525341140-1247</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white/5 border border-white/10 rounded-xl p-4 lg:p-6">
+                  <div className="flex items-start space-x-3 mb-3">
+                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <div>
+                      <h3 className="text-base lg:text-lg font-semibold text-white mb-2">Региональное объединение работодателей строительного комплекса «Союз строителей Воронежской области»</h3>
+                      <div className="text-xs lg:text-sm">
+                        <div className="text-white/60">Регистрационный номер: <span className="text-cyan-400 font-mono">195</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -230,9 +296,9 @@ export default function AboutPage() {
       <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="border-t border-white/10 pt-6 md:pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between text-sm md:text-base text-white/50 space-y-4 md:space-y-0">
-              <div>© 2025 ООО «Связьгазпроект». Все права защищены.</div>
-              <div className="hover:text-cyan-400 transition-colors cursor-pointer">Политика конфиденциальности</div>
+            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/50 space-y-4 md:space-y-0">
+              <div>© 2025 ООО «Связьгазпроект»</div>
+              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>

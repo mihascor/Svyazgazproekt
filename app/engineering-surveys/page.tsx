@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -24,12 +23,10 @@ export default function EngineeringSurveys() {
           <div className="flex items-center space-x-6">
             <div className="relative">
               <img 
-                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
+                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
                 alt="СГП Связьгазпроект"
-                className="h-12 md:h-16 w-auto"
-                style={{ transform: 'scaleX(1.2)' }}
+                className="h-16 w-auto rounded-lg"
               />
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
             </div>
           </div>
           
@@ -58,6 +55,9 @@ export default function EngineeringSurveys() {
                   </Link>
                   <Link href="/author-supervision" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Осуществление авторского надзора за строительством
+                  </Link>
+                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
+                    Сбор исходных данных
                   </Link>
                 </div>
               )}
@@ -96,6 +96,9 @@ export default function EngineeringSurveys() {
                   </Link>
                   <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
                     Осуществление авторского надзора за строительством
+                  </Link>
+                  <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
+                    Сбор исходных данных
                   </Link>
                 </div>
               </div>
@@ -153,13 +156,13 @@ export default function EngineeringSurveys() {
                   <i className="ri-compass-3-line text-2xl md:text-3xl text-blue-600"></i>
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
-                  Комплексный подход к изысканиям
+                  Комплексный подход к инженерным изысканиям
                 </h2>
               </div>
               
               <div className="prose prose-lg max-w-none text-center">
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6 md:mb-8">
-                  ООО «Связьгазпроект» выполняет все основные виды изысканий, необходимых для выполнения проектных работ, в том числе:
+                  ООО «Связьгазпроект» выполняет все основные виды инженерных изысканий, необходимых для выполнения проектных работ, в том числе:
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
@@ -212,10 +215,56 @@ export default function EngineeringSurveys() {
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                     Инженерно-геодезические изыскания
                   </h3>
-                  <div className="bg-gray-50 rounded-xl p-4 md:p-6 border-2 border-dashed border-gray-200">
-                    <div className="text-center text-gray-500">
-                      <i className="ri-file-text-line text-2xl md:text-3xl mb-3 block"></i>
-                      <p className="text-base md:text-lg">Описание услуги будет добавлено позже</p>
+                  <div className="space-y-6">
+                    <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                      Инженерно-геодезические изыскания выполняются для получения топографо-геодезических данных о рельефе, объектах и коммуникациях в объёмах, необходимых для подготовки проектной и рабочей документации в соответствии с требованиями законодательства и нормативно-технической базы.
+                    </p>
+
+                    <div className="bg-blue-50 rounded-xl p-6">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                        <i className="ri-list-check text-blue-600 mr-2"></i>
+                        Состав работ:
+                      </h4>
+                      <ul className="space-y-3">
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-blue-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Создание и развитие опорных планово-высотных геодезических сетей.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-blue-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Топографическая съёмка любой сложности, включая подземные коммуникации, обновление и подготовка топопланов.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-blue-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Согласование нанесённых коммуникаций с эксплуатирующими организациями.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-blue-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Крупномасштабная съёмка для ландшафтных работ.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-blue-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Вынос осей и точек проектируемых объектов и земельных участков.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-blue-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Исполнительная съёмка.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-blue-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Подготовка технического отчёта в соответствии с действующими нормами.</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 border-l-4 border-blue-600">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                        <i className="ri-tools-line text-blue-600 mr-2"></i>
+                        Оборудование и ПО:
+                      </h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        Для работ применяется высокоточное спутниковое и электронно-оптическое оборудование Trimble, трассопоисковые приборы RIDGID, дальномеры DISTO. Обработка результатов выполняется в Trimble Business Center, подготовка топопланов — в NanoCad.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -232,10 +281,34 @@ export default function EngineeringSurveys() {
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                     Инженерно-геологические изыскания
                   </h3>
-                  <div className="bg-gray-50 rounded-xl p-4 md:p-6 border-2 border-dashed border-gray-200">
-                    <div className="text-center text-gray-500">
-                      <i className="ri-file-text-line text-2xl md:text-3xl mb-3 block"></i>
-                      <p className="text-base md:text-lg">Описание услуги будет добавлено позже</p>
+                  <div className="space-y-6">
+                    <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                      Инженерно-геологические изыскания обеспечивают исходные данные для расчёта фундаментов и безопасной эксплуатации сооружений. В рамках работ выполняется комплекс полевых, лабораторных и камеральных исследований, позволяющий оценить геологическое строение площадки, гидрогеологические условия, физико-механические свойства грунтов, их агрессивность к конструкциям, наличие специфических грунтов и опасных процессов. По результатам даются рекомендации по инженерной защите территории.
+                    </p>
+
+                    <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border-l-4 border-green-600">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                        <i className="ri-tools-line text-green-600 mr-2"></i>
+                        Оборудование и техника:
+                      </h4>
+                      <ul className="space-y-3">
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-green-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Буровая установка УБГМ-1М на базе автомобиля Садко NEXT — бурение скважин с продувкой и промывкой в грунтах до 10 категории буримости, глубина до 60 м.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-green-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Буровые установки УБШМ-1-13 на базе Mitsubishi L200 и Great Wall Poer King Kong — бурение в труднодоступных и стеснённых условиях, грунты до 8 категории буримости, глубина до 35 м.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-green-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Электроразведочный комплекс РУТИЛ-1М для определения удельного электрического сопротивления.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-green-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">Комплект для статического зондирования "ТЕСТ" с прибором автоматической регистрации ТЕСТ-К2М и тензометрическими зондами (тип II) А2/350.</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -252,10 +325,73 @@ export default function EngineeringSurveys() {
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                     Инженерно-гидрометеорологические изыскания
                   </h3>
-                  <div className="bg-gray-50 rounded-xl p-4 md:p-6 border-2 border-dashed border-gray-200">
-                    <div className="text-center text-gray-500">
-                      <i className="ri-file-text-line text-2xl md:text-3xl mb-3 block"></i>
-                      <p className="text-base md:text-lg">Описание услуги будет добавлено позже</p>
+                  <div className="space-y-6">
+                    <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                      Инженерно-гидрометеорологические изыскания представляют собой комплекс исследований, направленных на изучение климатических, гидрологических, метеорологических и морфометрических условий на участке строительства. В ходе работ осуществляется прогноз их возможных изменений под влиянием проектируемого объекта, что позволяет принимать обоснованные проектные решения.
+                    </p>
+
+                    <div className="bg-cyan-50 rounded-xl p-6">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                        <i className="ri-search-line text-cyan-600 mr-2"></i>
+                        В ходе изысканий изучаются:
+                      </h4>
+                      <ul className="space-y-3">
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-cyan-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">гидрологический режим рек, озёр, водохранилищ, морей, болот и временных водотоков;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-cyan-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">климатические условия и ключевые метеорологические характеристики;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-cyan-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">опасные гидрометеорологические процессы и явления;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-cyan-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">изменения гидрологических и климатических параметров под воздействием техногенных факторов.</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl p-6 border-l-4 border-cyan-600">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                        <i className="ri-list-check text-cyan-600 mr-2"></i>
+                        Состав работ включает:
+                      </h4>
+                      <ul className="space-y-3">
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-cyan-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">сбор, анализ и обобщение гидрометеорологических и картографических материалов;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-cyan-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">рекогносцировочное обследование территории;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-cyan-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">наблюдения за гидрологическими и климатическими характеристиками;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-cyan-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">изучение опасных процессов и явлений;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-cyan-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">камеральную обработку данных и определение расчётных гидрологических и/или метеорологических параметров.</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 border border-cyan-200">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <i className="ri-file-text-line text-cyan-600 mr-2"></i>
+                        Результат работ:
+                      </h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        Технический отчёт об инженерно-гидрометеорологических изысканиях, подготовленный в соответствии с действующими нормативными документами.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -272,10 +408,58 @@ export default function EngineeringSurveys() {
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                     Инженерно-экологические изыскания
                   </h3>
-                  <div className="bg-gray-50 rounded-xl p-4 md:p-6 border-2 border-dashed border-gray-200">
-                    <div className="text-center text-gray-500">
-                      <i className="ri-file-text-line text-2xl md:text-3xl mb-3 block"></i>
-                      <p className="text-base md:text-lg">Описание услуги будет добавлено позже</p>
+                  <div className="space-y-6">
+                    <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                      Инженерно-экологические изыскания обеспечивают оценку экологических условий территории и прогноз их изменений для подготовки градостроительной и проектной документации.
+                    </p>
+
+                    <div className="bg-emerald-50 rounded-xl p-6">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                        <i className="ri-list-check text-emerald-600 mr-2"></i>
+                        Основные работы:
+                      </h4>
+                      <ul className="space-y-3">
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-emerald-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">сбор и анализ данных прошлых изысканий, фондовых и опубликованных материалов, информации о состоянии среды и экологических ограничениях;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-emerald-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">маршрутные наблюдения, эколого-ландшафтные исследования, изучение флоры и фауны, заложение почвенных разрезов;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-emerald-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">отбор проб и оценка загрязнения воздуха, почв, вод и донных отложений, исследование факторов физического воздействия;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-emerald-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">изучение влияния опасных природных и природно-антропогенных процессов;</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <i className="ri-checkbox-circle-fill text-emerald-600 mt-1 flex-shrink-0"></i>
+                          <span className="text-gray-700">камеральная обработка и подготовка технического отчёта.</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl p-6 border-l-4 border-emerald-600">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <i className="ri-flask-line text-emerald-600 mr-2"></i>
+                        Лабораторные исследования
+                      </h4>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        Лабораторные исследования выполняются в аккредитованных центрах.
+                      </p>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border border-emerald-200">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <i className="ri-file-text-line text-emerald-600 mr-2"></i>
+                        Применение результатов
+                      </h4>
+                      <p className="text-gray-700 leading-relaxed mb-4">
+                        Результаты изысканий используются при разработке ОВОС, ПМООС, МООС, проектов рекультивации и консервации земель.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -310,9 +494,9 @@ export default function EngineeringSurveys() {
       <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="border-t border-white/10 pt-6 md:pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between text-sm md:text-base text-white/50 space-y-4 md:space-y-0">
-              <div>© 2025 ООО «Связьгазпроект». Все права защищены.</div>
-              <div className="hover:text-cyan-400 transition-colors cursor-pointer">Политика конфиденциальности</div>
+            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/50 space-y-4 md:space-y-0">
+              <div>© 2025 ООО «Связьгазпроект»</div>
+              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>

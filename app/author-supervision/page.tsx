@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -24,12 +23,10 @@ export default function AuthorSupervision() {
           <div className="flex items-center space-x-6">
             <div className="relative">
               <img 
-                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
+                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
                 alt="СГП Связьгазпроект"
-                className="h-12 md:h-16 w-auto"
-                style={{ transform: 'scaleX(1.2)' }}
+                className="h-16 w-auto rounded-lg"
               />
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
             </div>
           </div>
           
@@ -160,7 +157,7 @@ export default function AuthorSupervision() {
               
               <div className="prose prose-lg max-w-none text-center">
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  ООО «Связьгазпроект» осуществляется авторский надзор за ходом строительства комплексов инженерно-технических средства охраны в соответствии с требованиями действующей нормативной документации.
+                  ООО «Связьгазпроект» осуществляется авторский надзор за ходом строительства комплексов инженерно-технических средства охраны в соответствии с требованиями действующей нормативной документации
                 </p>
               </div>
             </div>
@@ -396,9 +393,9 @@ export default function AuthorSupervision() {
       <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="border-t border-white/10 pt-6 md:pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between text-sm md:text-base text-white/50 space-y-4 md:space-y-0">
-              <div>© 2025 ООО «Связьгазпроект». Все права защищены.</div>
-              <div className="hover:text-cyan-400 transition-colors cursor-pointer">Политика конфиденциальности</div>
+            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/50 space-y-4 md:space-y-0">
+              <div>© 2025 ООО «Связьгазпроект»</div>
+              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>

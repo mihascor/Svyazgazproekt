@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -15,12 +14,10 @@ export default function DocumentsPage() {
           <Link href="/" className="flex items-center space-x-6">
             <div className="relative">
               <img 
-                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
+                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
                 alt="СГП Связьгазпроект"
-                className="h-12 md:h-16 w-auto"
-                style={{ transform: 'scaleX(1.2)' }}
+                className="h-16 w-auto rounded-lg"
               />
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
             </div>
           </Link>
           
@@ -88,7 +85,7 @@ export default function DocumentsPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
           <div className="absolute inset-0"
                style={{
-                 backgroundImage: `url(https://readdy.ai/api/search-image?query=professional%20legal%20documents%20and%20certificates%20with%20official%20seals%20and%20stamps%2C%20corporate%20licensing%20paperwork%20with%20modern%20digital%20archive%20system%2C%20professional%20documentation%20management%20with%20holographic%20security%20features%2C%20official%20business%20permits%20and%20certifications&width=1920&height=1080&seq=documents-legal&orientation=landscape)`,
+                 backgroundImage: `url(https://readdy.ai/api/search-image?query=modern%20corporate%20office%20with%20glass%20walls%20and%20digital%20document%20management%20systems%2C%20professional%20business%20environment%20with%20holographic%20data%20displays%20and%20secure%20filing%20cabinets%2C%20futuristic%20office%20interior%20with%20blue%20and%20cyan%20lighting%2C%20clean%20minimalist%20workspace%20with%20advanced%20technology%20integration%20and%20document%20security%20systems&width=1920&height=1080&seq=documents-corporate-office&orientation=landscape)`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                  opacity: '0.3'
@@ -247,9 +244,9 @@ export default function DocumentsPage() {
       <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="border-t border-white/10 pt-6 md:pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between text-sm md:text-base text-white/50 space-y-4 md:space-y-0">
-              <div>© 2025 ООО «Связьгазпроект». Все права защищены.</div>
-              <div className="hover:text-cyan-400 transition-colors cursor-pointer">Политика конфиденциальности</div>
+            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/50 space-y-4 md:space-y-0">
+              <div>© 2025 ООО «Связьгазпроект»</div>
+              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>

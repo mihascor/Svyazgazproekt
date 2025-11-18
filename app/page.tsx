@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -8,6 +7,7 @@ export default function Home() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState<string | null>(null);
+  const [officesExpanded, setOfficesExpanded] = useState(false);
 
   const toggleDropdown = (menu: string) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
@@ -26,21 +26,25 @@ export default function Home() {
     setMobileDropdown(mobileDropdown === menu ? null : menu);
   };
 
+  const toggleOffices = () => {
+    setOfficesExpanded(!officesExpanded);
+  };
+
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Desktop Header */}
       <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4">
         <div className="flex items-center justify-between min-w-[900px]">
           <div className="flex items-center space-x-6">
-            <div className="relative">
-              <img 
-                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
-                alt="СГП Связьгазпроект"
-                className="h-16 w-auto"
-                style={{ transform: 'scaleX(1.2)' }}
-              />
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-            </div>
+            <Link href="/" className="flex items-center space-x-6">
+              <div className="relative">
+                <img 
+                  src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
+                  alt="СГП Связьгазпроект"
+                  className="h-16 w-auto rounded-lg"
+                />
+              </div>
+            </Link>
           </div>
           
           <nav className="flex items-center space-x-1">
@@ -75,7 +79,7 @@ export default function Home() {
                 className="flex items-center space-x-1 px-4 py-2 text-base text-white/70 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
               >
                 <span>Деятельность</span>
-                <i className={`ri-arrow-down-s-line text-sm transition-transform duration-200 ${activeDropdown === 'activity' ? 'rotate-180' : ''}`}></i>
+                <i className={`ri-arrow-down-s-line text-xs transition-transform duration-200 ${activeDropdown === 'activity' ? 'rotate-180' : ''}`}></i>
               </button>
               {activeDropdown === 'activity' && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-3 min-w-[320px] shadow-2xl">
@@ -87,6 +91,9 @@ export default function Home() {
                   </Link>
                   <Link href="/author-supervision" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Осуществление авторского надзора за строительством
+                  </Link>
+                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
+                    Сбор исходных данных
                   </Link>
                 </div>
               )}
@@ -111,15 +118,13 @@ export default function Home() {
       {/* Mobile Header */}
       <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
         <div className="flex items-center justify-between">
-          <div className="relative">
+          <Link href="/" className="relative">
             <img 
-              src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
+              src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
               alt="СГП Связьгазпроект"
-              className="h-12 w-auto"
-              style={{ transform: 'scaleX(1.2)' }}
+              className="h-12 w-auto rounded-lg"
             />
-            <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-          </div>
+          </Link>
           
           <button 
             onClick={toggleMobileMenu}
@@ -177,6 +182,9 @@ export default function Home() {
                     <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Авторский надзор
                     </Link>
+                    <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
+                      Сбор исходных данных
+                    </Link>
                   </div>
                 )}
               </div>
@@ -230,7 +238,7 @@ export default function Home() {
           <div className="space-y-4 lg:space-y-8 mb-8 lg:mb-12">
             <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black leading-none tracking-tight">
               <span className="block bg-gradient-to-r from-white via-blue-100 to-cyan-300 bg-clip-text text-transparent">
-                ИЗЫСКАТЕЛЬСКИЕ
+                ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ
               </span>
               <span className="block bg-gradient-to-r from-cyan-300 via-blue-400 to-blue-500 bg-clip-text text-transparent transform -skew-x-6">
                 РАБОТЫ
@@ -239,8 +247,8 @@ export default function Home() {
             <div className="max-w-4xl mx-auto space-y-4">
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl px-4 lg:px-8 py-4 lg:py-6">
                 <p className="text-base sm:text-lg lg:text-2xl text-white font-light leading-relaxed">
-                  Выполняем весь цикл проектно-изыскательских работ для систем по безопасности объектов
-                  <span className="text-cyan-400"> топливно-энергетического комплекса</span>
+                  Выполняем весь цикл проектно-изыскательских работ по системам обеспечения безопасности объектов
+                  <span className="text-cyan-400"> ТЭК</span>
                 </p>
               </div>
             </div>
@@ -258,28 +266,6 @@ export default function Home() {
                 <i className="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
               </span>
             </Link>
-          </div>
-
-          {/* Floating Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-8 max-w-4xl mx-auto">
-            {[ 
-              { value: 'регалия №1', label: '', icon: 'ri-time-line', desc: '' }, 
-              { value: 'регалия №2', label: '', icon: 'ri-infinity-line', desc: '' }, 
-              { value: 'регалия №3', label: '', icon: 'ri-cpu-line', desc: '' }, 
-              { value: 'регалия №4', label: '', icon: 'ri-global-line', desc: '' }
-            ].map((stat, index) => (
-              <div key={index} className="group text-center">
-                <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-3 lg:p-4 hover:bg-white/10 hover:border-cyan-400/30 transition-all duration-300 cursor-pointer">
-                  <div className="w-6 h-6 lg:w-8 lg:h-8 mx-auto mb-2 flex items-center justify-center">
-                    <i className={`${stat.icon} text-cyan-400 text-lg lg:text-xl`}></i>
-                  </div>
-                  <div className="text-xs sm:text-sm lg:text-lg font-bold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent mb-1">
-                    {stat.value}
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-cyan-400/0 to-blue-500/0 group-hover:from-blue-500/5 group-hover:via-cyan-400/5 group-hover:to-blue-500/5 rounded-2xl transition-all duration-300"></div>
-                </div>
-              </div>
-            ))}
           </div>
 
           {/* Scroll Indicator */}
@@ -321,14 +307,14 @@ export default function Home() {
               {[ 
                 {
                   icon: 'ri-map-pin-line',
-                  label: 'Юристический адрес',
+                  label: 'Юридический адрес',
                   value: '160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9',
                   link: '#',
                   gradient: 'from-green-400 to-cyan-400'
                 },
                 {
                   icon: 'ri-phone-line',
-                  label: 'Телефон центрального офиса',
+                  label: 'Телефон',
                   value: '+7 (817) 223-96-95',
                   link: 'tel:+78172289695',
                   gradient: 'from-blue-500 to-cyan-400'
@@ -367,7 +353,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-sm text-white/70 uppercase tracking-widest mb-2 font-light">Местоположение</div>
-                    <div className="text-lg lg:text-xl font-semibold text-white">Региональные офисы</div>
+                    <div className="text-lg lg:text-xl font-semibold text-white">Центральный офис и обособленные подразделения</div>
                   </div>
                 </div>
                 <div className="rounded-xl overflow-hidden border border-white/20 mb-6">
@@ -381,148 +367,69 @@ export default function Home() {
                   ></iframe>
                 </div>
                 
-                {/* Offices Table */}
+                {/* Offices Contact Info */}
                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden">
-                  <div className="p-4 border-b border-white/10">
-                    <h3 className="text-lg font-semibold text-white">Адреса офисов</h3>
+                  {/* General Phone Number */}
+                  <div className="p-4 lg:p-6 border-b border-white/10 bg-gradient-to-r from-cyan-500/10 to-blue-500/10">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-4">
+                        <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-blue-500 to-cyan-400 bg-opacity-20 rounded-xl flex items-center justify-center">
+                          <i className="ri-phone-line text-lg lg:text-xl text-blue-400"></i>
+                        </div>
+                        <div>
+                          <div className="text-sm text-white/70 uppercase tracking-widest mb-1">ТЕЛЕФОН</div>
+                          <a href="tel:+78172239695" className="text-lg lg:text-xl font-semibold text-white hover:text-cyan-400 transition-colors">
+                            +7 (817) 223-96-95
+                          </a>
+                        </div>
+                      </div>
+                      <a href="tel:+78172239695" className="bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-4 lg:px-6 py-2 lg:py-3 rounded-full text-sm lg:text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
+                        Позвонить
+                      </a>
+                    </div>
                   </div>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="border-b border-white/10">
-                          <th className="text-left p-3 text-white/70 font-medium">Город</th>
-                          <th className="text-left p-3 text-white/70 font-medium hidden lg:table-cell">Адрес</th>
-                          <th className="text-left p-3 text-white/70 font-medium">Телефон</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {/* First row remains unchanged */}
-                        <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
-                          <td className="p-3">
-                            <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
-                              <div className="flex items-center space-x-2 mb-1 lg:mb-0">
-                                <div className="w-2 h-2 rounded-full bg-red-400"></div>
-                                <span className="text-white font-medium">Вологда</span>
-                              </div>
-                              <div className="text-xs text-white/70 lg:hidden break-words">
-                                160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9
-                              </div>
-                            </div>
-                          </td>
-                          <td className="p-3 text-white/70 hidden lg:table-cell">160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9</td>
-                          <td className="p-3">
-                            <a href="tel:+78172239695" className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm">
-                              +7 (817) 223-96-95
-                            </a>
-                          </td>
-                        </tr>
 
-                        {/* Modified rows start here */}
-                        <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
-                          <td className="p-3">
-                            <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
-                              <div className="flex items-center space-x-2 mb-1 lg:mb-0">
-                                <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                                <span className="text-white font-medium">Воронеж</span>
-                              </div>
-                              <div className="text-xs text-white/70 lg:hidden break-words">
-                                ул. Урицкого, д. 151
-                              </div>
-                            </div>
-                          </td>
-                          <td className="p-3 text-white/70 hidden lg:table-cell">ул. Урицкого, д. 151</td>
-                          <td className="p-3">
-                            <span className="text-white/50 text-sm">—</span>
-                          </td>
-                        </tr>
-                        <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
-                          <td className="p-3">
-                            <div className="flex flex-col lg:flex-row lg:space-x-2">
-                              <div className="flex items-center space-x-2 mb-1 lg:mb-0">
-                                <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                                <span className="text-white font-medium">Ставрополь</span>
-                              </div>
-                              <div className="text-xs text-white/70 lg:hidden break-words">
-                                пр-кт Кулакова, д. 7Г, пом. 33
-                              </div>
-                            </div>
-                          </td>
-                          <td className="p-3 text-white/70 hidden lg:table-cell">пр-кт Кулакова, д. 7Г, пом. 33</td>
-                          <td className="p-3">
-                            <span className="text-white/50 text-sm">—</span>
-                          </td>
-                        </tr>
-                        <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
-                          <td className="p-3">
-                            <div className="flex flex-col lg:flex-row lg:space-x-2">
-                              <div className="flex items-center space-x-2 mb-1 lg:mb-0">
-                                <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                                <span className="text-white font-medium">Томск</span>
-                              </div>
-                              <div className="text-xs text-white/70 lg:hidden break-words">
-                                ул. Дзержинского, д. 8
-                              </div>
-                            </div>
-                          </td>
-                          <td className="p-3 text-white/70 hidden lg:table-cell">ул. Дзержинского, д. 8</td>
-                          <td className="p-3">
-                            <span className="text-white/50 text-sm">—</span>
-                          </td>
-                        </tr>
-                        <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
-                          <td className="p-3">
-                            <div className="flex flex-col lg:flex-row lg:space-x-2">
-                              <div className="flex items-center space-x-2 mb-1 lg:mb-0">
-                                <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                                <span className="text-white font-medium">Санкт-Петербург</span>
-                              </div>
-                              <div className="text-xs text-white/70 lg:hidden break-words">
-                                Пулковское шоссе, д. 28А оф. 805
-                              </div>
-                            </div>
-                          </td>
-                          <td className="p-3 text-white/70 hidden lg:table-cell">Пулковское шоссе, д. 28А оф. 805</td>
-                          <td className="p-3">
-                            <span className="text-white/50 text-sm">—</span>
-                          </td>
-                        </tr>
-                        <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
-                          <td className="p-3">
-                            <div className="flex flex-col lg:flex-row lg:space-x-2">
-                              <div className="flex items-center space-x-2 mb-1 lg:mb-0">
-                                <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                                <span className="text-white font-medium">Нижний Новгород</span>
-                              </div>
-                              <div className="text-xs text-white/70 lg:hidden break-words">
-                                ул. Новая, д. 10, пом. П10
-                              </div>
-                            </div>
-                          </td>
-                          <td className="p-3 text-white/70 hidden lg:table-cell">ул. Новая, д. 10, пом. П10</td>
-                          <td className="p-3">
-                            <span className="text-white/50 text-sm">—</span>
-                          </td>
-                        </tr>
-                        <tr className="hover:bg-white/5 transition-colors">
-                          <td className="p-3">
-                            <div className="flex flex-col lg:flex-row lg:space-x-2">
-                              <div className="flex items-center space-x-2 mb-1 lg:mb-0">
-                                <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                                <span className="text-white font-medium">Казань</span>
-                              </div>
-                              <div className="text-xs text-white/70 lg:hidden break-words">
-                                пр-kt Победы, д. 173, оф. 114
-                              </div>
-                            </div>
-                          </td>
-                          <td className="p-3 text-white/70 hidden lg:table-cell">pr-kt Победы, д. 173, оф. 114</td>
-                          <td className="p-3">
-                            <span className="text-white/50 text-sm">—</span>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  {/* Offices List Toggle */}
+                  <div className="p-4 border-b border-white/10">
+                    <button 
+                      onClick={toggleOffices}
+                      className="w-full flex items-center justify-between text-left hover:bg-white/5 rounded-lg p-2 transition-colors cursor-pointer"
+                    >
+                      <h3 className="text-lg font-semibold text-white">Адреса офисов</h3>
+                      <i className={`ri-arrow-down-s-line text-xl text-white/70 transition-transform duration-300 ${officesExpanded ? 'rotate-180' : ''}`}></i>
+                    </button>
                   </div>
+
+                  {/* Collapsible Offices List */}
+                  {officesExpanded && (
+                    <div className="overflow-hidden">
+                      <div className="space-y-1 p-4">
+                        {[
+                          { city: 'Вологда', address: '160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9', isMain: true },
+                          { city: 'Воронеж', address: 'ул. Урицкого, д. 151', isMain: false },
+                          { city: 'Ставрополь', address: 'пр-кт Кулакова, д. 7Г, пом. 33', isMain: false },
+                          { city: 'Томск', address: 'ул. Дзержинского, д. 8', isMain: false },
+                          { city: 'Санкт-Петербург', address: 'Пулковское шоссе, д. 28А оф. 805', isMain: false },
+                          { city: 'Нижний Новгород', address: 'ул. Новая, д. 10, пом. П10', isMain: false },
+                          { city: 'Казань', address: 'пр-кт Победы, д. 173, оф. 114', isMain: false }
+                        ].map((office, index) => (
+                          <div key={index} className="flex items-center space-x-4 p-3 hover:bg-white/5 rounded-lg transition-colors">
+                            <div className={`w-3 h-3 rounded-full flex-shrink-0 ${office.isMain ? 'bg-red-400' : 'bg-blue-400'}`}></div>
+                            <div className="min-w-0 flex-1">
+                              <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6">
+                                <span className="text-white font-medium text-sm lg:text-base mb-1 lg:mb-0 lg:min-w-[140px]">
+                                  {office.city}
+                                </span>
+                                <span className="text-white/70 text-xs lg:text-sm leading-relaxed lg:flex-1">
+                                  {office.address}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
                 {/* End of Offices Table */}
               </div>
@@ -536,9 +443,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           {/* Bottom */}
           <div className="border-t border-white/10 pt-6">
-            <div className="flex flex-col lg:flex-row items-center justify-between text-base text-white/50 space-y-4 lg:space-y-0">
-              <div className="text-center lg:text-left">© 2025 ООО «Связьгазпроект».</div>
-              <div className="hover:text-cyan-400 transition-colors cursor-pointer text-center lg:text-right">Политика конфиденциальности</div>
+            <div className="flex flex-col lg:flex-row items-center justify-between text-sm text-white/50 space-y-4 lg:space-y-0">
+              <div className="text-center lg:text-left">© 2025 ООО «Связьгазпроект»</div>
+              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer text-center lg:text-right">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>

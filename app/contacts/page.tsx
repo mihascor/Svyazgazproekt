@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -8,6 +7,7 @@ export default function ContactsPage() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [selectedOffice, setSelectedOffice] = useState('central');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showAddressList, setShowAddressList] = useState(true);
 
   const toggleDropdown = (menu: string) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
@@ -26,7 +26,7 @@ export default function ContactsPage() {
       id: 'central',
       name: 'Центральный офис',
       city: 'Вологда',
-      address: '160012, Вологодская обл., г. Вологда, ул. Козленская, д. 119а, оф. 308/9',
+      address: 'ул. Козленская, д. 119А, оф. 308/9',
       phone: '+7 (817) 223-96-95',
       email: 'post@issgp.ru',
       coords: [59.2239, 39.8839],
@@ -91,6 +91,16 @@ export default function ContactsPage() {
       email: 'post@issgp.ru',
       coords: [55.8304, 49.0661],
       description: 'Региональное представительство'
+    },
+    {
+      id: 'ryazan',
+      name: 'Офис в г. Рязани',
+      city: 'Рязань',
+      address: 'Касимовское шоссе, д. 8 к. 1',
+      phone: '+7 (817) 223-96-95',
+      email: 'post@issgp.ru',
+      coords: [54.6269, 39.6916],
+      description: 'Региональное представительство'
     }
   ];
 
@@ -98,9 +108,13 @@ export default function ContactsPage() {
   const mapPoints = useMemo(() => {
     return offices
       .map((office) => {
-        // Используем кастомные маркеры в стиле сайта
-        const pointStyle = office.id === 'central' ? 'pm2gnm' : 'pm2blm';
-        return `${office.coords[1]},${office.coords[0]},${pointStyle}`;
+        // Центральный офис (Вологда) - большой красный маркер
+        // Остальные офисы - синие маркеры
+        if (office.id === 'central') {
+          return `${office.coords[1]},${office.coords[0]},pm2rdl`; // Большой красный маркер
+        } else {
+          return `${office.coords[1]},${office.coords[0]},pm2bl`; // Синий маркер
+        }
       })
       .join('~');
   }, [offices]);
@@ -113,14 +127,14 @@ export default function ContactsPage() {
       <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4">
         <div className="flex items-center justify-between min-w-[900px]">
           <div className="flex items-center space-x-6">
-            <Link href="/" className="relative">
-              <img
-                src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
-                alt="СГП Связьгазпроект"
-                className="h-16 w-auto"
-                style={{ transform: 'scaleX(1.2)' }}
-              />
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+            <Link href="/" className="flex items-center space-x-6">
+              <div className="relative">
+                <img 
+                  src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
+                  alt="СГП Связьгазпроект"
+                  className="h-16 w-auto rounded-lg"
+                />
+              </div>
             </Link>
           </div>
 
@@ -203,13 +217,11 @@ export default function ContactsPage() {
       <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
         <div className="flex items-center justify-between">
           <Link href="/" className="relative">
-            <img
-              src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/5283d2c85053ececa5ec8cfd9a0fba78.png"
+            <img 
+              src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
               alt="СГП Связьгазпроект"
-              className="h-12 w-auto"
-              style={{ transform: 'scaleX(1.2)' }}
+              className="h-12 w-auto rounded-lg"
             />
-            <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
           </Link>
 
           <button
@@ -344,16 +356,74 @@ export default function ContactsPage() {
                     </div>
                   </div>
                   <iframe
-                    src={`https://yandex.ru/map-widget/v1/?pt=${mapPoints}&z=4&l=map&mode=search&theme=dark`}
+                    src={`https://yandex.ru/map-widget/v1/?pt=${mapPoints}&z=4&l=map&theme=dark`}
                     width="100%"
                     height="300"
                     className="w-full lg:h-[400px]"
-                    style={{ border: 0, filter: 'hue-rotate(200deg) saturate(1.2) contrast(1.1)' }}
+                    style={{ border: 0 }}
                     loading="lazy"
                     allowFullScreen
                     title="Карта офисов Связьгазпроект"
                   ></iframe>
                 </div>
+              </div>
+
+              {/* General Phone Number */}
+              <div className="p-4 lg:p-6 border-b border-white/10 bg-gradient-to-r from-cyan-500/10 to-blue-500/10">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gray-800 rounded-xl flex items-center justify-center">
+                      <i className="ri-phone-line text-lg lg:text-xl text-gray-700"></i>
+                    </div>
+                    <div>
+                      <div className="text-sm text-white/70 uppercase tracking-widest mb-1">ТЕЛЕФОН</div>
+                      <a href="tel:+78172239695" className="text-lg lg:text-xl font-semibold text-white hover:text-cyan-400 transition-colors">
+                        +7 (817) 223-96-95
+                      </a>
+                    </div>
+                  </div>
+                  <a href="tel:+78172239695" className="bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-4 lg:px-6 py-2 lg:py-3 rounded-full text-sm lg:text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
+                    Позвонить
+                  </a>
+                </div>
+              </div>
+
+              {/* Collapsible Address List */}
+              <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden mb-6 lg:mb-8">
+                <button
+                  onClick={() => setShowAddressList(!showAddressList)}
+                  className="w-full p-4 lg:p-6 flex items-center justify-between hover:bg-white/5 transition-colors cursor-pointer"
+                >
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+                      <i className="ri-map-pin-line text-white text-sm lg:text-base"></i>
+                    </div>
+                    <h3 className="text-base lg:text-lg font-semibold text-white">Адреса офисов</h3>
+                  </div>
+                  <i className={`ri-arrow-down-s-line text-xl text-white/70 transition-transform duration-300 ${showAddressList ? 'rotate-180' : ''}`}></i>
+                </button>
+
+                {showAddressList && (
+                  <div className="border-t border-white/10">
+                    {offices.map((office, index) => (
+                      <div
+                        key={office.id}
+                        className={`p-4 lg:p-6 ${index !== offices.length - 1 ? 'border-b border-white/5' : ''} hover:bg-white/5 transition-colors cursor-pointer ${
+                          selectedOffice === office.id ? 'bg-cyan-400/10' : ''
+                        }`}
+                        onClick={() => setSelectedOffice(office.id)}
+                      >
+                        <div className="flex items-start space-x-3">
+                          <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${office.id === 'central' ? 'bg-red-400' : 'bg-blue-400'}`}></div>
+                          <div className="min-w-0">
+                            <div className="font-semibold text-white text-sm lg:text-base mb-1">{office.name}</div>
+                            <div className="text-xs lg:text-sm text-white/70 leading-relaxed">{office.address}</div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Office Details */}
@@ -382,7 +452,7 @@ export default function ContactsPage() {
 
                   {/* Phone */}
                   <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-blue-500 to-cyan-400 bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gray-700 rounded-xl flex items-center justify-center flex-shrink-0">
                       <i className="ri-phone-line text-blue-400 text-sm lg:text-base"></i>
                     </div>
                     <div>
@@ -535,9 +605,9 @@ export default function ContactsPage() {
       <footer className="relative py-8 lg:py-16 bg-black border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="border-t border-white/10 pt-6">
-            <div className="flex flex-col lg:flex-row items-center justify-between text-base text-white/50 space-y-4 lg:space-y-0">
-              <div className="text-center lg:text-left">© 2025 ООО «Связьгазпроект». Все права защищены.</div>
-              <div className="hover:text-cyan-400 transition-colors cursor-pointer text-center lg:text-right">Политика конфиденциальности</div>
+            <div className="flex flex-col lg:flex-row items-center justify-between text-sm text-white/50 space-y-4 lg:space-y-0">
+              <div className="text-center lg:text-left">© 2025 ООО «Связьгазпроект»</div>
+              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer text-center lg:text-right">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>
