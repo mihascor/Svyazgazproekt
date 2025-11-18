@@ -57,7 +57,7 @@ export default function ProjectsPage() {
             <i className={`ri-${mobileMenuOpen ? 'close' : 'menu'}-line text-xl`}></i>
           </button>
           
-          <a href="tel:+74951234567" 
+          <a href="tel:+78172289695" 
              className="hidden md:inline-block bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
             Связаться
           </a>
@@ -74,7 +74,7 @@ export default function ProjectsPage() {
                 Реализованные проекты
               </Link>
               <div className="px-6 pt-4 border-t border-white/20">
-                <a href="tel:+74951234567" 
+                <a href="tel:+78172289695" 
                    className="block text-center bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-3 rounded-full font-semibold">
                   Связаться
                 </a>
