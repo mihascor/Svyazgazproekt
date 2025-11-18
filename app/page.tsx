@@ -404,6 +404,7 @@ export default function Home() {
                           { city: 'Томск', address: 'ул. Дзержинского, д. 8', isMain: false },
                           { city: 'Санкт-Петербург', address: 'Пулковское шоссе, д. 28А оф. 805', isMain: false },
                           { city: 'Нижний Новгород', address: 'ул. Новая, д. 10, пом. П10', isMain: false },
+                          { city: 'Рязань', address: 'Касимовское шоссе, д. 8 к. 1', isMain: false },
                           { city: 'Казань', address: 'пр-кт Победы, д. 173, оф. 114', isMain: false }
                         ].map((office, index) => (
                           <div key={index} className="flex items-center space-x-4 p-3 hover:bg-white/5 rounded-lg transition-colors">
