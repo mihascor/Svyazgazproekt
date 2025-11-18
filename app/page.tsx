@@ -355,13 +355,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="rounded-xl overflow-hidden border border-white/20 mb-6">
-                  <iframe
-                    src="https://yandex.ru/map-widget/v1/?pt=39.8839,59.2239,pm2rdm~39.2088,51.6754,pm2blm~41.9734,45.0428,pm2blm~84.9744,56.4977,pm2blm~30.3609,59.9311,pm2blm~43.9361,56.2965,pm2blm~49.0661,55.8304,pm2blm&z=4&l=map"
-                    width="100%"
-                    height="300"
-                    frameBorder="0"
-                    className="w-full lg:h-[400px]"
-                    title="Яндекс Карта - Региональные офисы Связьгазпроект"
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5266c7a3390faf2a2084190b476b8d868496880856d137e2d785ef6e280974b9&amp;source=constructor" 
+                  width="100%" 
+                  height="300" 
+                  frameborder="0"
+                  className="w-full lg:h-[400px]"
+                  title="Яндекс Карта - Региональные офисы Связьгазпроект"
                   ></iframe>
                 </div>
                 

@@ -327,7 +327,12 @@ export default function Home() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-sm text-white/70 uppercase tracking-widest mb-3 font-light">{contact.label}</div>
-                      <a href={contact.link} className="text-lg lg:text-xl font-semibold text-white hover:text-cyan-400 transition-colors block leading-relaxed break-words">
+                      <a
+                        href={contact.link}
+                        target={contact.link.startsWith('http') ? '_blank' : undefined}
+                        rel={contact.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        className="text-lg lg:text-xl font-semibold text-white hover:text-cyan-400 transition-colors block leading-relaxed break-words"
+                      >
                         {contact.value}
                       </a>
                     </div>
