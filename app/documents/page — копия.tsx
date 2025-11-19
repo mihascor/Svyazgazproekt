@@ -116,44 +116,51 @@ export default function DocumentsPage() {
                 icon: 'ri-shield-user-line',
                 title: 'Политика в отношении обработки персональных данных',
                 description: 'Документ, регламентирующий принципы и порядок обработки персональных данных в организации',
-                status: 'Актуально'
+                status: 'Актуально',
+                file: '/documents/politika_v_otnoshenii_obrabotki_personalnykh_dannykh.pdf'
               },
               {
                 icon: 'ri-shield-check-line',
                 title: 'Лицензия ФСТЭК России',
                 description: 'Лицензия от 30.01.2023 по технической защите конфиденциальной информации',
                 number: 'Рег. № Л024-00107-77/00639358',
-                status: 'Действует'
+                status: 'Действует',
+                file: '/documents/licenziya_fstek_rossii_ot_30_01_2023_po_tehnicheskoiy_zashchite_konfidentsialnoy.pdf'
               },
               {
                 icon: 'ri-award-line',
                 title: 'Сертификат качества ГОСТ Р ИСО 9001-2015',
                 description: 'Система менеджмента качества соответствует международным стандартам',
-                status: 'Сертифицировано'
+                status: 'Сертифицировано',
+                file: '/documents/sertifikat_kachestva_gost_r_iso_9001_2015.pdf'
               },
               {
                 icon: 'ri-hashtag',
                 title: 'Свидетельство ИНН',
                 description: 'Свидетельство о постановке на учет российской организации в налоговом органе',
-                status: 'Действует'
+                status: 'Действует',
+                file: '/documents/svidetelstvo_inn.pdf'
               },
               {
                 icon: 'ri-building-line',
                 title: 'Свидетельство о ГРЮЛ',
                 description: 'Свидетельство о государственной регистрации юридического лица',
-                status: 'Действует'
+                status: 'Действует',
+                file: '/documents/svidetelstvo_gryul.pdf'
               },
               {
                 icon: 'ri-gas-station-line',
                 title: 'Сертификат соответствия ИНТЕРГАЗСЕРТ',
                 description: 'Проектирование инженерно-технических средств охраны на объектах Группы Газпром',
-                status: 'Сертифицировано'
+                status: 'Сертифицировано',
+                file: '/documents/sertifikat_sootvetstviya_intergazsert_proektirovanie_inzhenerno_tekhnicheskikh.pdf'
               },
               {
                 icon: 'ri-community-line',
                 title: 'Свидетельство члена СОЮЗА СТРОИТЕЛЕЙ',
                 description: 'Членство в СОЮЗЕ СТРОИТЕЛЕЙ ВОРОНЕЖСКОЙ ОБЛАСТИ',
-                status: 'Активно'
+                status: 'Активно',
+                file: '/documents/svidetelstvo_soyuz_stroiteley_voronezhskoy_oblasti.pdf'
               }
             ].map((doc, index) => (
               <div key={index} className="group relative">
@@ -176,14 +183,28 @@ export default function DocumentsPage() {
                     </div>
                   )}
                   <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-3 mt-auto">
-                    <button className="flex-1 flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-cyan-400/5 text-white px-4 py-3 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 cursor-pointer whitespace-nowrap">
-                      <i className="ri-eye-line"></i>
-                      <span>Просмотреть</span>
-                    </button>
-                    <button className="flex-1 flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-black px-4 py-3 rounded-lg text-xs md:text-sm font-bold transition-all duration-300 cursor-pointer whitespace-nowrap">
-                      <i className="ri-download-line"></i>
-                      <span>Скачать PDF</span>
-                    </button>
+                    <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-3 mt-auto">
+                      {/* Просмотреть */}
+                      <a 
+                        href={doc.file} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex-1 flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-cyan-400/5 text-white px-4 py-3 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 cursor-pointer whitespace-nowrap"
+                      >
+                        <i className="ri-eye-line"></i>
+                        <span>Просмотреть</span>
+                      </a>
+
+                      {/* Скачать */}
+                      <a 
+                        href={doc.file}
+                        download
+                        className="flex-1 flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-black px-4 py-3 rounded-lg text-xs md:text-sm font-bold transition-all duration-300 cursor-pointer whitespace-nowrap"
+                      >
+                        <i className="ri-download-line"></i>
+                        <span>Скачать PDF</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

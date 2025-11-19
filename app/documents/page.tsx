@@ -182,7 +182,6 @@ export default function DocumentsPage() {
                       <div className="text-white font-mono text-xs md:text-sm">{doc.number}</div>
                     </div>
                   )}
-                  <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-3 mt-auto">
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-3 mt-auto">
                       {/* Просмотреть */}
                       <a 
@@ -205,7 +204,6 @@ export default function DocumentsPage() {
                         <span>Скачать PDF</span>
                       </a>
                     </div>
-                  </div>
                 </div>
               </div>
             ))}
