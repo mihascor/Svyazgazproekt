@@ -175,7 +175,6 @@ export default function DocumentsPage() {
                       <div className="text-white font-mono text-xs md:text-sm">{doc.number}</div>
                     </div>
                   ) : (
-                    // Заглушка той же высоты
                     <div className="mb-4 md:mb-6 h-[32px] md:h-[40px]"></div>
                   )}
                   <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-3 mt-auto">
