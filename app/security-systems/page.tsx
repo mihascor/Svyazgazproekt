@@ -56,9 +56,6 @@ export default function SecuritySystems() {
                   <Link href="/author-supervision" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Осуществление авторского надзора за строительством
                   </Link>
-                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
-                    Сбор исходных данных
-                  </Link>
                 </div>
               )}
             </div>
@@ -97,9 +94,6 @@ export default function SecuritySystems() {
                   <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
                     Осуществление авторского надзора за строительством
                   </Link>
-                  <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
-                    Сбор исходных данных
-                  </Link
                 </div>
               </div>
               <div className="px-6 pt-4 border-t border-white/20">
