@@ -52,7 +52,7 @@ export default function ClientsPage() {
               <img 
                 src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
                 alt="СГП Связьгазпроект"
-                className="h-12 w-auto rounded-lg"
+                className="h-16 w-auto rounded-lg"
               />
             </div>
           </Link>
