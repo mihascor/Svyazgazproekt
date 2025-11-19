@@ -164,7 +164,7 @@ export default function DocumentsPage() {
               }
             ].map((doc, index) => (
               <div key={index} className="group relative">
-                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 transition-all duration-300 h-full">
+                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 transition-all duration-300 h-full flex flex-col">
                   <div className="flex items-start justify-between mb-4 md:mb-6">
                     <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-2xl flex items-center justify-center">
                       <i className={`${doc.icon} text-xl md:text-2xl text-cyan-400`}></i>
