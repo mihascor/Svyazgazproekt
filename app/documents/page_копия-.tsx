@@ -169,7 +169,7 @@ export default function DocumentsPage() {
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-white mb-3 leading-snug">{doc.title}</h3>
                   <p className="text-sm md:text-base text-white/70 mb-4 leading-relaxed">{doc.description}</p>
-                  {doc.number ? (
+                  {doc.number && (
                     <div className="mb-4 md:mb-6">
                       <div className="text-xs md:text-sm text-white/60 mb-1">Регистрационный номер:</div>
                       <div className="text-white font-mono text-xs md:text-sm">{doc.number}</div>

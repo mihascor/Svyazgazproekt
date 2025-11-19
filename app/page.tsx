@@ -372,7 +372,7 @@ export default function Home() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4">
                         <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-blue-500 to-cyan-400 bg-opacity-20 rounded-xl flex items-center justify-center">
-                          <i className="ri-phone-line text-lg lg:text-xl text-blue-400"></i>
+                          <i class="ri-phone-line text-xl lg:text-2xl text-gray-600"></i>
                         </div>
                         <div>
                           <div className="text-sm text-white/70 uppercase tracking-widest mb-1">ТЕЛЕФОН</div>
