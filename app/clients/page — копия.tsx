@@ -6,42 +6,6 @@ import { useState } from 'react';
 export default function ClientsPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Массив заказчиков (32 компании)
-  const companies = [
-    'ООО «ГАЗПРОМ ИНВЕСТ»',
-    'ООО «АЧИМ ДЕВЕЛОПМЕНТ»',
-    'ООО «ГЛ ИНЖИНИРИНГ»',
-    'ООО «ГАЗПРОМ ГАЗИФИКАЦИЯ»',
-    'ООО «ГАЗПРОМ ЭНЕРГО»',
-    'ООО «ГАЗПРОМ ДОБЫЧА КРАСНОДАР»',
-    'ООО «ГАЗПРОМ ДОБЫЧА НАДЫМ»',
-    'ООО «ГАЗПРОМ ДОБЫЧА НОЯБРЬСК»',
-    'ООО «ГАЗПРОМ ДОБЫЧА УРЕНГОЙ»',
-    'ООО «ГАЗПРОМ ДОБЫЧА ЯМБУРГ»',
-    'ООО «ГАЗПРОМ ДОБЫЧА АСТРАХАНЬ»',
-    'ООО «ГАЗПРОМ ДОБЫЧА ИРКУТСК»',
-    'ООО «ГАЗПРОМ ДОБЫЧА ОРЕНБУРГ»',
-    'ПАО «ГАЗПРОМ НЕФТЬ»',
-    'ООО «ГАЗПРОМНЕФТЬ-ЗАПОЛЯРЬЕ»',
-    'ООО «ГАЗПРОМ ПЕРЕРАБОТКА»',
-    'ООО «ГАЗПРОМ ПРОЕКТИРОВАНИЕ»',
-    'ООО «ГАЗПРОМ ПХГ»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ ВОЛГОГРАД»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ ЕКАТЕРИНБУРГ»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ КАЗАНЬ»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ КРАСНОДАР»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ МОСКВА»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ СУРГУТ»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ ТОМСК»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ УХТА»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ ЧАЙКОВСКИЙ»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ ЮГОРСК»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ НИЖНИЙ НОВГОРОД»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ САНКТ-ПЕТЕРБУРГ»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ САМАРА»',
-    'ООО «ГАЗПРОМ ТРАНСГАЗ СТАВРОПОЛЬ»',
-  ];
-
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
@@ -147,12 +111,12 @@ export default function ClientsPage() {
 
           {/* Clients Grid - 32 companies */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {companies.map((company, index) => (
+            {Array.from({ length: 32 }, (_, index) => (
               <div key={index} className="group relative">
                 <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-xl p-4 md:p-6 hover:border-cyan-400/30 hover:bg-white/15 transition-all duration-300 cursor-pointer h-full flex items-center justify-center">
                   <div className="text-center">
                     <h3 className="text-sm md:text-lg font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">
-                      {company}
+                      ООО «ГАЗПРОМ ИНВЕСТ»
                     </h3>
                   </div>
                 </div>
