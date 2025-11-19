@@ -169,13 +169,11 @@ export default function DocumentsPage() {
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-white mb-3 leading-snug">{doc.title}</h3>
                   <p className="text-sm md:text-base text-white/70 mb-4 leading-relaxed">{doc.description}</p>
-                  {doc.number ? (
+                  {doc.number && (
                     <div className="mb-4 md:mb-6">
                       <div className="text-xs md:text-sm text-white/60 mb-1">Регистрационный номер:</div>
                       <div className="text-white font-mono text-xs md:text-sm">{doc.number}</div>
                     </div>
-                  ) : (
-                    <div className="mb-4 md:mb-6 h-[32px] md:h-[40px]"></div>
                   )}
                   <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-3 mt-auto">
                     <button className="flex-1 flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-cyan-400/5 text-white px-4 py-3 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 cursor-pointer whitespace-nowrap">
