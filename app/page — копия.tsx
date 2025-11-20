@@ -297,7 +297,7 @@ export default function Home() {
           {/* Contact Information */}
           <div className="max-w-4xl mx-auto">
             <div className="grid gap-6 lg:gap-8">
-              {[
+              {[ 
                 {
                   icon: 'ri-map-pin-line',
                   label: 'Юридический адрес',
@@ -321,23 +321,23 @@ export default function Home() {
                 }
               ].map((contact, index) => (
                 <div key={index} className="group relative">
-                  <a
-                    href={contact.link}
-                    target={contact.link.startsWith('http') ? '_blank' : undefined}
-                    rel={contact.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="flex items-start space-x-4 lg:space-x-6 bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 hover:border-cyan-400/30 transition-all duration-300 cursor-pointer"
-                  >
+                  <div className="flex items-start space-x-4 lg:space-x-6 bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 hover:border-cyan-400/30 transition-all duration-300 cursor-pointer">
                     <div className={`w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br ${contact.gradient} bg-opacity-20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
                       <i className={`${contact.icon} text-xl lg:text-2xl text-gray-600`}></i>
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-sm text-white/70 uppercase tracking-widest mb-3 font-light">{contact.label}</div>
-                      <div className="text-lg lg:text-xl font-semibold text-white group-hover:text-cyan-400 transition-colors block leading-relaxed break-words">
+                      <a
+                        href={contact.link}
+                        target={contact.link.startsWith('http') ? '_blank' : undefined}
+                        rel={contact.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        className="text-lg lg:text-xl font-semibold text-white hover:text-cyan-400 transition-colors block leading-relaxed break-words"
+                      >
                         {contact.value}
-                      </div>
+                      </a>
                     </div>
                     <i className="ri-arrow-right-line text-cyan-400 text-xl group-hover:translate-x-2 transition-transform duration-300 hidden lg:block"></i>
-                  </a>
+                  </div>
                 </div>
               ))}
             </div>
