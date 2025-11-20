@@ -5,9 +5,15 @@ import { useState } from 'react';
 
 export default function AboutPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState<string | null>(null);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+    setMobileDropdown(null);
+  };
+
+  const toggleMobileDropdown = (menu: string) => {
+    setMobileDropdown(mobileDropdown === menu ? null : menu);
   };
 
   return (
@@ -69,44 +75,75 @@ export default function AboutPage() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-xl border border-white/20 rounded-2xl py-4 mx-4">
-            <div className="flex flex-col space-y-2">
-              <Link
-                href="/"
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors"
-              >
+            <nav className="px-4 py-2 space-y-1">
+              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-white/70 hover:text-white hover:bg-white/10 rounded-xl transition-colors">
                 Главная
               </Link>
-              <Link
-                href="/about"
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-cyan-400 bg-white/10 transition-colors"
-              >
-                О нас
-              </Link>
-              <Link
-                href="/clients"
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors"
-              >
-                Заказчики
-              </Link>
-              <Link
-                href="/documents"
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors"
-              >
-                Документы
-              </Link>
-              <div className="px-6 pt-4 border-t border-white/20">
-                <a
-                  href="tel:+78172239695"
-                  className="block text-center bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-3 rounded-full font-semibold"
+
+              {/* Компания dropdown */}
+              <div>
+                <button 
+                  onClick={() => toggleMobileDropdown('company')}
+                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors"
                 >
+                  <span>Компания</span>
+                  <i className={`ri-arrow-down-s-line text-sm transition-transform duration-200 ${mobileDropdown === 'company' ? 'rotate-180' : ''}`}></i>
+                </button>
+                {mobileDropdown === 'company' && (
+                  <div className="ml-4 mt-2 space-y-1">
+                    <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-cyan-400 bg-white/10 rounded-lg transition-colors">
+                      О нас
+                    </Link>
+                    <Link href="/clients" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
+                      Наши заказчики
+                    </Link>
+                    <Link href="/documents" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
+                      Документы
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Деятельность dropdown */}
+              <div>
+                <button 
+                  onClick={() => toggleMobileDropdown('activity')}
+                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors"
+                >
+                  <span>Деятельность</span>
+                  <i className={`ri-arrow-down-s-line text-sm transition-transform duration-200 ${mobileDropdown === 'activity' ? 'rotate-180' : ''}`}></i>
+                </button>
+                {mobileDropdown === 'activity' && (
+                  <div className="ml-4 mt-2 space-y-1">
+                    <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
+                      Инженерные изыскания
+                    </Link>
+                    <Link href="/security-systems" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
+                      Системы безопасности
+                    </Link>
+                    <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
+                      Авторский надзор
+                    </Link>
+                    <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
+                      Сбор исходных данных
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link href="/projects" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-white/70 hover:text-white hover:bg-white/10 rounded-xl transition-colors">
+                Реализованные проекты
+              </Link>
+              <Link href="/contacts" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-white/70 hover:text-white hover:bg-white/10 rounded-xl transition-colors">
+                Контакты
+              </Link>
+              <div className="pt-4 border-t border-white/20">
+                <a href="tel:+78172239695" 
+                   className="block text-center bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-3 rounded-full font-semibold cursor-pointer">
                   Связаться
                 </a>
               </div>
-            </div>
+            </nav>
           </div>
         )}
       </header>
