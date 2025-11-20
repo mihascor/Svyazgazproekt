@@ -365,7 +365,7 @@ export default function ProjectsPage() {
                 <span>Позвонить сейчас</span>
               </span>
             </a>
-            <a href="mailto:post@issgp.ru" className="group bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/30 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-white/20 transition-all duration-300 cursor-pointer whitespace-nowrap">
+            <a href="mailto:post@issgp.ru?subject=&body=" className="group bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/30 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-white/20 transition-all duration-300 cursor-pointer whitespace-nowrap">
               <span className="flex items-center justify-center space-x-2">
                 <i className="ri-mail-line"></i>
                 <span>Написать письмо</span>

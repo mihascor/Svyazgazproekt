@@ -395,7 +395,7 @@ export default function SecuritySystems() {
                 Позвонить сейчас
               </a>
               <a 
-                href="mailto:post@issgp.ru" 
+                href="mailto:post@issgp.ru?subject=&body=" 
                 className="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap"
               >
                 Написать письмо
