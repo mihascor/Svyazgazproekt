@@ -29,7 +29,7 @@ export default function ProjectsPage() {
       {/* Header */}
       <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
         <div className="flex items-center justify-between md:min-w-[900px]">
-          <div className="flex items-center space-x-6">
+          <Link href="/" className="flex items-center space-x-6">
             <div className="relative">
               <img 
                 src="https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/39805c45713a625f1f7e23a032648890.png"
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
                 className="h-12 md:h-16 w-auto rounded-lg"
               />
             </div>
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
