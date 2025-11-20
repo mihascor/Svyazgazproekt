@@ -316,7 +316,7 @@ export default function Home() {
                   icon: 'ri-mail-line',
                   label: 'Адрес электронной почты',
                   value: 'post@issgp.ru',
-                  link: 'mailto:post@issgp.ru',
+                  link: 'mailto:post@issgp.ru?subject=&body=',
                   gradient: 'from-purple-500 to-pink-400'
                 }
               ].map((contact, index) => (
