@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Pacifico } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "../components/ScrollToTop";
+import CookieBanner from "../components/CookieBanner";
 
 const pacifico = Pacifico({
   weight: '400',
@@ -37,6 +38,7 @@ export default function RootLayout({
       >
         {children}
         <ScrollToTop />
+        <CookieBanner />
       </body>
     </html>
   );
