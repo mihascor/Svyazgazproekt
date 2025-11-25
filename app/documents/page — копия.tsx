@@ -113,14 +113,14 @@ export default function DocumentsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
             {[
               {
-                icon: 'ri-hashtag',
+                icon: 'ri-shield-user-line',
                 title: 'Политика в отношении обработки персональных данных',
                 description: 'Документ, регламентирующий принципы и порядок обработки персональных данных в организации',
                 status: 'Актуально',
                 file: '/documents/politika_v_otnoshenii_obrabotki_personalnykh_dannykh.pdf'
               },
               {
-                icon: 'ri-hashtag',
+                icon: 'ri-shield-check-line',
                 title: 'Лицензия ФСТЭК России',
                 description: 'Лицензия от 30.01.2023 по технической защите конфиденциальной информации',
                 number: 'Рег. № Л024-00107-77/00639358',
@@ -128,7 +128,7 @@ export default function DocumentsPage() {
                 file: '/documents/licenziya_fstek_rossii_ot_30_01_2023_po_tehnicheskoiy_zashchite_konfidentsialnoy.pdf'
               },
               {
-                icon: 'ri-hashtag',
+                icon: 'ri-award-line',
                 title: 'Сертификат качества ГОСТ Р ИСО 9001-2015',
                 description: 'Система менеджмента качества соответствует международным стандартам',
                 status: 'Сертифицировано',
@@ -142,21 +142,21 @@ export default function DocumentsPage() {
                 file: '/documents/svidetelstvo_inn.pdf'
               },
               {
-                icon: 'ri-hashtag',
+                icon: 'ri-building-line',
                 title: 'Свидетельство о ГРЮЛ',
                 description: 'Свидетельство о государственной регистрации юридического лица',
                 status: 'Действует',
                 file: '/documents/svidetelstvo_gryul.pdf'
               },
               {
-                icon: 'ri-hashtag',
+                icon: 'ri-gas-station-line',
                 title: 'Сертификат соответствия ИНТЕРГАЗСЕРТ',
                 description: 'Проектирование инженерно-технических средств охраны на объектах Группы Газпром',
                 status: 'Сертифицировано',
                 file: '/documents/sertifikat_sootvetstviya_intergazsert_proektirovanie_inzhenerno_tekhnicheskikh.pdf'
               },
               {
-                icon: 'ri-hashtag',
+                icon: 'ri-community-line',
                 title: 'Свидетельство члена СОЮЗА СТРОИТЕЛЕЙ',
                 description: 'Членство в СОЮЗЕ СТРОИТЕЛЕЙ ВОРОНЕЖСКОЙ ОБЛАСТИ',
                 status: 'Активно',
