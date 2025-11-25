@@ -242,21 +242,21 @@ export default function SecuritySystems() {
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <i className="ri-roadster-line text-green-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs sm:text-sm md:text-lg font-medium text-gray-800">инженерные заграждения</span>
+                    <span className="text-xs sm:text-sm md:text-lg font-medium text-gray-800">Инженерные заграждения</span>
                   </div>
                   
                   <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <i className="ri-building-line text-green-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs sm:text-sm md:text-lg font-medium text-gray-800">инженерные средства и сооружения</span>
+                    <span className="text-xs sm:text-sm md:text-lg font-medium text-gray-800">Инженерные средства и сооружения</span>
                   </div>
                   
                   <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <i className="ri-door-open-line text-green-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs sm:text-sm md:text-lg font-medium text-gray-800">контрольно-пропускные пункты</span>
+                    <span className="text-xs sm:text-sm md:text-lg font-medium text-gray-800">Контрольно-пропускные пункты</span>
                   </div>
                 </div>
               </div>
@@ -276,63 +276,63 @@ export default function SecuritySystems() {
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-alarm-warning-line text-blue-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">система охранной сигнализации зданий</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Система охранной сигнализации зданий</span>
                   </div>
                   
                   <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-radio-button-line text-blue-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">система охранной сигнализации периметра объекта</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Система охранной сигнализации периметра объекта</span>
                   </div>
                   
                   <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-notification-4-line text-blue-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">система тревожной сигнализации</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Система тревожной сигнализации</span>
                   </div>
                   
                   <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-shield-user-line text-blue-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">система контроля и управления доступом</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Система контроля и управления доступом</span>
                   </div>
                   
                   <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-camera-line text-blue-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">система охранная телевизионная</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Система охранная телевизионная</span>
                   </div>
                   
                   <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-database-2-line text-blue-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">система сбора, обработки и отображения информации</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Система сбора, обработки и отображения информации</span>
                   </div>
                   
                   <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-search-2-line text-blue-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">технические средства досмотра</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Технические средства досмотра</span>
                   </div>
 
                   <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <i className="ri-flashlight-line text-purple-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800">система охранного освещения</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800">Система охранного освещения</span>
                   </div>
 
                   <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <i className="ri-battery-charge-line text-purple-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800">система электропитания</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800">Система электропитания</span>
                   </div>
                 </div>
               </div>
