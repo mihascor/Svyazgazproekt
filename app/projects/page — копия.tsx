@@ -259,6 +259,92 @@ export default function ProjectsPage() {
         </div>
       </section>
 
+      {/* Major Projects Section */}
+      <section className="py-16 md:py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent mb-4">
+              Реализованные проекты
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
+              Примеры крупных объектов, оснащенных по нашим проектам комплексами инженерно-технических средств охраны
+            </p>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12 lg:mb-16">
+            {[
+              {
+                id: 1,
+                title: 'Система видеонаблюдения промышленного объекта',
+                category: 'Видеонаблюдение',
+                image: 'https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/ee7a67e2b8c152b244b4fd3b3dcb62c2.jpeg',
+                description: 'Комплексная система видеонаблюдения для промышленного предприятия с интеграцией систем безопасности'
+              },
+              {
+                id: 2,
+                title: 'Центр мониторинга и управления',
+                category: 'Диспетчерские системы',
+                image: 'https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/ddde60ae81c74385c2463a92b905d3da.jpeg',
+                description: 'Современный центр управления с многоэкранными системами мониторинга и контроля'
+              },
+              {
+                id: 3,
+                title: 'Зимний промышленный комплекс',
+                category: 'Промышленные объекты',
+                image: 'https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/e7322b215c8c6acc7fd8d0094d33dbdd.jpeg',
+                description: 'Система безопасности для промышленного комплекса в условиях крайнего севера'
+              },
+              {
+                id: 4,
+                title: 'Система контроля доступа',
+                category: 'Контроль доступа',
+                image: 'https://static.readdy.ai/image/5eff5abc1e92443076ad1ffc97651ac8/dcd8d69d3893c3ef75ed525e95ff74d6.jpeg',
+                description: 'Интегрированная система контроля и управления доступом с биометрической идентификацией'
+              }
+            ].map((project) => (
+              <div key={project.id} className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-3xl hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 overflow-hidden cursor-pointer"
+                   onClick={() => openImageModal(project.image)}>
+                <div className="relative h-80 md:h-96 overflow-hidden">
+                  <img 
+                    src={project.image}
+                    alt={`Проект ${project.id}`}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                      <i className="ri-zoom-in-line text-xl text-white"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+             onClick={closeImageModal}>
+          <div className="relative max-w-6xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <img 
+              src={selectedImage}
+              alt="Увеличенное изображение проекта"
+              className="max-w-full max-h-full object-contain rounded-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <button 
+              onClick={closeImageModal}
+              className="absolute top-4 right-4 w-10 h-10 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors">
+              <i className="ri-close-line text-xl"></i>
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
