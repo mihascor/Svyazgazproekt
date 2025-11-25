@@ -150,9 +150,6 @@ export default function DataCollectionPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
-              <div className="text-center mb-6 md:mb-8">
-              </div>
-              
               <div className="prose prose-lg max-w-none text-center">
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                   ООО «Связьгазпроект» выполняет комплексное сопровождение проектов, связанных с оформлением имущественных прав, землеустроительной и градостроительной деятельностью
