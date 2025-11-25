@@ -139,7 +139,8 @@ export default function DataCollectionPage() {
               <span className="text-gray-700 text-xs md:text-sm font-light tracking-widest">ДЕЯТЕЛЬНОСТЬ</span>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-6 md:mb-8 text-gray-900">
-              Выполнение землеустроительных работ<br />
+              Отдел землеустройства и<br />
+              <span className="text-blue-600">сбора исходных данных (СИД)</span>
             </h1>
           </div>
         </div>
@@ -152,12 +153,16 @@ export default function DataCollectionPage() {
             <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
               <div className="text-center mb-6 md:mb-8">
                 <div className="w-16 h-16 md:w-20 md:h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                  <i className="ri-file-list-3-line text-2xl md:text-3xl text-blue-600"></i>
                 </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                  Комплексное сопровождение проектов
+                </h2>
               </div>
               
               <div className="prose prose-lg max-w-none text-center">
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  ООО «Связьгазпроект» выполняет комплексное сопровождение проектов, связанных с оформлением имущественных прав, землеустроительной и градостроительной деятельностью
+                  Отдел землеустройства и СИД является структурным подразделением, обеспечивающим комплексное сопровождение проектов, связанных с оформлением имущественных прав, землеустроительной и градостроительной деятельностью
                 </p>
               </div>
             </div>
