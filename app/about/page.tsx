@@ -145,8 +145,7 @@ export default function AboutPage() {
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 lg:p-8">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-cyan-400 mb-4">Наш опыт</h2>
                 <p className="text-sm sm:text-base lg:text-lg text-white/80 leading-relaxed">
-                  Компания «Связьгазпроект» работает с 2015 года и за это время реализовала более 1000 проектов.
-Мы специализируемся на проектировании комплексных систем инженерно-технической охраны для крупных и стратегически важных объектов.
+                  Компания «Связьгазпроект» основана в 2015 году. Мы специализируемся на проектировании комплексов инженерно-технических средств охраны для крупных и стратегически важных объектов
                 </p>
               </div>
 
@@ -171,8 +170,8 @@ export default function AboutPage() {
 
             <div className="space-y-4 lg:space-y-6">
               {[
-                { icon: 'ri-team-line', title: 'Наша команда', desc: 'В компании работает более 400 высококвалифицированных специалистов — коллектив опытных профессионалов, способный качественно и в установленные сроки решить любую поставленную задачу.' },
-                { icon: 'ri-global-line', title: 'Наша география', desc: 'Главный офис компании находится в Вологде. Обособленные подразделения «Связьгазпроекта» работают в семи регионах России: Санкт-Петербурге, Воронеже, Ставрополе, Рязани, Томске, Казани и Нижнем Новгороде.' }
+                { icon: 'ri-team-line', title: 'Наша команда', desc: 'В компании работает более 400 высококвалифицированных специалистов — коллектив опытных профессионалов, способный качественно и в установленные сроки решить любую поставленную задачу' },
+                { icon: 'ri-global-line', title: 'Наша география', desc: 'Главный офис компании находится в Вологде. Обособленные подразделения работают в семи регионах России: Санкт-Петербурге, Воронеже, Ставрополе, Рязани, Томске, Казани и Нижнем Новгороде' }
               ].map((item, index) => (
                 <div key={index} className="flex items-start space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 lg:p-6 hover:border-cyan-400/30 transition-all duration-300">
                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
