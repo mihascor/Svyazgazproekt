@@ -151,8 +151,6 @@ export default function DataCollectionPage() {
           <div className="max-w-5xl mx-auto">
             <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
               <div className="text-center mb-6 md:mb-8">
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
-                </div>
               </div>
               
               <div className="prose prose-lg max-w-none text-center">
