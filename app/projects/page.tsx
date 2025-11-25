@@ -109,6 +109,9 @@ export default function ProjectsPage() {
         
         <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
+            <div className="inline-block bg-gradient-to-r from-cyan-500/20 to-purple-500/20 backdrop-blur-sm border border-cyan-400/30 rounded-full px-4 md:px-6 py-2 mb-6 md:mb-8">
+              <span className="text-cyan-300 text-xs md:text-sm font-light tracking-widest">ПОРТФОЛИО</span>
+            </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
               <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent">
                 Реализованные
