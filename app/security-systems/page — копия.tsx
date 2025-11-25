@@ -320,20 +320,6 @@ export default function SecuritySystems() {
                     </div>
                     <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">технические средства досмотра</span>
                   </div>
-
-                  <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
-                    <div className="w-6 h-6 md:w-8 md:h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <i className="ri-flashlight-line text-purple-600 text-sm md:text-lg"></i>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800">система охранного освещения</span>
-                  </div>
-
-                  <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
-                    <div className="w-6 h-6 md:w-8 md:h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <i className="ri-battery-charge-line text-purple-600 text-sm md:text-lg"></i>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800">система электропитания</span>
-                  </div>
                 </div>
               </div>
             </div>
