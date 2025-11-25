@@ -201,28 +201,28 @@ export default function AuthorSupervision() {
                       <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <i className="ri-file-text-line text-green-600 text-sm md:text-lg"></i>
                       </div>
-                      <span className="text-xs md:text-sm font-medium text-gray-800">оформление договоров</span>
+                      <span className="text-xs md:text-sm font-medium text-gray-800">Оформление договоров</span>
                     </div>
                     
                     <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                       <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <i className="ri-shield-check-line text-green-600 text-sm md:text-lg"></i>
                       </div>
-                      <span className="text-xs md:text-sm font-medium text-gray-800">подготовка разрешительной документации</span>
+                      <span className="text-xs md:text-sm font-medium text-gray-800">Подготовка разрешительной документации</span>
                     </div>
                     
                     <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                       <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <i className="ri-clipboard-line text-green-600 text-sm md:text-lg"></i>
                       </div>
-                      <span className="text-xs md:text-sm font-medium text-gray-800">рассмотрение и подписание актов освидетельствования скрытых работ</span>
+                      <span className="text-xs md:text-sm font-medium text-gray-800">Рассмотрение и подписание актов освидетельствования скрытых работ</span>
                     </div>
                     
                     <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                       <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <i className="ri-check-double-line text-green-600 text-sm md:text-lg"></i>
                       </div>
-                      <span className="text-xs md:text-sm font-medium text-gray-800">акты промежуточной приёмки ответственных конструкций, участков сетей инженерно-технического обеспечения</span>
+                      <span className="text-xs md:text-sm font-medium text-gray-800">Акты промежуточной приёмки ответственных конструкций, участков сетей инженерно-технического обеспечения</span>
                     </div>
                   </div>
                 </div>
@@ -337,13 +337,13 @@ export default function AuthorSupervision() {
               {
                 icon: 'ri-shield-check-line',
                 title: 'Качество',
-                desc: 'Контроль соблюдения всех технических требований',
+                desc: 'Контроль реализации всех технических требований',
                 color: 'green'
               },
               {
                 icon: 'ri-time-line',
                 title: 'Сроки',
-                desc: 'Соблюдение графика строительных работ',
+                desc: 'Реализация графика строительных работ',
                 color: 'blue'
               },
               {
