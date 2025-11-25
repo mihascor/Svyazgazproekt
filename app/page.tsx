@@ -93,7 +93,7 @@ export default function Home() {
                     Осуществление авторского надзора за строительством
                   </Link>
                   <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
-                    Сбор исходных данных
+                    Выполнение землеустроительных работ
                   </Link>
                 </div>
               )}
@@ -183,7 +183,7 @@ export default function Home() {
                       Авторский надзор
                     </Link>
                     <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
-                      Сбор исходных данных
+                      Выполнение землеустроительных работ
                     </Link>
                   </div>
                 )}

@@ -57,7 +57,7 @@ export default function EngineeringSurveys() {
                     Осуществление авторского надзора за строительством
                   </Link>
                   <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
-                    Сбор исходных данных
+                    Выполнение землеустроительных работ
                   </Link>
                 </div>
               )}
@@ -98,7 +98,7 @@ export default function EngineeringSurveys() {
                     Осуществление авторского надзора за строительством
                   </Link>
                   <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
-                    Сбор исходных данных
+                    Выполнение землеустроительных работ
                   </Link>
                 </div>
               </div>
