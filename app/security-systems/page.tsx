@@ -339,56 +339,6 @@ export default function SecuritySystems() {
             </div>
           </div>
 
-          {/* Вспомогательные системы и средства */}
-          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-lg">
-            <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-purple-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <i className="ri-settings-3-line text-2xl md:text-3xl text-purple-600"></i>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">
-                  Вспомогательные системы и средства
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-                  <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
-                    <div className="w-6 h-6 md:w-8 md:h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <i className="ri-flashlight-line text-purple-600 text-sm md:text-lg"></i>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800">система охранного освещения</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
-                    <div className="w-6 h-6 md:w-8 md:h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <i className="ri-battery-charge-line text-purple-600 text-sm md:text-lg"></i>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800">система электропитания</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
-                    <div className="w-6 h-6 md:w-8 md:h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <i className="ri-notification-2-line text-purple-600 text-sm md:text-lg"></i>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800">средства оповещения</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
-                    <div className="w-6 h-6 md:w-8 md:h-8 bg-purple-100 flex items-center justify-center flex-shrink-0">
-                      <i className="ri-phone-line text-purple-600 text-sm md:text-lg"></i>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800">средства постовой связи</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
-                    <div className="w-6 h-6 md:w-8 md:h-8 bg-purple-100 flex items-center justify-center flex-shrink-0">
-                      <i className="ri-user-search-line text-purple-600 text-sm md:text-lg"></i>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">средства контроля действий сотрудников подразделения охраны</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </section>
 
