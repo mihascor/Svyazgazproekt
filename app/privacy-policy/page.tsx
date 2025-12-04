@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
           <Link href="/" className="flex items-center space-x-6">
             <div className="relative">
               <img 
-                src="/logo_sgp.svg"
+                src="/logo_sgp.png"
                 alt="СГП Связьгазпроект"
                 className="h-12 md:h-16 w-auto rounded-lg"
               />
