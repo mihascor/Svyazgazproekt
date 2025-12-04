@@ -25,7 +25,7 @@ export default function SecuritySystems() {
               <img 
                 src="/logo_sgp.svg"
                 alt="СГП Связьгазпроект"
-                className="h-12 md:h-16 w-auto rounded-lg"
+                className="h-12 md:h-16 w-auto rounded-sm"
               />
             </div>
           </Link>
