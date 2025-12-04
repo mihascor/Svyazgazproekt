@@ -256,6 +256,35 @@ export default function ProjectsPage() {
         </div>
       </section>
 
+      {/* Overview_ Section */}
+      <section className="py-0 bg-black">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
+              <div className="text-center mb-6 md:mb-8">
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500/20 to-cyan-400/20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-cyan-400/30">
+                  <i className="ri-trophy-line text-2xl md:text-3xl text-cyan-400"></i>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent mb-4 md:mb-6">
+                  Примеры реализованных проектов
+                </h3>
+              </div>
+              
+              <div className="prose prose-lg max-w-none text-center">
+                <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">
+                  Газопровод «Сила Сибири»
+                  Ковыктинское газоконденсатное месторождения
+                  Амурский газоперерабатывающий завод
+                  Московский нефтеперерабатывающий завод
+                  Омский нефтеперерабатывающий завод 
+                  Система магистральных газопроводов «Восточная система газоснабжения» и другие
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
