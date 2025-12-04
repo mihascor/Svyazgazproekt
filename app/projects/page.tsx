@@ -169,7 +169,7 @@ export default function ProjectsPage() {
                 color: 'green-400'
               }
             ].map((stat, index) => (
-              <div key={index} className="group text-center bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 cursor-pointer">
+              <div key={index} className="group text-center bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 cursor-default">
                 <div className={`w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-${stat.color}/20 to-${stat.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-${stat.color}/30`}>
                   <i className={`${stat.icon} text-2xl md:text-3xl text-${stat.color}`}></i>
                 </div>
