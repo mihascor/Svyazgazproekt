@@ -14,7 +14,7 @@ export default function DocumentsPage() {
           <Link href="/" className="flex items-center space-x-6">
             <div className="relative">
               <img 
-                src="/logo_sgp.png"
+                src="/logo_sgp.svg"
                 alt="СГП Связьгазпроект"
                 className="h-12 md:h-16 w-auto rounded-lg"
               />
