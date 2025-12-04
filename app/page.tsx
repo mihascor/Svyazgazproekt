@@ -41,7 +41,7 @@ export default function Home() {
                 <img 
                   src="/logo_sgp.svg"
                   alt="СГП Связьгазпроект"
-                  className="h-16 w-auto rounded-lg"
+                  className="h-16 w-auto rounded-md"
                 />
               </div>
             </Link>
@@ -122,7 +122,7 @@ export default function Home() {
             <img 
               src="/logo_sgp.svg"
               alt="СГП Связьгазпроект"
-              className="h-12 w-auto rounded-lg"
+              className="h-12 w-auto rounded-md"
             />
           </Link>
           
