@@ -118,7 +118,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
           <div className="absolute inset-0"
                style={{
-                 backgroundImage: `url(https://readdy.ai/api/search-image?query=modern%20engineering%20office%20with%20professional%20team%20working%20on%20technical%20blueprints%20and%20digital%20displays%2C%20corporate%20workspace%20with%20advanced%20CAD%20systems%20and%20holographic%20project%20visualizations%2C%20experienced%20engineers%20analyzing%20complex%20infrastructure%20plans%2C%20professional%20consulting%20environment%20with%20cutting-edge%20technology&width=1920&height=1080&seq=about-company&orientation=landscape)`,
+                 backgroundImage: `url('/about_fon.jpg')`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                  opacity: '0.3'

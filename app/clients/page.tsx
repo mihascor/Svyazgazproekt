@@ -121,7 +121,7 @@ export default function ClientsPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
           <div className="absolute inset-0"
                style={{
-                 backgroundImage: `url(https://readdy.ai/api/search-image?query=modern%20glass%20office%20buildings%20and%20skyscrapers%20without%20any%20text%20or%20company%20names%2C%20clean%20architectural%20photography%20of%20corporate%20business%20district%20with%20reflective%20glass%20facades%20and%20steel%20structures%2C%20contemporary%20urban%20skyline%20in%20evening%20blue%20hour%20lighting%2C%20no%20signage%20or%20lettering%20visible&width=1920&height=1080&seq=clients-glass-buildings&orientation=landscape)`,
+                 backgroundImage: `url('/clients_fon.jpg')`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                  opacity: '0.2'

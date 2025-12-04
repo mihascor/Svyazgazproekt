@@ -85,7 +85,7 @@ export default function DocumentsPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
           <div className="absolute inset-0"
                style={{
-                 backgroundImage: `url(https://readdy.ai/api/search-image?query=modern%20corporate%20office%20with%20glass%20walls%20and%20digital%20document%20management%20systems%2C%20professional%20business%20environment%20with%20holographic%20data%20displays%20and%20secure%20filing%20cabinets%2C%20futuristic%20office%20interior%20with%20blue%20and%20cyan%20lighting%2C%20clean%20minimalist%20workspace%20with%20advanced%20technology%20integration%20and%20document%20security%20systems&width=1920&height=1080&seq=documents-corporate-office&orientation=landscape)`,
+                 backgroundImage: `url('/documents_fon.jpg')`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                  opacity: '0.3'

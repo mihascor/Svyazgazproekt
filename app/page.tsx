@@ -274,7 +274,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-indigo-900"></div>
         <div className="absolute inset-0"
              style={{
-               backgroundImage: `url(https://readdy.ai/api/search-image?query=abstract%20futuristic%20technology%20background%20with%20glowing%20blue%20and%20cyan%20neon%20lights%20digital%20network%20connections%20and%20geometric%20patterns%20modern%20minimalist%20tech%20design%20with%20flowing%20energy%20lines%20and%20particles%20dark%20background%20with%20luminous%20technological%20elements%20no%20text%20no%20letters%20no%20writing%20whatsoever&width=1920&height=1080&seq=contact-tech-abstract-notext-v3&orientation=landscape)`,
+               backgroundImage: `url('/app_down_fon.jpg')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
                opacity: '0.2'
