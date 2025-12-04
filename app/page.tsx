@@ -224,7 +224,7 @@ export default function Home() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `url(https://readdy.ai/api/search-image?query=futuristic%20engineering%20holographic%20interface%20with%20floating%20digital%20blueprints%20and%203D%20technical%20projections%20in%20white%20and%20light%20blue%20tones%20with%20neon%20purple%20accents%2C%20holographic%20building%20models%20with%20bright%20purple%20neon%20lighting%20on%20white-blue%20background%2C%20next-generation%20smart%20city%20infrastructure%20visualization%20in%20light%20blue%20and%20white%20colors%20with%20violet%20neon%20highlights%2C%20quantum%20computing%20workspace%20for%20engineering%20with%20white%20light%20blue%20and%20purple%20neon%20glow%2C%20ultra-modern%20transparent%20displays%20with%20white%20light-blue%20color%20scheme%20and%20purple%20neon%20accents%2C%20no%20text%20no%20letters%20no%20writing%20whatsoever&width=1920&height=1080&seq=hero-white-lightblue-purple-v1&orientation=landscape)`,
+              backgroundImage: `url('/app_fon.jpg')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               opacity: '0.4'
