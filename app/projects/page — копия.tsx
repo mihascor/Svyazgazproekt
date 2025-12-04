@@ -109,6 +109,9 @@ export default function ProjectsPage() {
         
         <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
+            <div className="inline-block bg-gradient-to-r from-cyan-500/20 to-purple-500/20 backdrop-blur-sm border border-cyan-400/30 rounded-full px-4 md:px-6 py-2 mb-6 md:mb-8">
+              <span className="text-cyan-300 text-xs md:text-sm font-light tracking-widest">ПОРТФОЛИО</span>
+            </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
               <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent">
                 Реализованные
@@ -242,7 +245,7 @@ export default function ProjectsPage() {
                 color: 'indigo-400'
               }
             ].map((type, index) => (
-              <div key={index} className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-4 md:p-6 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 text-center cursor-default">
+              <div key={index} className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-4 md:p-6 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 text-center cursor-pointer">
                 <div className={`w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-${type.color}/20 to-${type.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-${type.color}/30`}>
                   <i className={`${type.icon} text-xl md:text-2xl text-${type.color}`}></i>
                 </div>
