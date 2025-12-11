@@ -48,7 +48,7 @@ export default function SecuritySystems() {
               {activeDropdown === 'activity' && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-3 min-w-[320px] shadow-2xl">
                   <Link href="/engineering-surveys" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
-                    Выполнение инженерных изысканий
+                    Выполнение комплексных инженерных изысканий
                   </Link>
                   <Link href="/security-systems" onClick={closeDropdowns} className="block px-5 py-3 text-base text-cyan-400 bg-white/10 transition-colors">
                     Проектирование комплексов инженерно-технических средств охраны
@@ -89,7 +89,7 @@ export default function SecuritySystems() {
                 <div className="text-cyan-400 font-medium mb-2">Деятельность</div>
                 <div className="pl-4 space-y-2">
                   <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
-                    Выполнение инженерных изысканий
+                    Выполнение комплексных инженерных изысканий
                   </Link>
                   <Link href="/security-systems" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-cyan-400 bg-white/10 px-3 rounded transition-colors">
                     Проектирование комплексов инженерно-технических средств охраны
@@ -149,13 +149,13 @@ export default function SecuritySystems() {
                   <i className="ri-shield-check-line text-2xl md:text-3xl text-blue-600"></i>
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
-                  Комплексные решения безопасности
+                  Комплексные решения по безопасности
                 </h2>
               </div>
               
               <div className="prose prose-lg max-w-none text-center">
                 <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
-                  ООО «Связьгазпроект» осуществляет проектирование комплексов инженерно-технических средств охраны для объектов топливно-энергетического комплекса, которое включает в себя предпроектное обследование, разработку проектных решений и сопровождение объектов в процессе строительства в рамках авторского надзора
+                  ООО «Связьгазпроект» осуществляет проектирование комплексов инженерно-технических средств охраны для различных объектов, которое включает в себя предпроектное обследование, разработку проектных решений и сопровождение объектов в процессе строительства в рамках авторского надзора
                 </p>
               </div>
             </div>
