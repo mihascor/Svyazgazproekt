@@ -83,6 +83,9 @@ export default function Home() {
               </button>
               {activeDropdown === 'activity' && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-3 min-w-[320px] shadow-2xl">
+                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
+                    Выполнение землеустроительных работ
+                  </Link>
                   <Link href="/engineering-surveys" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Выполнение комплексных инженерных изысканий
                   </Link>
@@ -91,9 +94,6 @@ export default function Home() {
                   </Link>
                   <Link href="/author-supervision" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Осуществление авторского надзора за строительством
-                  </Link>
-                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
-                    Выполнение землеустроительных работ
                   </Link>
                 </div>
               )}
@@ -173,6 +173,9 @@ export default function Home() {
                 </button>
                 {mobileDropdown === 'activity' && (
                   <div className="ml-4 mt-2 space-y-1">
+                    <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
+                      Выполнение землеустроительных работ
+                    </Link>
                     <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Инженерные изыскания
                     </Link>
@@ -181,9 +184,6 @@ export default function Home() {
                     </Link>
                     <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Авторский надзор
-                    </Link>
-                    <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
-                      Выполнение землеустроительных работ
                     </Link>
                   </div>
                 )}
