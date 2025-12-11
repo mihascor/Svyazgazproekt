@@ -272,6 +272,7 @@ export default function SecuritySystems() {
               <div className="flex-1">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">Технические средства охраны</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
+
                   <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-alarm-warning-line text-blue-600 text-sm md:text-lg"></i>
@@ -310,15 +311,15 @@ export default function SecuritySystems() {
                   <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-database-2-line text-blue-600 text-sm md:text-lg"></i>
+                      <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Система сбора и обработки информации</span>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Система сбора, обработки и отображения информации</span>
                   </div>
                   
                   <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <i className="ri-search-2-line text-blue-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Технические средства досмотра</span>
+                    <span className="text-xs md:text-sm font-medium text-gray-800 leading-tight">Технические средства осмотра</span>
                   </div>
 
                   <div className="flex items-center space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">

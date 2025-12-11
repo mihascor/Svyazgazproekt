@@ -104,9 +104,6 @@ export default function DocumentsPage() {
                 ДОКУМЕНТЫ И ЛИЦЕНЗИИ
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto px-4">
-              Все необходимые разрешения и сертификаты для осуществления деятельности
-            </p>
           </div>
 
           {/* Documents Grid */}
@@ -115,7 +112,7 @@ export default function DocumentsPage() {
               {
                 icon: 'ri-hashtag',
                 title: 'Политика в отношении обработки персональных данных',
-                description: 'Документ, регламентирующий принципы и порядок обработки персональных данных в организации',
+                description: 'Документ, регламентирующий принципы и порядок обработки персональных данных в компании',
                 status: 'Актуально',
                 file: '/documents/politika_v_otnoshenii_obrabotki_personalnykh_dannykh.pdf'
               },
