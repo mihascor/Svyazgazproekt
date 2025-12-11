@@ -184,14 +184,14 @@ export default function EngineeringSurveys() {
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <i className="ri-cloudy-line text-cyan-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-base md:text-lg font-medium text-gray-800">гидрометеорологические</span>
+                    <span className="text-base md:text-lg font-medium text-gray-800">инженерно-гидрометеорологический</span>
                   </div>
                   
                   <div className="flex items-center space-x-3 bg-white rounded-xl p-3 md:p-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <i className="ri-leaf-line text-emerald-600 text-sm md:text-lg"></i>
                     </div>
-                    <span className="text-base md:text-lg font-medium text-gray-800">экологические</span>
+                    <span className="text-base md:text-lg font-medium text-gray-800">инженерно-экологические</span>
                   </div>
                 </div>
               </div>

@@ -247,7 +247,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto space-y-4">
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl px-4 lg:px-8 py-4 lg:py-6">
                 <p className="text-base sm:text-lg lg:text-2xl text-white font-light leading-relaxed">
-                  ООО «Связьгазпроект» выполняет полный комплекс проектно-изыскательных работ по оснащению комплектации инженерных средств охраны объектов топливно-энергетического комплекса
+                  ООО «Связьгазпроект» выполняет полный комплекс проектно-изыскательных работ по оснащению комплексами инженерных средств охраны различных объектов
                 </p>
               </div>
             </div>
