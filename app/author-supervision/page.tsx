@@ -89,7 +89,7 @@ export default function AuthorSupervision() {
                 <div className="text-cyan-400 font-medium mb-2">Деятельность</div>
                 <div className="pl-4 space-y-2">
                   <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
-                    Выполнение  инженерных изысканий
+                    Выполнение комплексных инженерных изысканий
                   </Link>
                   <Link href="/security-systems" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
                     Проектирование комплексов инженерно-технических средств охраны
