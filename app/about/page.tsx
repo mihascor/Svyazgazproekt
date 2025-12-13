@@ -154,7 +154,11 @@ export default function AboutPage() {
                 <ul className="space-y-3 text-sm sm:text-base lg:text-lg text-white/80">
                   <li className="flex items-start space-x-3">
                     <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
-                    <span>выполнение комплексных инженерных изысканий и землеустроительных работ</span>
+                    <span>выполнение комплексных инженерных изысканий</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <span>выполнение землеустроительных работ</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
