@@ -31,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-white overflow-x-hidden">
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Desktop Header */}
       <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4">
         <div className="flex items-center justify-between min-w-[900px]">
@@ -227,7 +227,7 @@ export default function Home() {
               backgroundImage: `url('/app_fon_1.png')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              opacity: '0.8'
+              opacity: '0.4'
             }}>
           </div>
           {/*<div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>*/}
