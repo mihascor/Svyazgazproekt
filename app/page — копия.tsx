@@ -218,19 +218,19 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 lg:pt-40">
         {/* Animated Background */}
         <div className="absolute inset-0">
-          {/*<div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>*/}
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `url('/app_fon_1.png')`,
+              backgroundImage: `url('/app_fon_2.png')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               opacity: '0.4'
             }}>
           </div>
-          {/*<div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>*/}
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 text-center">
