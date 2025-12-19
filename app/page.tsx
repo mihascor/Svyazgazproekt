@@ -274,7 +274,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-indigo-900"></div>
         <div className="absolute inset-0"
              style={{
-               backgroundImage: `url('/app_down_fon.jpg')`,
+               backgroundImage: `url('/app_down_fon.png')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
                opacity: '0.2'
