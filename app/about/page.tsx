@@ -115,16 +115,16 @@ export default function AboutPage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 lg:pt-40">
         {/* Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div> */}
           <div className="absolute inset-0"
                style={{
                  backgroundImage: `url('/about_fon.png')`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
-                 opacity: '0.3'
+                 opacity: '0.8'
                }}>
           </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div> */}
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 lg:px-8">
