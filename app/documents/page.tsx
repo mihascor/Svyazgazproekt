@@ -85,7 +85,7 @@ export default function DocumentsPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
           <div className="absolute inset-0"
                style={{
-                 backgroundImage: `url('/documents_fon.jpg')`,
+                 backgroundImage: `url('/documents_fon.png')`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                  opacity: '0.3'

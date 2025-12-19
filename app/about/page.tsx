@@ -118,7 +118,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
           <div className="absolute inset-0"
                style={{
-                 backgroundImage: `url('/about_fon.jpg')`,
+                 backgroundImage: `url('/about_fon.png')`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                  opacity: '0.3'
