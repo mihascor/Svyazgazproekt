@@ -277,7 +277,7 @@ export default function Home() {
                backgroundImage: `url('/app_down_fon.png')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
-               opacity: '0.2'
+               opacity: '0.8'
              }}>
         </div>
         
