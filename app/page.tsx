@@ -45,7 +45,6 @@ export default function Home() {
                 />
               </div>
             </Link>
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
           </div>
           
           <nav className="flex items-center space-x-1">
