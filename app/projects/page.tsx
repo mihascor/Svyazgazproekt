@@ -146,7 +146,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Experience Stats */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-black to-gray-900">
+      <section className="py-16 md:py-20 bg-gradient-to-b from-white to-gray-900">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent mb-4">
@@ -257,7 +257,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Overview_ Section */}
-      <section className="py-0 bg-black">
+      <section className="py-0 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
