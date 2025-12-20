@@ -122,7 +122,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Overview Section */}
-      <section className="py-0 bg-black">
+      <section className="py-0 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
