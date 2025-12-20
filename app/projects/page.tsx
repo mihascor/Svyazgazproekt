@@ -191,7 +191,7 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           
           <div className="text-center mb-12 md:mb-16">
-            <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-500/20 to-cyan-400/20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-green-400/30">
+            {/* <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-500/20 to-cyan-400/20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-green-400/30"> */}
               <i className="ri-building-4-line text-xl md:text-2xl text-green-400"></i>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-green-300 bg-clip-text text-transparent mb-4">
