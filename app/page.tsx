@@ -44,8 +44,8 @@ export default function Home() {
                   className="h-16 w-auto rounded-sm"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
             </Link>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
           </div>
           
           <nav className="flex items-center space-x-1">
