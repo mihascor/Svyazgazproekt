@@ -25,7 +25,7 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-white text-black">
       {/* Header */}
       <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
         <div className="flex items-center justify-between md:min-w-[900px]">
@@ -99,7 +99,7 @@ export default function ProjectsPage() {
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute inset-0"
              style={{
-               backgroundImage: `url(https://readdy.ai/api/search-image?query=futuristic%20industrial%20infrastructure%20portfolio%20showcasing%20major%20energy%20facilities%20including%20gas%20processing%20plants%2C%20oil%20refineries%2C%20pipeline%20systems%2C%20compressor%20stations%2C%20and%20energy%20distribution%20networks%20with%20holographic%20digital%20blueprints%20and%20neon%20lighting%20effects%20in%20cyberpunk%20style&width=1920&height=800&seq=projects-portfolio-hero-dark&orientation=landscape)`,
+               backgroundImage: `url('/projects_fon.png')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
                opacity: '0.3'
