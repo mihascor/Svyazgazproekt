@@ -187,7 +187,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Object Types Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-gray-900 to-black">
+      <section className="py-16 md:py-20 bg-gradient-to-b from-gray-900 to-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           
           <div className="text-center mb-12 md:mb-16">
