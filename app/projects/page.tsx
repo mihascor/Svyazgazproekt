@@ -105,7 +105,7 @@ export default function ProjectsPage() {
                opacity: '0.3'
              }}>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div> */}
         
         <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
