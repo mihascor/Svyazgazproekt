@@ -118,7 +118,7 @@ export default function ClientsPage() {
       <section className="relative min-h-screen pt-32 md:pt-40 pb-16">
         {/* Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div> */}
           <div className="absolute inset-0"
                style={{
                  backgroundImage: `url('/clients_fon.jpg')`,
@@ -127,7 +127,7 @@ export default function ClientsPage() {
                  opacity: '0.2'
                }}>
           </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div> */}
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Header */}

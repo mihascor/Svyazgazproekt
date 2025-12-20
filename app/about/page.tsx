@@ -11,7 +11,7 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg- white text-black">
       {/* Desktop Header */}
       <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4">
         <div className="flex items-center justify-between min-w-[900px]">
