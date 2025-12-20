@@ -230,7 +230,7 @@ export default function Home() {
               opacity: '0.8'
             }}>
           </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2f6fb2] via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgb(20,65,112)] via-transparent to-transparent"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 text-center">
@@ -271,7 +271,7 @@ export default function Home() {
 
       {/* Contact Section - Cyberpunk */}
       <section id="контакты" className="py-16 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#2f6fb2] via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[rgb(20,65,112)] via-transparent to-transparent"></div>
         <div className="absolute inset-0"
              style={{
                backgroundImage: `url('/app_down_fon.png')`,
