@@ -102,7 +102,7 @@ export default function ProjectsPage() {
                backgroundImage: `url('/projects_fon.png')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
-               opacity: '0.3'
+               opacity: '0.8'
              }}>
         </div>
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div> */}
