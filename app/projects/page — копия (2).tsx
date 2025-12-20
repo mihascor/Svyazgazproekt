@@ -25,7 +25,7 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-white">
+    <div className="min-h-screen bg-white text-black">
       {/* Header */}
       <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
         <div className="flex items-center justify-between md:min-w-[900px]">
@@ -58,14 +58,14 @@ export default function ProjectsPage() {
           </button>
           
           <a href="tel:+78172289695" 
-             className="hidden md:inline-block bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
+             className="hidden md:inline-block bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
             Связаться
           </a>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-xl border border-white/20 rounded-2xl py-4 mx-4">
+          <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-xl border border-white/20 rounded-2xl py-4 mx-4">
             <div className="flex flex-col space-y-2">
               <Link href="/" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
                 Главная
@@ -75,7 +75,7 @@ export default function ProjectsPage() {
               </Link>
               <div className="px-6 pt-4 border-t border-white/20">
                 <a href="tel:+78172289695" 
-                   className="block text-center bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-6 py-3 rounded-full font-semibold">
+                   className="block text-center bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-3 rounded-full font-semibold">
                   Связаться
                 </a>
               </div>
@@ -94,7 +94,7 @@ export default function ProjectsPage() {
 
       {/* Hero Section */}
       <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-white"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div> */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute inset-0"
@@ -102,14 +102,14 @@ export default function ProjectsPage() {
                backgroundImage: `url('/projects_fon.png')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
-               opacity: '0.3'
+               opacity: '0.8'
              }}>
         </div>
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div> */}
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div> */}
         
         <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-white leading-tight mb-6 md:mb-8">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
               <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent">
                 Реализованные
               </span>
@@ -173,7 +173,7 @@ export default function ProjectsPage() {
                 <div className={`w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-${stat.color}/20 to-${stat.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-${stat.color}/30`}>
                   <i className={`${stat.icon} text-2xl md:text-3xl text-${stat.color}`}></i>
                 </div>
-                <div className={`text-2xl sm:text-3xl md:text-4xl font-white text-${stat.color} mb-2 group-hover:text-cyan-300 transition-colors`}>
+                <div className={`text-2xl sm:text-3xl md:text-4xl font-black text-${stat.color} mb-2 group-hover:text-cyan-300 transition-colors`}>
                   {stat.value}
                 </div>
                 <div className="text-xs sm:text-sm md:text-lg font-medium text-white/80 group-hover:text-white transition-colors">
@@ -287,7 +287,7 @@ export default function ProjectsPage() {
 
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         
@@ -316,7 +316,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white py-12 md:py-16">
+      <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="border-t border-white/10 pt-6 md:pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/50 space-y-4 md:space-y-0">
