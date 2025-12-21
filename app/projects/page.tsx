@@ -131,10 +131,9 @@ export default function ProjectsPage() {
             backgroundImage: `url('/projects_fon.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            opacity: '0.8'
           }}
         />
-        {/* light veil for readability */}
-        <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px]" />
         {/* subtle vignette similar to AboutPage bottom fade */}
         <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/30 to-black/60" />
       </div>
