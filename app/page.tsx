@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black overflow-x-hidden">
       {/* Desktop Header */}
-      <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#9bc0da]/90 backdrop-blur-md border border-[#2b5377]/30 rounded-full px-8 py-4">
+      <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4">
         <div className="flex items-center justify-between min-w-[900px]">
           <div className="flex items-center space-x-6">
             <Link href="/" className="flex items-center space-x-6">
@@ -52,20 +52,20 @@ export default function Home() {
             <div className="relative">
               <button 
                 onClick={() => toggleDropdown('company')}
-                className="flex items-center space-x-1 px-4 py-2 text-base text-[#2b5377] hover:text-[#1f3f5a] hover:bg-[#2b5377]/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
+                className="flex items-center space-x-1 px-4 py-2 text-base text-white/70 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
               >
                 <span>Компания</span>
                 <i className={`ri-arrow-down-s-line text-sm transition-transform duration-200 ${activeDropdown === 'company' ? 'rotate-180' : ''}`}></i>
               </button>
               {activeDropdown === 'company' && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-3 min-w-[200px] shadow-2xl">
-                  <Link href="/about" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-[#2b5377]/10 transition-colors">
+                  <Link href="/about" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     О нас
                   </Link>
-                  <Link href="/clients" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-[#2b5377]/10 transition-colors">
+                  <Link href="/clients" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Наши заказчики
                   </Link>
-                  <Link href="/documents" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-[#2b5377]/10 transition-colors">
+                  <Link href="/documents" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Документы
                   </Link>
                 </div>
@@ -76,23 +76,23 @@ export default function Home() {
             <div className="relative">
               <button 
                 onClick={() => toggleDropdown('activity')}
-                className="flex items-center space-x-1 px-4 py-2 text-base text-[#2b5377] hover:text-[#1f3f5a] hover:bg-[#2b5377]/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
+                className="flex items-center space-x-1 px-4 py-2 text-base text-white/70 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
               >
                 <span>Деятельность</span>
                 <i className={`ri-arrow-down-s-line text-xs transition-transform duration-200 ${activeDropdown === 'activity' ? 'rotate-180' : ''}`}></i>
               </button>
               {activeDropdown === 'activity' && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-3 min-w-[320px] shadow-2xl">
-                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-[#2b5377]/10 transition-colors">
+                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Выполнение землеустроительных работ
                   </Link>
-                  <Link href="/engineering-surveys" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-[#2b5377]/10 transition-colors">
+                  <Link href="/engineering-surveys" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Выполнение комплексных инженерных изысканий
                   </Link>
-                  <Link href="/security-systems" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-[#2b5377]/10 transition-colors">
+                  <Link href="/security-systems" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Проектирование комплексов инженерно-технических средств охраны
                   </Link>
-                  <Link href="/author-supervision" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-[#2b5377]/10 transition-colors">
+                  <Link href="/author-supervision" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Осуществление авторского надзора за строительством
                   </Link>
                 </div>
@@ -100,10 +100,10 @@ export default function Home() {
             </div>
 
             {/* Regular links */}
-            <Link href="/projects" className="px-4 py-2 text-base text-[#2b5377] hover:text-[#1f3f5a] hover:bg-[#2b5377]/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
+            <Link href="/projects" className="px-4 py-2 text-base text-white/70 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
               Реализованные проекты
             </Link>
-            <a href="#контакты" className="px-4 py-2 text-base text-[#2b5377] hover:text-[#1f3f5a] hover:bg-[#2b5377]/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
+            <a href="#контакты" className="px-4 py-2 text-base text-white/70 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
               Контакты
             </a>
           </nav>
@@ -116,7 +116,7 @@ export default function Home() {
       </header>
 
       {/* Mobile Header */}
-      <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#9bc0da]/90 backdrop-blur-md border border-[#2b5377]/30 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
+      <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
         <div className="flex items-center justify-between">
           <Link href="/" className="relative">
             <img 
@@ -128,7 +128,7 @@ export default function Home() {
           
           <button 
             onClick={toggleMobileMenu}
-            className="w-10 h-10 flex items-center justify-center text-[#2b5377] hover:bg-[#2b5377]/10 rounded-full transition-colors cursor-pointer"
+            className="w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 rounded-full transition-colors cursor-pointer"
           >
             <i className={`ri-${mobileMenuOpen ? 'close' : 'menu'}-line text-xl`}></i>
           </button>
@@ -142,20 +142,20 @@ export default function Home() {
               <div>
                 <button 
                   onClick={() => toggleMobileDropdown('company')}
-                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:bg-[#2b5377]/10 rounded-xl transition-colors"
+                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors"
                 >
                   <span>Компания</span>
                   <i className={`ri-arrow-down-s-line text-sm transition-transform duration-200 ${mobileDropdown === 'company' ? 'rotate-180' : ''}`}></i>
                 </button>
                 {mobileDropdown === 'company' && (
                   <div className="ml-4 mt-2 space-y-1">
-                    <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-[#2b5377]/10 rounded-lg transition-colors">
+                    <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       О нас
                     </Link>
-                    <Link href="/clients" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-[#2b5377]/10 rounded-lg transition-colors">
+                    <Link href="/clients" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Наши заказчики
                     </Link>
-                    <Link href="/documents" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-[#2b5377]/10 rounded-lg transition-colors">
+                    <Link href="/documents" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Документы
                     </Link>
                   </div>
@@ -166,33 +166,33 @@ export default function Home() {
               <div>
                 <button 
                   onClick={() => toggleMobileDropdown('activity')}
-                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:bg-[#2b5377]/10 rounded-xl transition-colors"
+                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors"
                 >
                   <span>Деятельность</span>
                   <i className={`ri-arrow-down-s-line text-sm transition-transform duration-200 ${mobileDropdown === 'activity' ? 'rotate-180' : ''}`}></i>
                 </button>
                 {mobileDropdown === 'activity' && (
                   <div className="ml-4 mt-2 space-y-1">
-                    <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-[#2b5377]/10 rounded-lg transition-colors">
+                    <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Выполнение землеустроительных работ
                     </Link>
-                    <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-[#2b5377]/10 rounded-lg transition-colors">
+                    <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Инженерные изыскания
                     </Link>
-                    <Link href="/security-systems" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-[#2b5377]/10 rounded-lg transition-colors">
+                    <Link href="/security-systems" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Системы безопасности
                     </Link>
-                    <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-[#2b5377]/10 rounded-lg transition-colors">
+                    <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors">
                       Авторский надзор
                     </Link>
                   </div>
                 )}
               </div>
 
-              <Link href="/projects" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-white hover:bg-[#2b5377]/10 rounded-xl transition-colors">
+              <Link href="/projects" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors">
                 Реализованные проекты
               </Link>
-              <a href="#контакты" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-white hover:bg-[#2b5377]/10 rounded-xl transition-colors">
+              <a href="#контакты" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors">
                 Контакты
               </a>
               <div className="pt-4 border-t border-white/20">
@@ -329,7 +329,7 @@ export default function Home() {
                       <i className={`${contact.icon} text-xl lg:text-2xl text-gray-600`}></i>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-sm text-[#2b5377] uppercase tracking-widest mb-3 font-light">{contact.label}</div>
+                      <div className="text-sm text-white/70 uppercase tracking-widest mb-3 font-light">{contact.label}</div>
                       <div className="text-lg lg:text-xl font-semibold text-white group-hover:text-cyan-400 transition-colors block leading-relaxed break-words">
                         {contact.value}
                       </div>
@@ -348,7 +348,7 @@ export default function Home() {
                     <i className="ri-map-2-line text-xl lg:text-2xl text-gray-600"></i>
                   </div>
                   <div>
-                    <div className="text-sm text-[#2b5377] uppercase tracking-widest mb-2 font-light">Местоположение</div>
+                    <div className="text-sm text-white/70 uppercase tracking-widest mb-2 font-light">Местоположение</div>
                     <div className="text-lg lg:text-xl font-semibold text-white">Центральный офис и обособленные подразделения</div>
                   </div>
                 </div>
@@ -373,7 +373,7 @@ export default function Home() {
                           <i className="ri-phone-line text-xl lg:text-2xl text-gray-600"></i>
                         </div>
                         <div>
-                          <div className="text-sm text-[#2b5377] uppercase tracking-widest mb-1">ТЕЛЕФОН</div>
+                          <div className="text-sm text-white/70 uppercase tracking-widest mb-1">ТЕЛЕФОН</div>
                           <a href="tel:+78172239695" className="text-lg lg:text-xl font-semibold text-white hover:text-cyan-400 transition-colors">
                             +7 (817) 223-96-95
                           </a>
@@ -392,7 +392,7 @@ export default function Home() {
                       className="w-full flex items-center justify-between text-left hover:bg-white/5 rounded-lg p-2 transition-colors cursor-pointer"
                     >
                       <h3 className="text-lg font-semibold text-white">Адреса офисов</h3>
-                      <i className={`ri-arrow-down-s-line text-xl text-[#2b5377] transition-transform duration-300 ${officesExpanded ? 'rotate-180' : ''}`}></i>
+                      <i className={`ri-arrow-down-s-line text-xl text-white/70 transition-transform duration-300 ${officesExpanded ? 'rotate-180' : ''}`}></i>
                     </button>
                   </div>
 
@@ -417,7 +417,7 @@ export default function Home() {
                                 <span className="text-white font-medium text-sm lg:text-base mb-1 lg:mb-0 lg:min-w-[140px]">
                                   {office.city}
                                 </span>
-                                <span className="text-[#2b5377] text-xs lg:text-sm leading-relaxed lg:flex-1">
+                                <span className="text-white/70 text-xs lg:text-sm leading-relaxed lg:flex-1">
                                   {office.address}
                                 </span>
                               </div>
