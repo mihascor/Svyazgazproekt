@@ -230,7 +230,7 @@ export default function Home() {
               opacity: '0.8'
             }}>
           </div>
-          {/* <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[hsl(211,66%,44%)] via-transparent to-transparent"></div> */}
+          <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[#719cc1] via-transparent to-transparent"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 text-center">
