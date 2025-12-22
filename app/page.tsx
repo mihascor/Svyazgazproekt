@@ -39,7 +39,7 @@ export default function Home() {
             <Link href="/" className="flex items-center space-x-6">
               <div className="relative">
                 <img 
-                  src="/logo_sgp.svg"
+                  src="/logo_sgp.png"
                   alt="СГП Связьгазпроект"
                   className="h-16 w-auto rounded-sm"
                 />
@@ -120,7 +120,7 @@ export default function Home() {
         <div className="flex items-center justify-between">
           <Link href="/" className="relative">
             <img 
-              src="/logo_sgp.svg"
+              src="/logo_sgp.png"
               alt="СГП Связьгазпроект"
               className="h-12 w-auto rounded-sm"
             />
