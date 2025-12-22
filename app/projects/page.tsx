@@ -120,7 +120,7 @@ export default function ProjectsPage() {
           ></div>
 
           {/* Лёгкое затемнение снизу, как в AboutPage (можно ослабить/усилить при желании) */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div> */}
         </div>
 
         {/* Контент поверх */}
