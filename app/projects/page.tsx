@@ -304,10 +304,7 @@ export default function ProjectsPage() {
           </section>
 
           {/* CTA Section (оставляем как есть) */}
-          <section className="py-16 md:py-20 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <section className="py-16 md:py-20 relative overflow-hidden" style={{ backgroundColor: '#749dc5' }}>
 
             <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 md:mb-8">
