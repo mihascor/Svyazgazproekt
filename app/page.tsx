@@ -324,8 +324,8 @@ export default function Home() {
           {/* Main Title */}
           <div className="space-y-4 lg:space-y-8 mb-8 lg:mb-12">
             <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black leading-none tracking-tight">
-              <span className="block text-[#0B1B2B]">ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ</span>
-              <span className="block text-[#0B1B2B] transform -skew-x-6">РАБОТЫ</span>
+              <span className="block text-[#3b6a97]">ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ</span>
+              <span className="block text-[#3b6a97]">РАБОТЫ</span>
             </h1>
             <div className="max-w-4xl mx-auto space-y-4">
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl px-4 lg:px-8 py-4 lg:py-6">
