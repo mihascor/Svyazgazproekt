@@ -18,7 +18,7 @@ export default function Home() {
   };
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen((v) => !v);
+    setMobileMenuOpen(!mobileMenuOpen);
     setMobileDropdown(null);
   };
 
@@ -27,38 +27,31 @@ export default function Home() {
   };
 
   const toggleOffices = () => {
-    setOfficesExpanded((v) => !v);
+    setOfficesExpanded(!officesExpanded);
   };
 
   return (
     <div className="min-h-screen bg-white text-black overflow-x-hidden">
       {/* Desktop Header */}
-      <header
-        className="hidden lg:flex fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-white/10 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-8 py-4"
-        onMouseLeave={closeDropdowns}
-      >
+      <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-8 py-4">
         <div className="flex items-center justify-between min-w-[900px]">
           <div className="flex items-center space-x-6">
             <Link href="/" className="flex items-center space-x-6">
               <div className="relative">
                 <img
-                  src="/logo.png"
+                  src="/logo_sgp.png"
                   alt="СГП Связьгазпроект"
-                  className="w-16 h-16 object-contain"
+                  className="h-16 w-auto rounded-sm"
                 />
-              </div>
-              <div>
-                <div className="text-lg font-bold text-black">СГП</div>
-                <div className="text-xs text-[#0B1B2B]/80">Связьгазпроект</div>
               </div>
             </Link>
           </div>
 
-          <nav className="flex items-center space-x-2">
+          <nav className="flex items-center space-x-1">
             {/* Компания dropdown */}
             <div className="relative">
               <button
-                onMouseEnter={() => toggleDropdown('company')}
+                onClick={() => toggleDropdown('company')}
                 className="flex items-center space-x-1 px-4 py-2 text-base text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
               >
                 <span>Компания</span>
@@ -68,8 +61,6 @@ export default function Home() {
                   }`}
                 ></i>
               </button>
-
-              {/* ВСПЛЫВАЮЩЕЕ МЕНЮ НЕ ТРОГАЕМ */}
               {activeDropdown === 'company' && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-3 min-w-[200px] shadow-2xl">
                   <Link
@@ -93,13 +84,6 @@ export default function Home() {
                   >
                     Документы
                   </Link>
-                  <Link
-                    href="/news"
-                    onClick={closeDropdowns}
-                    className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors"
-                  >
-                    Новости
-                  </Link>
                 </div>
               )}
             </div>
@@ -107,18 +91,16 @@ export default function Home() {
             {/* Деятельность dropdown */}
             <div className="relative">
               <button
-                onMouseEnter={() => toggleDropdown('activity')}
+                onClick={() => toggleDropdown('activity')}
                 className="flex items-center space-x-1 px-4 py-2 text-base text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
               >
                 <span>Деятельность</span>
                 <i
-                  className={`ri-arrow-down-s-line text-sm transition-transform duration-200 ${
+                  className={`ri-arrow-down-s-line text-xs transition-transform duration-200 ${
                     activeDropdown === 'activity' ? 'rotate-180' : ''
                   }`}
                 ></i>
               </button>
-
-              {/* ВСПЛЫВАЮЩЕЕ МЕНЮ НЕ ТРОГАЕМ */}
               {activeDropdown === 'activity' && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-3 min-w-[320px] shadow-2xl">
                   <Link
@@ -153,46 +135,44 @@ export default function Home() {
               )}
             </div>
 
+            {/* Regular links */}
             <Link
               href="/projects"
-              className="px-4 py-2 text-[#0B1B2B]/70 hover:text-[#0B1B2B] transition-colors cursor-pointer whitespace-nowrap"
+              className="px-4 py-2 text-base text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
             >
-              Проекты
+              Реализованные проекты
             </Link>
-            <Link
-              href="/contacts"
-              className="px-4 py-2 text-[#0B1B2B]/70 hover:text-[#0B1B2B] transition-colors cursor-pointer whitespace-nowrap"
+            <a
+              href="#контакты"
+              className="px-4 py-2 text-base text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
             >
               Контакты
-            </Link>
+            </a>
           </nav>
 
-          <button
-            className="bg-gradient-to-r from-[#84CC16] to-[#A3E635] px-6 py-3 rounded-full text-black font-semibold hover:shadow-xl hover:shadow-lime-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap"
-            onClick={() => {
-              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-            }}
+          <a
+            href="tel:+78172239695"
+            className="bg-gradient-to-r from-[#84CC16] to-[#A3E635] text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap"
           >
             Связаться
-          </button>
+          </a>
         </div>
       </header>
 
       {/* Mobile Header */}
-      <header className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-xl border-b border-[#0B1B2B]/30">
-        <div className="flex items-center justify-between px-4 py-3">
-          <Link href="/" className="flex items-center space-x-3">
-            <img src="/logo.png" alt="СГП Связьгазпроект" className="w-12 h-12 object-contain" />
-            <div>
-              <div className="text-base font-bold text-black">СГП</div>
-              <div className="text-[10px] text-[#0B1B2B]/80">Связьгазпроект</div>
-            </div>
+      <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="relative">
+            <img
+              src="/logo_sgp.png"
+              alt="СГП Связьгазпроект"
+              className="h-12 w-auto rounded-sm"
+            />
           </Link>
 
           <button
             onClick={toggleMobileMenu}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#0B1B2B]"
-            aria-label="Меню"
+            className="w-10 h-10 flex items-center justify-center text-[#0B1B2B] hover:bg-white/10 rounded-full transition-colors cursor-pointer"
           >
             <i className={`ri-${mobileMenuOpen ? 'close' : 'menu'}-line text-xl`}></i>
           </button>
@@ -200,12 +180,13 @@ export default function Home() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="bg-white/95 backdrop-blur-xl border-t border-[#0B1B2B]/30">
-            <div className="px-4 py-6 space-y-4">
+          <div className="absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-xl border border-white/20 rounded-2xl py-4 mx-4">
+            <nav className="px-4 py-2 space-y-1">
+              {/* Компания dropdown */}
               <div>
                 <button
                   onClick={() => toggleMobileDropdown('company')}
-                  className="w-full flex items-center justify-between py-3 text-[#0B1B2B] font-medium"
+                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors"
                 >
                   <span>Компания</span>
                   <i
@@ -214,30 +195,38 @@ export default function Home() {
                     }`}
                   ></i>
                 </button>
-
-                {/* ВСПЛЫВАЮЩЕЕ МЕНЮ НЕ ТРОГАЕМ (но это не dropdown-ховер, это mobile список; белого текста тут не было обязательного) */}
                 {mobileDropdown === 'company' && (
-                  <div className="pl-4 space-y-3 pb-3">
-                    <Link href="/about" onClick={toggleMobileMenu} className="block text-[#0B1B2B]/70">
+                  <div className="ml-4 mt-2 space-y-1">
+                    <Link
+                      href="/about"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors"
+                    >
                       О нас
                     </Link>
-                    <Link href="/clients" onClick={toggleMobileMenu} className="block text-[#0B1B2B]/70">
+                    <Link
+                      href="/clients"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors"
+                    >
                       Наши заказчики
                     </Link>
-                    <Link href="/documents" onClick={toggleMobileMenu} className="block text-[#0B1B2B]/70">
+                    <Link
+                      href="/documents"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors"
+                    >
                       Документы
-                    </Link>
-                    <Link href="/news" onClick={toggleMobileMenu} className="block text-[#0B1B2B]/70">
-                      Новости
                     </Link>
                   </div>
                 )}
               </div>
 
+              {/* Деятельность dropdown */}
               <div>
                 <button
                   onClick={() => toggleMobileDropdown('activity')}
-                  className="w-full flex items-center justify-between py-3 text-[#0B1B2B] font-medium"
+                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors"
                 >
                   <span>Деятельность</span>
                   <i
@@ -246,80 +235,103 @@ export default function Home() {
                     }`}
                   ></i>
                 </button>
-
                 {mobileDropdown === 'activity' && (
-                  <div className="pl-4 space-y-3 pb-3">
-                    <Link href="/data-collection" onClick={toggleMobileMenu} className="block text-[#0B1B2B]/70">
+                  <div className="ml-4 mt-2 space-y-1">
+                    <Link
+                      href="/data-collection"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors"
+                    >
                       Выполнение землеустроительных работ
                     </Link>
-                    <Link href="/engineering-surveys" onClick={toggleMobileMenu} className="block text-[#0B1B2B]/70">
-                      Выполнение комплексных инженерных изысканий
+                    <Link
+                      href="/engineering-surveys"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors"
+                    >
+                      Инженерные изыскания
                     </Link>
-                    <Link href="/security-systems" onClick={toggleMobileMenu} className="block text-[#0B1B2B]/70">
-                      Проектирование комплексов инженерно-технических средств охраны
+                    <Link
+                      href="/security-systems"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors"
+                    >
+                      Системы безопасности
                     </Link>
-                    <Link href="/author-supervision" onClick={toggleMobileMenu} className="block text-[#0B1B2B]/70">
-                      Осуществление авторского надзора за строительством
+                    <Link
+                      href="/author-supervision"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg transition-colors"
+                    >
+                      Авторский надзор
                     </Link>
                   </div>
                 )}
               </div>
 
-              <Link href="/projects" onClick={toggleMobileMenu} className="block py-3 text-[#0B1B2B] font-medium">
-                Проекты
-              </Link>
-              <Link href="/contacts" onClick={toggleMobileMenu} className="block py-3 text-[#0B1B2B] font-medium">
-                Контакты
-              </Link>
-
-              <button
-                onClick={() => {
-                  toggleMobileMenu();
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="block bg-gradient-to-r from-[#84CC16] to-[#A3E635] w-full px-6 py-3 rounded-full text-center text-black font-semibold cursor-pointer"
+              <Link
+                href="/projects"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors"
               >
-                Связаться
-              </button>
-            </div>
+                Реализованные проекты
+              </Link>
+              <a
+                href="#контакты"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors"
+              >
+                Контакты
+              </a>
+              <div className="pt-4 border-t border-white/20">
+                <a
+                  href="tel:+78172239695"
+                  className="block bg-gradient-to-r from-[#84CC16] to-[#A3E635] text-black px-6 py-3 rounded-full text-center font-semibold cursor-pointer"
+                >
+                  Связаться
+                </a>
+              </div>
+            </nav>
           </div>
         )}
       </header>
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-0">
-        {/* Background */}
+      {/* Click outside to close dropdowns */}
+      {activeDropdown && (
+        <div className="fixed inset-0 z-40" onClick={closeDropdowns}></div>
+      )}
+
+      {/* Hero Section - Futuristic */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 lg:pt-40">
+        {/* Animated Background */}
         <div className="absolute inset-0">
-          <img src="/projects_fon.png" alt="Фон" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/30"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#7aa8cf] via-transparent to-transparent"></div>
+          {/*<div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div>*/}
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url('/app_fon.png')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: '0.8'
+            }}
+          ></div>
+          <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[#719cc1] via-transparent to-transparent"></div>
         </div>
 
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute top-3/4 right-1/4 w-96 h-96 bg-cyan-400/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-indigo-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
-        </div>
-
-        {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 text-center">
+          {/* Main Title */}
           <div className="space-y-4 lg:space-y-8 mb-8 lg:mb-12">
             <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black leading-none tracking-tight">
               <span className="block text-[#0B1B2B]">ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ</span>
               <span className="block text-[#0B1B2B] transform -skew-x-6">РАБОТЫ</span>
             </h1>
-
-            <div className="max-w-5xl mx-auto space-y-6">
-              <p className="text-lg sm:text-xl lg:text-3xl text-[#0B1B2B]/80 font-light leading-relaxed">
-                Комплексные инженерные изыскания, проектирование и авторский надзор
-              </p>
-
-              <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-md border border-[#0B1B2B]/30 rounded-2xl px-4 lg:px-8 py-4 lg:py-6">
+            <div className="max-w-4xl mx-auto space-y-4">
+              <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl px-4 lg:px-8 py-4 lg:py-6">
                 <p className="text-base sm:text-lg lg:text-2xl text-[#0B1B2B] font-light leading-relaxed">
-                  ООО «Связьгазпроект» выполняет полный комплекс проектно-изыскательских работ по объектам
-                  магистрального и распределительного газопровода, автомобильным дорогам, площадным объектам,
-                  а также проектирование и оснащение комплексами инженерных средств охраны различных объектов
+                  ООО «Связьгазпроект» выполняет полный комплекс проектно-изыскательных работ по оснащению комплексами
+                  инженерных средств охраны различных объектов
                 </p>
               </div>
             </div>
@@ -329,40 +341,22 @@ export default function Home() {
           <div className="flex flex-col gap-4 lg:flex-row lg:gap-6 justify-center items-center mb-12 lg:mb-20">
             <a
               href="tel:+78172239695"
-              className="w-full lg:w-auto relative group bg-gradient-to-r from-[#84CC16] to-[#A3E635] px-8 py-4 rounded-2xl font-bold text-black text-lg hover:shadow-2xl hover:shadow-lime-500/25 cursor-pointer whitespace-nowrap overflow-hidden"
+              className="w-full lg:w-auto group relative bg-gradient-to-r from-[#84CC16] to-[#A3E635] text-black px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 cursor-pointer whitespace-nowrap"
             >
               <span className="relative z-10">Связаться с нами</span>
               <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
             </a>
-
             <Link
               href="/projects"
-              className="w-full lg:w-auto relative group border-2 border-[#0B1B2B]/30 text-[#0B1B2B] px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/10 hover:shadow-2xl cursor-pointer whitespace-nowrap backdrop-blur-sm overflow-hidden"
+              className="w-full lg:w-auto relative group border-2 border-[#0B1B2B]/30 text-[#0B1B2B] px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:bg-white/5 transition-all duration-300 cursor-pointer whitespace-nowrap backdrop-blur-sm overflow-hidden"
             >
-              <span className="relative z-10">Портфолио проектов</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+              <span className="relative z-10 flex items-center justify-center space-x-2">
+                <span>Портфолио проектов</span>
+                <i className="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
+              </span>
             </Link>
           </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-8 max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 lg:p-8 hover:bg-white/15 transition-all duration-300">
-              <div className="text-4xl lg:text-6xl font-black text-[#0B1B2B] mb-2">15+</div>
-              <div className="text-sm lg:text-base text-[#0B1B2B]/80 font-medium">лет опыта</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 lg:p-8 hover:bg-white/15 transition-all duration-300">
-              <div className="text-4xl lg:text-6xl font-black text-[#0B1B2B] mb-2">500+</div>
-              <div className="text-sm lg:text-base text-[#0B1B2B]/80 font-medium">проектов</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 lg:p-8 hover:bg-white/15 transition-all duration-300">
-              <div className="text-4xl lg:text-6xl font-black text-[#0B1B2B] mb-2">24/7</div>
-              <div className="text-sm lg:text-base text-[#0B1B2B]/80 font-medium">поддержка</div>
-            </div>
-          </div>
         </div>
-
-        {/* Bottom Fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/50 to-transparent"></div>
       </section>
 
       {/* Contact Section - Cyberpunk */}
