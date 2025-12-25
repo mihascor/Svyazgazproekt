@@ -286,7 +286,7 @@ export default function Home() {
               <div className="pt-4 border-t border-white/20">
                 <a
                   href="tel:+78172239695"
-                  className="block bg-gradient-to-r from-[#84CC16] to-[#A3E635] text-black px-6 py-3 rounded-full text-center font-semibold cursor-pointer"
+                  className="block bg-gradient-to-r from-[#919eb1] to-[#919eb1] text-black px-6 py-3 rounded-full text-center font-semibold cursor-pointer"
                 >
                   Связаться
                 </a>
@@ -324,8 +324,7 @@ export default function Home() {
           {/* Main Title */}
           <div className="space-y-4 lg:space-y-8 mb-8 lg:mb-12">
             <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black leading-none tracking-tight">
-              <span className="block text-[#3b6a97]">ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ</span>
-              <span className="block text-[#3b6a97]">РАБОТЫ</span>
+              <span className="block text-[#3b6a97]">ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ РАБОТЫ</span>
             </h1>
             <div className="max-w-4xl mx-auto space-y-4">
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl px-4 lg:px-8 py-4 lg:py-6">
@@ -341,7 +340,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 lg:flex-row lg:gap-6 justify-center items-center mb-12 lg:mb-20">
             <a
               href="tel:+78172239695"
-              className="w-full lg:w-auto group relative bg-gradient-to-r from-[#5bf3e7] to-[#82faf0] text-black px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 cursor-pointer whitespace-nowrap"
+              className="w-full lg:w-auto group relative bg-gradient-to-r from-[#5f708a] to-[#5f708a] text-black px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 cursor-pointer whitespace-nowrap"
             >
               <span className="relative z-10">Связаться с нами</span>
               <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
