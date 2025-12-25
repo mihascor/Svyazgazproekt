@@ -152,7 +152,7 @@ export default function Home() {
 
           <a
             href="tel:+78172239695"
-            className="bg-gradient-to-r from-[#3a689a] to-[#3a689a] text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap"
+            className="bg-gradient-to-r from-[#7d9ab2] to-[#7d9ab2] text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap"
           >
             Связаться
           </a>
@@ -286,7 +286,7 @@ export default function Home() {
               <div className="pt-4 border-t border-white/20">
                 <a
                   href="tel:+78172239695"
-                  className="block bg-gradient-to-r from-[#3a689a] to-[#3a689a] text-black px-6 py-3 rounded-full text-center font-semibold cursor-pointer"
+                  className="block bg-gradient-to-r from-[#7d9ab2] to-[#7d9ab2] text-black px-6 py-3 rounded-full text-center font-semibold cursor-pointer"
                 >
                   Связаться
                 </a>
@@ -343,7 +343,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 lg:flex-row lg:gap-6 justify-center items-center mb-12 lg:mb-20">
             <a
               href="tel:+78172239695"
-              className="w-full lg:w-auto group relative bg-gradient-to-r from-[#3a689a] to-[#3a689a] text-black px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 cursor-pointer whitespace-nowrap"
+              className="w-full lg:w-auto group relative bg-gradient-to-r from-[#7d9ab2] to-[#7d9ab2] text-black px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 cursor-pointer whitespace-nowrap"
             >
               <span className="relative z-10">Связаться с нами</span>
               <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
