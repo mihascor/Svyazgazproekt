@@ -324,7 +324,7 @@ export default function Home() {
           {/* Main Title */}
           <div className="space-y-4 lg:space-y-8 mb-8 lg:mb-12">
             <div className="mx-auto max-w-full lg:max-w-[900px]">
-              <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black leading-none tracking-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-none tracking-tight">
                 <span className="block text-[#3b6a97]">ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ</span>
                 <span className="block text-[#3b6a97]">РАБОТЫ</span>
               </h1>
