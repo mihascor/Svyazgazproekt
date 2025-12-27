@@ -103,10 +103,10 @@ export default function EngineeringSurveys() {
               <div className="px-6 py-3">
                 <div className="text-cyan-400 font-medium mb-2">Деятельность</div>
                 <div className="pl-4 space-y-2">
-                  <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-cyan-400 bg-white/10 px-3 rounded transition-colors">
+                  <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
                     Выполнение землеустроительных работ
                   </Link>
-                  <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
+                  <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block px-5 py-3 text-base text-cyan-400 bg-white/10 transition-colors">
                     Выполнение комплексных инженерных изысканий
                   </Link>
                   <Link href="/security-systems" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
