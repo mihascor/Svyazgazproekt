@@ -5,8 +5,7 @@ import { useState } from 'react';
 
 export default function DataCollectionPage() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
- const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
- const [mobileDropdown, setMobileDropdown] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleDropdown = (menu: string) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
@@ -16,130 +15,103 @@ export default function DataCollectionPage() {
     setActiveDropdown(null);
   };
 
-  const toggleMobileMenu = () => {
-  setMobileMenuOpen(!mobileMenuOpen);
-  setMobileDropdown(null);
-  };
-
-
   return (
     <div className="min-h-screen bg-white text-gray-900">
-{/* ================= HEADER (DESKTOP + MOBILE) ================= */}
-
-      {/* DESKTOP HEADER */}
-      <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-8 py-4">
-        <div className="flex items-center justify-between min-w-[900px]">
+      {/* Header */}
+      <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-black/90 backdrop-blur-xl border border-gray-800 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
+        <div className="flex items-center justify-between md:min-w-[900px]">
+          <Link href="/" className="flex items-center space-x-6">
+            <div className="relative">
+              <img 
+                src="/logo_sgp.svg"
+                alt="СГП Связьгазпроект"
+                className="h-12 md:h-16 w-auto rounded-sm"
+              />
+            </div>
+          </Link>
           
-          {/* LEFT */}
-          <div className="flex items-center space-x-6">
-            {/* LOGO */}
-            <Link href="/" className="text-[#0B1B2B] font-bold text-lg">
-              LOGO
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-1">
+            <Link href="/" className="px-4 py-2 text-base text-white/70 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
+              Главная
             </Link>
 
-            {/* NAV */}
-            <nav className="flex items-center space-x-1">
-              <Link href="/" className="flex items-center space-x-6">
-                <div className="relative">
-                  <img
-                    src="/logo_sgp.svg"
-                    alt="СГП Связьгазпроект"
-                    className="h-16 w-auto rounded-sm"
-                  />
-                </div>
-              </Link>
-
-              <div className="relative">
-                <button
-                  onClick={() => toggleDropdown('activity')}
-                  className="px-4 py-2 text-base text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1"
-                >
-                  Деятельность
-                  <i className="ri-arrow-down-s-line text-sm"></i>
-                </button>
-
-                {activeDropdown === 'activity' && (
-                  <div className="absolute top-full left-0 mt-2 bg-black/95 backdrop-blur-xl border border-white/20 rounded-2xl py-2 w-56 z-50">
-                    <Link href="/data-collection" className="block px-4 py-2 text-white/80 hover:bg-white/10">
-                      Data Collection
-                    </Link>
-                    <Link href="/analytics" className="block px-4 py-2 text-white/80 hover:bg-white/10">
-                      Analytics
-                    </Link>
-                  </div>
-                )}
-              </div>
-            </nav>
-          </div>
-
-          {/* RIGHT */}
-          <Link
-            href="/contact"
-            className="bg-gradient-to-r from-[#7d9ab2] to-[#7d9ab2] text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 whitespace-nowrap"
-          >
-            Связаться
-          </Link>
-        </div>
-      </header>
-
-      {/* MOBILE HEADER */}
-      <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="text-[#0B1B2B] font-bold text-lg">
-            LOGO
-          </Link>
-
-          <button
-            onClick={toggleMobileMenu}
-            className="w-10 h-10 flex items-center justify-center text-[#0B1B2B] hover:bg-white/10 rounded-full transition-colors"
-          >
-            <i className={`ri-${mobileMenuOpen ? 'close' : 'menu'}-line text-xl`}></i>
-          </button>
-        </div>
-
-        {mobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-xl border border-white/20 rounded-2xl py-4 mx-4">
-            <nav className="flex flex-col space-y-1">
-              <Link href="/" className="px-4 py-3 text-white hover:bg-white/10 rounded-xl">
-                Главная
-              </Link>
-
-              <button
-                onClick={() => toggleMobileDropdown('activity')}
-                className="w-full flex items-center justify-between px-4 py-3 text-white hover:bg-white/10 rounded-xl"
+            {/* Деятельность dropdown */}
+            <div className="relative">
+              <button 
+                onClick={() => toggleDropdown('activity')}
+                className="flex items-center space-x-1 px-4 py-2 text-base text-cyan-400 bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
               >
                 <span>Деятельность</span>
-                <i className={`ri-arrow-down-s-line transition-transform ${mobileDropdown === 'activity' ? 'rotate-180' : ''}`}></i>
+                <i className={`ri-arrow-down-s-line text-xs transition-transform duration-200 ${activeDropdown === 'activity' ? 'rotate-180' : ''}`}></i>
               </button>
-
-              {mobileDropdown === 'activity' && (
-                <div className="ml-4 space-y-1">
-                  <Link href="/data-collection" className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg">
-                    Data Collection
+              {activeDropdown === 'activity' && (
+                <div className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-3 min-w-[320px] shadow-2xl">
+                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-cyan-400 bg-white/10 transition-colors">
+                    Выполнение землеустроительных работ
                   </Link>
-                  <Link href="/analytics" className="block px-4 py-2 text-white/80 hover:bg-white/10 rounded-lg">
-                    Analytics
+                  <Link href="/engineering-surveys" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
+                    Выполнение комплексных инженерных изысканий
+                  </Link>
+                  <Link href="/security-systems" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
+                    Проектирование комплексов инженерно-технических средств охраны
+                  </Link>
+                  <Link href="/author-supervision" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
+                    Осуществление авторского надзора за строительством
                   </Link>
                 </div>
               )}
+            </div>
+          </nav>
 
-              <Link
-                href="/contact"
-                className="mt-2 mx-4 bg-gradient-to-r from-[#7d9ab2] to-[#7d9ab2] text-black px-6 py-2 rounded-full text-center font-semibold"
-              >
-                Связаться
+          {/* Mobile Menu Button */}
+          <button 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 rounded-full transition-colors"
+          >
+            <i className={`ri-${mobileMenuOpen ? 'close' : 'menu'}-line text-xl`}></i>
+          </button>
+          
+          <a href="tel:+78172239695" 
+             className="hidden md:inline-block bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
+            Связаться
+          </a>
+        </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-4 mx-4">
+            <div className="flex flex-col space-y-2">
+              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
+                Главная
               </Link>
-            </nav>
+              <div className="px-6 py-3">
+                <div className="text-cyan-400 font-medium mb-2">Деятельность</div>
+                <div className="pl-4 space-y-2">
+                  <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-cyan-400 bg-white/10 px-3 rounded transition-colors">
+                    Выполнение землеустроительных работ
+                  </Link>
+                  <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
+                    Выполнение комплексных инженерных изысканий
+                  </Link>
+                  <Link href="/security-systems" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
+                    Проектирование комплексов инженерно-технических средств охраны
+                  </Link>
+                  <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
+                    Осуществление авторского надзора за строительством
+                  </Link>
+                </div>
+              </div>
+              <div className="px-6 pt-4 border-t border-white/20">
+                <a href="tel:+78172239695" 
+                   className="block text-center bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-3 rounded-full font-semibold">
+                  Связаться
+                </a>
+              </div>
+            </div>
           </div>
         )}
       </header>
-
-      {activeDropdown && (
-        <div className="fixed inset-0 z-40" onClick={closeDropdowns}></div>
-      )}
-
-      {/* ================= END HEADER ================= */}
-
 
       {/* Click outside to close dropdowns */}
       {activeDropdown && (
