@@ -30,7 +30,7 @@ export default function CookieBanner() {
 
   return (
     <div className="fixed inset-x-0 bottom-4 flex justify-center z-[60] pointer-events-none">
-      <div className="pointer-events-auto max-w-3xl w-[calc(100%-2rem)] rounded-2xl bg-black/85 text-white border border-white/10 px-4 py-3 shadow-xl backdrop-blur-md flex flex-col gap-3 md:flex-row md:items-center md:justify-between text-sm">
+      <div className="pointer-events-auto max-w-3xl w-[calc(100%-2rem)] rounded-2xl bg-black/85 text-white border border-[#0B1B2B]/30 px-4 py-3 shadow-xl backdrop-blur-md flex flex-col gap-3 md:flex-row md:items-center md:justify-between text-sm">
         <p className="leading-relaxed">
           Этот сайт использует только технические cookie, необходимые для его функционирования.
           Эти cookie не требуют Вашего согласия и используются для таких целей, как, например,

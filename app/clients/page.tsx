@@ -45,7 +45,7 @@ export default function ClientsPage() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Header */}
-      <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
+      <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
         <div className="flex items-center justify-between md:min-w-[900px]">
           <Link href="/" className="flex items-center space-x-6">
             <div className="relative">

@@ -415,7 +415,7 @@ export default function Home() {
                     href={contact.link}
                     target={contact.link.startsWith('http') ? '_blank' : undefined}
                     rel={contact.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="flex items-start space-x-4 lg:space-x-6 bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 hover:border-cyan-400/30 transition-all duration-300 cursor-pointer"
+                    className="flex items-start space-x-4 lg:space-x-6 bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 lg:p-8 hover:border-cyan-400/30 transition-all duration-300 cursor-pointer"
                   >
                     <div className={`w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br ${contact.gradient} bg-opacity-20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
                       <i className={`${contact.icon} text-xl lg:text-2xl text-gray-600`}></i>
@@ -434,7 +434,7 @@ export default function Home() {
 
             {/* Yandex Map */}
             <div className="mt-8 lg:mt-12">
-              <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-4 lg:p-8 hover:border-cyan-400/30 transition-all duration-300">
+              <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-4 lg:p-8 hover:border-cyan-400/30 transition-all duration-300">
                 <div className="flex items-center space-x-4 mb-6">
                   <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-400 to-cyan-400 bg-opacity-20 rounded-2xl flex items-center justify-center">
                     <i className="ri-map-2-line text-xl lg:text-2xl text-gray-600"></i>
@@ -456,7 +456,7 @@ export default function Home() {
                 </div>
 
                 {/* Offices Contact Info */}
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden">
+                <div className="bg-white/5 backdrop-blur-sm border border-[#0B1B2B]/30 rounded-xl overflow-hidden">
                   {/* General Phone Number */}
                   <div className="p-4 lg:p-6 border-b border-white/10 bg-gradient-to-r from-cyan-500/10 to-blue-500/10">
                     <div className="flex items-center justify-between">

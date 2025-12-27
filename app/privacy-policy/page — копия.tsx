@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
+      <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
         <div className="flex items-center justify-between md:min-w-[900px]">
           <Link href="/" className="flex items-center space-x-6">
             <div className="relative">
@@ -145,7 +145,7 @@ export default function PrivacyPolicyPage() {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">1.5. Основные понятия, используемые в Политике:</h3>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-4">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-4">
                     
                     <div>
                       <h4 className="text-base font-semibold text-cyan-300 mb-2">персональные данные</h4>
@@ -277,7 +277,7 @@ export default function PrivacyPolicyPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">1.6. Основные права и обязанности Оператора</h3>
                   
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-4">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-4">
                     <div>
                       <h4 className="text-base font-semibold text-cyan-300 mb-3">1.6.1. Оператор имеет право:</h4>
                       <div className="space-y-3 text-sm text-white/70">
@@ -323,7 +323,7 @@ export default function PrivacyPolicyPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">1.7. Основные права субъекта персональных данных</h3>
                   <p className="text-sm text-white/70 mb-3">Субъект персональных данных имеет право:</p>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                     <div className="flex items-start space-x-2 text-sm text-white/70">
                       <span className="text-cyan-400 font-semibold">1)</span>
                       <p>получать информацию, касающуюся обработки его персональных данных, за исключением случаев, предусмотренных федеральными законами. Сведения предоставляются субъекту персональных данных Оператором в доступной форме, и в них не должны содержаться персональные данные, относящиеся к другим субъектам персональных данных, за исключением случаев, когда имеются законные основания для раскрытия таких персональных данных. Перечень информации и порядок её получения установлен Законом о персональных данных;</p>
@@ -379,7 +379,7 @@ export default function PrivacyPolicyPage() {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">2.3. Обработка Оператором персональных данных осуществляется в следующих целях:</h3>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                     <div className="flex items-start space-x-3">
                       <i className="ri-briefcase-line text-cyan-400 mt-1 flex-shrink-0"></i>
                       <span className="text-sm text-white/70">ведение кадрового и бухгалтерского учета;</span>
@@ -442,7 +442,7 @@ export default function PrivacyPolicyPage() {
                     Правовым основанием обработки персональных данных является совокупность нормативных правовых актов, во исполнение которых и в соответствии с которыми Оператор осуществляет обработку персональных данных, в том числе:
                   </p>
                   
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                     <div className="flex items-start space-x-3">
                       <i className="ri-government-line text-cyan-400 mt-1 flex-shrink-0"></i>
                       <span className="text-sm text-white/70">Конституция Российской Федерации;</span>
@@ -484,7 +484,7 @@ export default function PrivacyPolicyPage() {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">3.2. Правовым основанием обработки персональных данных также являются:</h3>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                     <div className="flex items-start space-x-3">
                       <i className="ri-file-text-line text-cyan-400 mt-1 flex-shrink-0"></i>
                       <span className="text-sm text-white/70">договоры, заключаемые между Оператором и субъектами персональных данных;</span>
@@ -513,7 +513,7 @@ export default function PrivacyPolicyPage() {
                   <h3 className="text-lg font-semibold text-white mb-3">4.2. Оператор может обрабатывать персональные данные следующих категорий субъектов персональных данных:</h3>
                   
                   <div className="space-y-6">
-                    <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6">
+                    <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6">
                       <h4 className="text-base font-semibold text-cyan-300 mb-3">4.2.1. Работники, уволенные работники:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-white/70">
                         <div className="flex items-center space-x-2">
@@ -631,7 +631,7 @@ export default function PrivacyPolicyPage() {
                       </div>
                     </div>
                     
-                    <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6">
+                    <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6">
                       <h4 className="text-base font-semibold text-cyan-300 mb-3">4.2.2. Клиенты, контрагенты, представители контрагентов, выгодоприобретатели по договорам Оператора:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-white/70">
                         <div className="flex items-center space-x-2">
@@ -705,7 +705,7 @@ export default function PrivacyPolicyPage() {
                       </div>
                     </div>
                     
-                    <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6">
+                    <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6">
                       <h4 className="text-base font-semibold text-cyan-300 mb-3">4.2.4. Родственники работников:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-white/70">
                         <div className="flex items-center space-x-2">
@@ -743,7 +743,7 @@ export default function PrivacyPolicyPage() {
                       </div>
                     </div>
                     
-                    <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6">
+                    <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6">
                       <h4 className="text-base font-semibold text-cyan-300 mb-3">4.2.5. Соискатели:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-white/70">
                         <div className="flex items-center space-x-2">
@@ -875,7 +875,7 @@ export default function PrivacyPolicyPage() {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">5.3. Оператор осуществляет обработку персональных данных для каждой цели их обработки следующими способами:</h3>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                     <div className="flex items-start space-x-3">
                       <i className="ri-computer-line text-cyan-400 mt-1 flex-shrink-0"></i>
                       <span className="text-sm text-white/70">неавтоматизированная обработка персональных данных;</span>
@@ -900,7 +900,7 @@ export default function PrivacyPolicyPage() {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">5.5. Обработка персональных данных для каждой цели обработки, указанной в п. 2.3 Политики, осуществляется путем:</h3>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                     <div className="flex items-start space-x-3">
                       <i className="ri-user-voice-line text-cyan-400 mt-1 flex-shrink-0"></i>
                       <span className="text-sm text-white/70">получения персональных данных в устной и письменной форме непосредственно от субъектов персональных данных;</span>
@@ -921,7 +921,7 @@ export default function PrivacyPolicyPage() {
                   <p className="mb-4">
                     Не допускается раскрытие третьим лицам и распространение персональных данных без согласия субъекта персональных данных, если иное не предусмотрено федеральным законом. Согласие на обработку персональных данных, разрешенных субъектом персональных данных для распространения, оформляется отдельно от иных согласий субъекта персональных данных на обработку его персональных данных.
                   </p>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-sm text-white/70">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 text-sm text-white/70">
                     <i className="ri-information-line text-cyan-400 mr-2"></i>
                     Требования к содержанию согласия на обработку персональных данных, разрешенных субъектом персональных данных для распространения, утверждены Приказом Роскомнадзора от 24 февраля 2021 года № 18.
                   </div>
@@ -936,7 +936,7 @@ export default function PrivacyPolicyPage() {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">5.8. Оператор принимает необходимые правовые, организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, распространения и других несанкционированных действий, в том числе:</h3>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                     <div className="flex items-start space-x-3">
                       <i className="ri-shield-check-line text-cyan-400 mt-1 flex-shrink-0"></i>
                       <span className="text-sm text-white/70">определяет угрозы безопасности персональных данных при их обработке;</span>
@@ -995,7 +995,7 @@ export default function PrivacyPolicyPage() {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">5.10. Оператор прекращает обработку персональных данных в следующих случаях:</h3>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                     <div className="flex items-start space-x-3">
                       <i className="ri-error-warning-line text-cyan-400 mt-1 flex-shrink-0"></i>
                       <span className="text-sm text-white/70">выявлен факт их неправомерной обработки. Срок - в течение трех рабочих дней с даты выявления;</span>
@@ -1013,7 +1013,7 @@ export default function PrivacyPolicyPage() {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">5.11. При достижении целей обработки персональных данных, а также в случае отзыва субъектом персональных данных согласия на их обработку Оператор прекращает обработку этих данных, если:</h3>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                     <div className="flex items-start space-x-3">
                       <i className="ri-file-text-line text-cyan-400 mt-1 flex-shrink-0"></i>
                       <span className="text-sm text-white/70">иное не предусмотрено договором, стороной которого, выгодоприобретателем или поручителем по которому является субъект персональных данных;</span>
@@ -1055,7 +1055,7 @@ export default function PrivacyPolicyPage() {
                     Подтверждение факта обработки персональных данных Оператором, правовые основания и цели обработки персональных данных, а также иные сведения, указанные в ч. 7 ст. 14 Закона о персональных данных, предоставляются Оператором субъекту персональных данных или его представителю в течение 10 рабочих дней с момента обращения либо получения запроса субъекта персональных данных или его представителя. Данный срок может быть продлен, но не более чем на пять рабочих дней. Для этого Оператору следует направить субъекту персональных данных мотивированное уведомление с указанием причин продления срока предоставления запрашиваемой информации.
                   </p>
                   
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 mb-4">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 mb-4">
                     <p className="text-sm text-white/70 mb-3">
                       В предоставляемые сведения не включаются персональные данные, относящиеся к другим субъектам персональных данных, за исключением случаев, когда имеются законные основания для раскрытия таких персональных данных.
                     </p>
@@ -1099,7 +1099,7 @@ export default function PrivacyPolicyPage() {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">6.2.</h3>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-4">
+                  <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-4">
                     <div className="flex items-start space-x-3">
                       <div className="w-8 h-8 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                         <i className="ri-lock-line text-cyan-400"></i>
@@ -1172,7 +1172,7 @@ export default function PrivacyPolicyPage() {
                   <div className="space-y-6">
                     <div>
                       <h4 className="text-base font-semibold text-cyan-300 mb-3">6.5.1. Условия и сроки уничтожения персональных данных Оператором:</h4>
-                      <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-4">
+                      <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-4">
                         <div className="flex items-start space-x-3">
                           <div className="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                             <i className="ri-checkbox-circle-line text-green-400"></i>
@@ -1220,7 +1220,7 @@ export default function PrivacyPolicyPage() {
                       <p className="mb-4">
                         При достижении цели обработки персональных данных, а также в случае отзыва субъектом персональных данных согласия на их обработку персональные данные подлежат уничтожению, если:
                       </p>
-                      <div className="bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 space-y-3">
+                      <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 space-y-3">
                         <div className="flex items-start space-x-3">
                           <i className="ri-file-text-line text-cyan-400 mt-1 flex-shrink-0"></i>
                           <span className="text-sm text-white/70">иное не предусмотрено договором, стороной которого, выгодоприобретателем или поручителем по которому является субъект персональных данных;</span>

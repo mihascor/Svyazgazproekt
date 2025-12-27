@@ -27,7 +27,7 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Header */}
-      <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
+      <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
         <div className="flex items-center justify-between md:min-w-[900px]">
           <Link href="/" className="flex items-center space-x-6">
             <div className="relative">
@@ -125,7 +125,7 @@ export default function ProjectsPage() {
       <section className="py-0 bg-black">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
+            <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
               <div className="text-center mb-6 md:mb-8">
                 <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500/20 to-cyan-400/20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-cyan-400/30">
                   <i className="ri-trophy-line text-2xl md:text-3xl text-cyan-400"></i>
@@ -169,7 +169,7 @@ export default function ProjectsPage() {
                 color: 'green-400'
               }
             ].map((stat, index) => (
-              <div key={index} className="group text-center bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 cursor-default">
+              <div key={index} className="group text-center bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 cursor-default">
                 <div className={`w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-${stat.color}/20 to-${stat.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-${stat.color}/30`}>
                   <i className={`${stat.icon} text-2xl md:text-3xl text-${stat.color}`}></i>
                 </div>
@@ -242,7 +242,7 @@ export default function ProjectsPage() {
                 color: 'indigo-400'
               }
             ].map((type, index) => (
-              <div key={index} className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-4 md:p-6 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 text-center cursor-default">
+              <div key={index} className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-4 md:p-6 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 text-center cursor-default">
                 <div className={`w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-${type.color}/20 to-${type.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-${type.color}/30`}>
                   <i className={`${type.icon} text-xl md:text-2xl text-${type.color}`}></i>
                 </div>
@@ -260,7 +260,7 @@ export default function ProjectsPage() {
       <section className="py-0 bg-black">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
+            <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
               <div className="text-center mb-6 md:mb-8">
                 <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500/20 to-cyan-400/20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-cyan-400/30">
                   <i className="ri-trophy-line text-2xl md:text-3xl text-cyan-400"></i>

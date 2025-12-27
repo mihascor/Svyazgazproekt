@@ -124,7 +124,7 @@ export default function ContactsPage() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Desktop Header */}
-      <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4">
+      <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-8 py-4">
         <div className="flex items-center justify-between min-w-[900px]">
           <div className="flex items-center space-x-6">
             <Link href="/" className="flex items-center space-x-6">
@@ -214,7 +214,7 @@ export default function ContactsPage() {
       </header>
 
       {/* Mobile Header */}
-      <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
+      <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
         <div className="flex items-center justify-between">
           <Link href="/" className="relative">
             <img 
@@ -389,7 +389,7 @@ export default function ContactsPage() {
               </div>
 
               {/* Collapsible Address List */}
-              <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden mb-6 lg:mb-8">
+              <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl overflow-hidden mb-6 lg:mb-8">
                 <button
                   onClick={() => setShowAddressList(!showAddressList)}
                   className="w-full p-4 lg:p-6 flex items-center justify-between hover:bg-white/5 transition-colors cursor-pointer"
@@ -427,7 +427,7 @@ export default function ContactsPage() {
               </div>
 
               {/* Office Details */}
-              <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 mb-6 lg:mb-8">
+              <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 lg:p-8 mb-6 lg:mb-8">
                 <div className="flex items-start space-x-4 mb-6">
                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center">
                     <i className="ri-building-line text-lg lg:text-xl text-white"></i>
@@ -501,7 +501,7 @@ export default function ContactsPage() {
               </div>
 
               {/* Offices Table - Mobile Optimized */}
-              <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden">
+              <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl overflow-hidden">
                 <div className="p-4 border-b border-white/10">
                   <h3 className="text-base lg:text-lg font-semibold text-white">Все офисы</h3>
                 </div>
@@ -568,7 +568,7 @@ export default function ContactsPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-4 lg:p-6">
+            <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-4 lg:p-6">
               <div className="flex items-center space-x-4 mb-4">
                 <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-green-500 to-cyan-400 bg-opacity-20 rounded-xl flex items-center justify-center">
                   <i className="ri-time-line text-green-400 text-lg lg:text-xl"></i>
@@ -583,7 +583,7 @@ export default function ContactsPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl p-4 lg:p-6">
+            <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-4 lg:p-6">
               <div className="flex items-center space-x-4 mb-4">
                 <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-orange-500 to-red-40 bg-opacity-20 rounded-xl flex items-center justify-center">
                   <i className="ri-calendar-line text-orange-400 text-lg lg:text-xl"></i>

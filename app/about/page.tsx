@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Desktop Header */}
-      <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-8 py-4">
+      <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-8 py-4">
         <div className="flex items-center justify-between min-w-[900px]">
           <Link href="/" className="flex items-center space-x-6">
             <div className="relative">
@@ -48,7 +48,7 @@ export default function AboutPage() {
       </header>
 
       {/* Mobile Header */}
-      <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
+      <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
         <div className="flex items-center justify-between">
           <Link href="/" className="relative">
             <img 
@@ -177,7 +177,7 @@ export default function AboutPage() {
                 { icon: 'ri-team-line', title: 'Наша команда', desc: 'В компании работает более 400 высококвалифицированных специалистов — коллектив опытных профессионалов, способный качественно и в установленные сроки решить любую поставленную задачу' },
                 { icon: 'ri-global-line', title: 'Наша география', desc: 'Центральный офис компании находится в Вологде. Обособленные подразделения работают в семи регионах России: Санкт-Петербурге, Воронеже, Ставрополе, Рязани, Томске, Казани и Нижнем Новгороде' }
               ].map((item, index) => (
-                <div key={index} className="flex items-start space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 lg:p-6 hover:border-cyan-400/30 transition-all duration-300">
+                <div key={index} className="flex items-start space-x-4 bg-white/5 backdrop-blur-sm border border-[#0B1B2B]/30 rounded-xl p-4 lg:p-6 hover:border-cyan-400/30 transition-all duration-300">
                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
                     <i className={`${item.icon} text-lg lg:text-xl text-cyan-400`}></i>
                   </div>
@@ -204,7 +204,7 @@ export default function AboutPage() {
               </div>
 
               <div className="space-y-4">
-                <div className="bg-white/5 border border-white/10 rounded-xl p-4 lg:p-6">
+                <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 lg:p-6">
                   <div className="flex items-start space-x-3 mb-3">
                     <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
                     <div>
@@ -218,7 +218,7 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="bg-white/5 border border-white/10 rounded-xl p-4 lg:p-6">
+                <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 lg:p-6">
                   <div className="flex items-start space-x-3 mb-3">
                     <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
                     <div>
@@ -232,7 +232,7 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="bg-white/5 border border-white/10 rounded-xl p-4 lg:p-6">
+                <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 lg:p-6">
                   <div className="flex items-start space-x-3 mb-3">
                     <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
                     <div>
