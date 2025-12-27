@@ -224,7 +224,7 @@ export default function Home() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `url('/app_fon.png')`,
+              backgroundImage: `url('/app_fon.webp')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               opacity: '0.4'

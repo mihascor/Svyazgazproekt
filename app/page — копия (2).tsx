@@ -224,7 +224,7 @@ export default function Home() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `url('/app_fon.png')`,
+              backgroundImage: `url('/app_fon.webp')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               opacity: '0.8'
@@ -273,7 +273,7 @@ export default function Home() {
       <section id="контакты" className="py-16 lg:py-32 relative overflow-hidden">
         <div className="absolute inset-0"
              style={{
-               backgroundImage: `url('/app_down_fon.png')`,
+               backgroundImage: `url('/app_down_fon.webp')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
                opacity: '0.8'

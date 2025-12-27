@@ -112,7 +112,7 @@ export default function ProjectsPage() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `url('/projects_fon.png')`,
+              backgroundImage: `url('/projects_fon.webp')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               opacity: '0.8',

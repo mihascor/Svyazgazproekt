@@ -121,7 +121,7 @@ export default function ClientsPage() {
           {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div> */}
           <div className="absolute inset-0"
                style={{
-                 backgroundImage: `url('/clients_fon.png')`,
+                 backgroundImage: `url('/clients_fon.webp')`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                  opacity: '0.2'

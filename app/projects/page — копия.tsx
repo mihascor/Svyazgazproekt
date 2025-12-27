@@ -99,7 +99,7 @@ export default function ProjectsPage() {
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute inset-0"
              style={{
-               backgroundImage: `url('/projects_fon.png')`,
+               backgroundImage: `url('/projects_fon.webp')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
                opacity: '0.3'
