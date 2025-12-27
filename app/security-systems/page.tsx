@@ -18,7 +18,7 @@ export default function SecuritySystems() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Header */}
-      <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-black/90 backdrop-blur-xl border border-gray-800 rounded-full px-4 md:px-8 py-4 w-[calc(100%-3rem)] md:w-auto">
+      <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-8 py-4">
         <div className="flex items-center justify-between md:min-w-[900px]">
           <Link href="/" className="flex items-center space-x-6">
             <div className="relative">
@@ -32,7 +32,7 @@ export default function SecuritySystems() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            <Link href="/" className="px-4 py-2 text-base text-white/70 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
+            <Link href="/" className="px-4 py-2 text-base text-[#0B1B2B]/70 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
               Главная
             </Link>
 
@@ -47,13 +47,13 @@ export default function SecuritySystems() {
               </button>
               {activeDropdown === 'activity' && (
                 <div className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-3 min-w-[320px] shadow-2xl">
-                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
+                  <Link href="/data-collection" onClick={closeDropdowns} className="block px-5 py-3 text-base text-cyan-400 bg-white/10 transition-colors">
                     Выполнение землеустроительных работ
                   </Link>
                   <Link href="/engineering-surveys" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Выполнение комплексных инженерных изысканий
                   </Link>
-                  <Link href="/security-systems" onClick={closeDropdowns} className="block px-5 py-3 text-base text-cyan-400 bg-white/10 transition-colors">
+                  <Link href="/security-systems" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
                     Проектирование комплексов инженерно-технических средств охраны
                   </Link>
                   <Link href="/author-supervision" onClick={closeDropdowns} className="block px-5 py-3 text-base text-white hover:text-cyan-400 hover:bg-white/10 transition-colors">
@@ -63,24 +63,39 @@ export default function SecuritySystems() {
               )}
             </div>
           </nav>
-
-          {/* Mobile Menu Button */}
-          <button 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 rounded-full transition-colors"
-          >
-            <i className={`ri-${mobileMenuOpen ? 'close' : 'menu'}-line text-xl`}></i>
-          </button>
           
-          <a href="tel:+78172289695" 
+          <a href="tel:+78172239695" 
              className="hidden md:inline-block bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
             Связаться
           </a>
         </div>
+      </header>
 
-        {/* Mobile Menu */}
+      {/* Header (Mobile) */}
+      <header className="lg:hidden fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-4 py-4 w-[calc(100%-3rem)]">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="flex items-center space-x-4">
+            <div className="relative">
+              <img 
+                src="/logo_sgp.svg"
+                alt="СГП Связьгазпроект"
+                className="h-12 w-auto rounded-sm"
+              />
+            </div>
+          </Link>
+
+          {/* Mobile Menu Button (как было, те же цвета/логика) */}
+          <button 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 rounded-full transition-colors"
+          >
+            <i className={`ri-${mobileMenuOpen ? 'close' : 'menu'}-line text-xl`}></i>
+          </button>
+        </div>
+
+        {/* Mobile Menu (оставлено как было, те же цвета) */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-4 mx-4">
+          <div className="absolute top-full left-0 right-0 mt-2 bg-gray-900/95 backdrop-blur-xl border border-white/30 rounded-2xl py-4 mx-4">
             <div className="flex flex-col space-y-2">
               <Link href="/" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
                 Главная
@@ -88,13 +103,13 @@ export default function SecuritySystems() {
               <div className="px-6 py-3">
                 <div className="text-cyan-400 font-medium mb-2">Деятельность</div>
                 <div className="pl-4 space-y-2">
-                  <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
+                  <Link href="/data-collection" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-cyan-400 bg-white/10 px-3 rounded transition-colors">
                     Выполнение землеустроительных работ
                   </Link>
                   <Link href="/engineering-surveys" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
                     Выполнение комплексных инженерных изысканий
                   </Link>
-                  <Link href="/security-systems" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-cyan-400 bg-white/10 px-3 rounded transition-colors">
+                  <Link href="/security-systems" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
                     Проектирование комплексов инженерно-технических средств охраны
                   </Link>
                   <Link href="/author-supervision" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-white hover:text-cyan-400 hover:bg-white/10 px-3 rounded transition-colors">
@@ -103,7 +118,7 @@ export default function SecuritySystems() {
                 </div>
               </div>
               <div className="px-6 pt-4 border-t border-white/20">
-                <a href="tel:+78172289695" 
+                <a href="tel:+78172239695" 
                    className="block text-center bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-3 rounded-full font-semibold">
                   Связаться
                 </a>
