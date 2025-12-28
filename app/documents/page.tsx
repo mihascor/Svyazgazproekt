@@ -96,7 +96,7 @@ export default function DocumentsPage() {
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <div className="inline-block bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-[#0B1B2B]/30 rounded-full px-4 md:px-6 py-2 mb-6 md:mb-8">
+            <div className="inline-block bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-400/30 rounded-full px-4 md:px-6 py-2 mb-6 md:mb-8">
               <span className="text-cyan-300 text-xs md:text-sm font-light tracking-widest">ДОКУМЕНТООБОРОТ</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
@@ -161,7 +161,7 @@ export default function DocumentsPage() {
               }
             ].map((doc, index) => (
               <div key={index} className="group relative">
-                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 transition-all duration-300 h-full flex flex-col">
+                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 transition-all duration-300 h-full flex flex-col">
                   <div className="flex items-start justify-between mb-4 md:mb-6">
                     <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-2xl flex items-center justify-center">
                       <i className={`${doc.icon} text-xl md:text-2xl text-cyan-400`}></i>
