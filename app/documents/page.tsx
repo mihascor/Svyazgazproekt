@@ -96,11 +96,11 @@ export default function DocumentsPage() {
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-              <div className="inline-block bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-6 py-2 mb-8 text-[#0B1B2B]">
-                <span className="text-sm font-light tracking-widest">
-                  ДОКУМЕНТООБОРОТ
-                </span>
-              </div>
+            <div className="inline-block bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-6 py-2 mb-8 text-[#0B1B2B]">
+              <span className="text-sm font-light tracking-widest">
+                ДОКУМЕНТООБОРОТ
+              </span>
+            </div>
               <div className="mx-auto max-w-full lg:max-w-[1000px]">
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-none tracking-tight">
                   <span className="block text-[#3b6a97]">ДОКУМЕНТЫ И ЛИЦЕНЗИИ</span>
