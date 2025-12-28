@@ -128,11 +128,13 @@ export default function ProjectsPage() {
           {/* Hero Section (пересобран по структуре AboutPage) */}
           <section className="relative min-h-screen flex items-start justify-center pt-32 md:pt-40 pb-16 md:pb-24">
             <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 w-full">
-              <div className="mx-auto max-w-full lg:max-w-[1000px]">
-                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-none tracking-tight">
-                  <span className="block text-[#3b6a97]">Реализованные</span>
-                  <span className="block text-[#3b6a97]">проекты</span>
-                </h1>
+              <div className="text-center mb-12 md:mb-16">
+                <div className="mx-auto max-w-full lg:max-w-[1000px]">
+                  <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-none tracking-tight">
+                    <span className="block text-[#3b6a97]">РЕАЛИЗОВАННЫЕ</span>
+                    <span className="block text-[#3b6a97]">ПРОЕКТЫ</span>
+                  </h1>
+                </div>
               </div>
 
               {/* Overview Section (без изменений по содержимому) */}
