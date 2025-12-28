@@ -207,7 +207,7 @@ export default function DocumentsPage() {
           </div>
 
           {/* Additional Info */}
-          <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:p-8 mb-8 md:mb-12">
+          <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 md:p-8 mb-8 md:mb-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
               <div>
                 <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-4">Правовая информация</h3>
