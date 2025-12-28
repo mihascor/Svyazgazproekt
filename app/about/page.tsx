@@ -29,7 +29,7 @@ export default function AboutPage() {
             <Link href="/" className="px-4 py-2 text-base text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
               Главная
             </Link>
-            <Link href="/about" className="px-4 py-2 text-base text-cyan-400 bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
+            <Link href="/about" className="px-4 py-2 text-base text-[#0485c1] bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">
               О нас
             </Link>
             <Link href="/clients" className="px-4 py-2 text-base text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap">

@@ -40,7 +40,7 @@ export default function DataCollectionPage() {
             <div className="relative">
               <button 
                 onClick={() => toggleDropdown('activity')}
-                className="flex items-center space-x-1 px-4 py-2 text-base text-cyan-400 bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
+                className="flex items-center space-x-1 px-4 py-2 text-base text-[#0485c1] bg-white/10 rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
               >
                 <span>Деятельность</span>
                 <i className={`ri-arrow-down-s-line text-xs transition-transform duration-200 ${activeDropdown === 'activity' ? 'rotate-180' : ''}`}></i>
