@@ -142,7 +142,7 @@ export default function AboutPage() {
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 lg:space-y-8">
-              <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 lg:p-8">
+              <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 lg:p-8">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-cyan-400 mb-4">Наш опыт</h2>
                 <p className="text-sm sm:text-base lg:text-lg text-white/80 leading-relaxed">
                   Компания «Связьгазпроект» основана в 2015 году. Мы специализируемся на проектировании комплексов инженерно-технических средств охраны для крупных и стратегически важных объектов
@@ -192,7 +192,7 @@ export default function AboutPage() {
 
           {/* SRO Membership Section */}
           <div className="mt-12 lg:mt-16">
-            <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 lg:p-8">
+            <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 lg:p-8">
               <div className="flex items-start space-x-4 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
                   <i className="ri-building-line text-xl text-cyan-400"></i>
