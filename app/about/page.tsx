@@ -132,11 +132,11 @@ export default function AboutPage() {
             <div className="inline-block bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-400/30 rounded-full px-6 py-2 mb-8">
               <span className="text-cyan-300 text-sm font-light tracking-widest">О КОМПАНИИ</span>
             </div>
-            <h1 className="text-3xl lg:text-6xl font-black leading-tight mb-8">
-              <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent">
-                СВЯЗЬГАЗПРОЕКТ
-              </span>
-            </h1>
+              <div className="mx-auto max-w-full lg:max-w-[1000px]">
+                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-none tracking-tight">
+                  <span className="block text-[#3b6a97]">СВЯЗЬГАЗПРОЕКТ</span>
+                </h1>
+              </div>
           </div>
 
           {/* Main Content */}
