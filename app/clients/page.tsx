@@ -76,7 +76,7 @@ export default function ClientsPage() {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 rounded-full transition-colors"
+            className="md:hidden w-10 h-10 flex items-center justify-center text-[#0B1B2B] hover:bg-white/10 rounded-full transition-colors"
           >
             <i className={`ri-${mobileMenuOpen ? 'close' : 'menu'}-line text-xl`}></i>
           </button>
