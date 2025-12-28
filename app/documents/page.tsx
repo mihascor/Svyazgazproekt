@@ -96,7 +96,7 @@ export default function DocumentsPage() {
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <div className="inline-block bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-400/30 rounded-full px-4 md:px-6 py-2 mb-6 md:mb-8">
+            <div className="inline-block bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-[#0B1B2B]/30 rounded-full px-4 md:px-6 py-2 mb-6 md:mb-8">
               <span className="text-cyan-300 text-xs md:text-sm font-light tracking-widest">ДОКУМЕНТООБОРОТ</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
