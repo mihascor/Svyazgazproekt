@@ -124,7 +124,7 @@ export default function ClientsPage() {
                  backgroundImage: `url('/clients_fon.webp')`,
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
-                 opacity: '0.2'
+                 opacity: '0.8'
                }}>
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
