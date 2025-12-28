@@ -92,7 +92,7 @@ export default function ProjectsPage() {
               <div className="px-6 pt-4 border-t border-white/20">
                 <a
                   href="tel:+78172289695"
-                  className="block text-center bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-3 rounded-full font-semibold"
+                  className="block text-center  bg-[#7d9ab2] text-black px-6 py-3 rounded-full font-semibold"
                 >
                   Связаться
                 </a>

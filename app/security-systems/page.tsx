@@ -65,7 +65,7 @@ export default function SecuritySystems() {
           </nav>
           
           <a href="tel:+78172239695" 
-             className="hidden md:inline-block bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
+             className="hidden md:inline-block  bg-[#7d9ab2] text-black px-6 py-2 rounded-full text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
             Связаться
           </a>
         </div>
@@ -119,7 +119,7 @@ export default function SecuritySystems() {
               </div>
               <div className="px-6 pt-4 border-t border-white/20">
                 <a href="tel:+78172239695" 
-                   className="block text-center bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 py-3 rounded-full font-semibold">
+                   className="block text-center  bg-[#7d9ab2] text-black px-6 py-3 rounded-full font-semibold">
                   Связаться
                 </a>
               </div>
