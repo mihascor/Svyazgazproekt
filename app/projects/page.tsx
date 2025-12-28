@@ -128,14 +128,10 @@ export default function ProjectsPage() {
           {/* Hero Section (пересобран по структуре AboutPage) */}
           <section className="relative min-h-screen flex items-start justify-center pt-32 md:pt-40 pb-16 md:pb-24">
             <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 w-full">
-              <div className="text-center mb-12 md:mb-16">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
-                  <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent">
-                    Реализованные
-                  </span>
-                  <span className="block bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    проекты
-                  </span>
+              <div className="mx-auto max-w-full lg:max-w-[1000px]">
+                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-none tracking-tight">
+                  <span className="block text-[#3b6a97]">Реализованные</span>
+                  <span className="block text-[#3b6a97]">проекты</span>
                 </h1>
               </div>
 
