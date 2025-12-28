@@ -149,7 +149,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 lg:p-8">
+              <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 lg:p-8">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-400 mb-4">Виды деятельности</h2>
                 <ul className="space-y-3 text-sm sm:text-base lg:text-lg text-white/80">
                   <li className="flex items-start space-x-3">
