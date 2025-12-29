@@ -55,16 +55,16 @@ export default function DocumentsPage() {
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-xl border border-white/20 rounded-2xl py-4 mx-4">
             <div className="flex flex-col space-y-2">
-              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
+              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-[#0485c1] hover:text-white hover:bg-white/10 transition-colors">
                 Главная
               </Link>
-              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
+              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-[#0485c1] hover:text-white hover:bg-white/10 transition-colors">
                 О нас
               </Link>
-              <Link href="/clients" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
+              <Link href="/clients" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-[#0485c1] hover:text-white hover:bg-white/10 transition-colors">
                 Заказчики
               </Link>
-              <Link href="/documents" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-cyan-400 bg-white/10 transition-colors">
+              <Link href="/documents" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-[#0485c1] bg-white/10 transition-colors">
                 Документы
               </Link>
               <div className="px-6 pt-4 border-t border-white/20">
@@ -167,7 +167,7 @@ export default function DocumentsPage() {
                 <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 md:p-8 hover:border-cyan-400/30 transition-all duration-300 h-full flex flex-col">
                   <div className="flex items-start justify-between mb-4 md:mb-6">
                     <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-2xl flex items-center justify-center">
-                      <i className={`${doc.icon} text-xl md:text-2xl text-cyan-400`}></i>
+                      <i className={`${doc.icon} text-xl md:text-2xl text-[#0485c1]`}></i>
                     </div>
                     <div className="flex items-center space-x-2 text-green-400 text-xs md:text-sm">
                       <i className="ri-checkbox-circle-line"></i>
@@ -175,7 +175,7 @@ export default function DocumentsPage() {
                     </div>
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-white mb-3 leading-snug">{doc.title}</h3>
-                  <p className="text-sm md:text-base text-white/70 mb-4 leading-relaxed">{doc.description}</p>
+                  <p className="text-sm md:text-base text-[#0485c1] mb-4 leading-relaxed">{doc.description}</p>
                   {doc.number && (
                     <div className="mb-4 md:mb-6">
                       <div className="text-xs md:text-sm text-white/60 mb-1">Регистрационный номер:</div>
@@ -213,24 +213,24 @@ export default function DocumentsPage() {
           <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 md:p-8 mb-8 md:mb-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-4">Правовая информация</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-[#0485c1] mb-4">Правовая информация</h3>
                 <div className="space-y-3 text-white/80">
                   <div className="flex items-start space-x-3">
-                    <i className="ri-building-line text-cyan-400 mt-1"></i>
+                    <i className="ri-building-line text-[#0485c1] mt-1"></i>
                     <div>
                       <div className="font-semibold text-sm md:text-base">ООО «Связьгазпроект»</div>
                       <div className="text-xs md:text-sm text-white/60">Директор: Макарова Анна Николаевна</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <i className="ri-hashtag text-cyan-400 mt-1"></i>
+                    <i className="ri-hashtag text-[#0485c1] mt-1"></i>
                     <div>
                       <div className="font-semibold text-sm md:text-base">ИНН: 3525341140</div>
                       <div className="text-xs md:text-sm text-white/60">КПП: 352501001</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <i className="ri-bank-line text-cyan-400 mt-1"></i>
+                    <i className="ri-bank-line text-[#0485c1] mt-1"></i>
                     <div>
                       <div className="font-semibold text-sm md:text-base">ОГРН: 1153525002113</div>
                       <div className="text-xs md:text-sm text-white/60">Общество с ограниченной ответственностью</div>
@@ -240,10 +240,10 @@ export default function DocumentsPage() {
               </div>
               <div className="text-center">
                 <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i className="ri-verified-badge-line text-3xl md:text-4xl text-cyan-400"></i>
+                  <i className="ri-verified-badge-line text-3xl md:text-4xl text-[#0485c1]"></i>
                 </div>
                 <div className="text-base md:text-lg font-semibold text-white mb-2">Сертифицированная организация</div>
-                <div className="text-sm md:text-base text-white/70">Все документы актуальны и соответствуют требованиям законодательства РФ</div>
+                <div className="text-sm md:text-base text-[#0485c1]">Все документы актуальны и соответствуют требованиям законодательства РФ</div>
               </div>
             </div>
           </div>
@@ -265,7 +265,7 @@ export default function DocumentsPage() {
           <div className="border-t border-white/10 pt-6 md:pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/50 space-y-4 md:space-y-0">
               <div>© 2025 ООО «Связьгазпроект»</div>
-              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer">Политика обработки персональных данных</Link>
+              <Link href="/privacy-policy" className="hover:text-[#0485c1] transition-colors cursor-pointer">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>
