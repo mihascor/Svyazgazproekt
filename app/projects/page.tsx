@@ -280,13 +280,13 @@ export default function ProjectsPage() {
                       <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500/20 to-cyan-400/20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-cyan-400/30">
                         <i className="ri-trophy-line text-2xl md:text-3xl text-cyan-400"></i>
                       </div>
-                      <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent mb-4 md:mb-6">
+                      <h3 className="text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4 md:mb-6">
                         Примеры реализованных проектов
                       </h3>
                     </div>
 
                     <div className="prose prose-lg max-w-none text-center">
-                      <ul className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed list-none space-y-2">
+                      <ul className="text-base sm:text-lg md:text-xl text-[#0B1B2B]/70 leading-relaxed list-none space-y-2">
                         <li>Газопровод «Сила Сибири»</li>
                         <li>Ковыктинское газоконденсатное месторождение</li>
                         <li>Амурский газоперерабатывающий завод</li>
