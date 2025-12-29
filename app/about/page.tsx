@@ -73,7 +73,7 @@ export default function AboutPage() {
               <Link
                 href="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-white hover:bg-white/10 transition-colors"
+                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 transition-colors"
               >
                 Главная
               </Link>
@@ -87,14 +87,14 @@ export default function AboutPage() {
               <Link
                 href="/clients"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-white hover:bg-white/10 transition-colors"
+                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 transition-colors"
               >
                 Заказчики
               </Link>
               <Link
                 href="/documents"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-white hover:bg-white/10 transition-colors"
+                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 transition-colors"
               >
                 Документы
               </Link>
@@ -214,8 +214,8 @@ export default function AboutPage() {
                       <h3 className="text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Ассоциация «Объединение проектировщиков „УниверсалПроект"»</h3>
                       <p className="text-sm lg:text-base text-[#0B1B2B]/70 mb-2">Право подготовки проектной документации</p>
                       <div className="space-y-1 text-xs lg:text-sm">
-                        <div className="text-white/60">СРО: <span className="text-cyan-400 font-mono">СРО-П-179-12122012</span></div>
-                        <div className="text-white/60">Регистрационный номер: <span className="text-cyan-400 font-mono">П-179-003525341140-0598</span></div>
+                        <div className="text-[#0B1B2B]/60">СРО: <span className="text-cyan-400 font-mono">СРО-П-179-12122012</span></div>
+                        <div className="text-[#0B1B2B]/60">Регистрационный номер: <span className="text-cyan-400 font-mono">П-179-003525341140-0598</span></div>
                       </div>
                     </div>
                   </div>
@@ -228,8 +228,8 @@ export default function AboutPage() {
                       <h3 className="text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Ассоциация «Национальный Альянс изыскателей „ГеоЦентр"»</h3>
                       <p className="text-sm lg:text-base text-[#0B1B2B]/70 mb-2">Право выполнения инженерных изысканий</p>
                       <div className="space-y-1 text-xs lg:text-sm">
-                        <div className="text-white/60">СРО: <span className="text-cyan-400 font-mono">СРО-И-037-18122012</span></div>
-                        <div className="text-white/60">Регистрационный номер: <span className="text-cyan-400 font-mono">И-037-003525341140-1247</span></div>
+                        <div className="text-[#0B1B2B]/60">СРО: <span className="text-cyan-400 font-mono">СРО-И-037-18122012</span></div>
+                        <div className="text-[#0B1B2B]/60">Регистрационный номер: <span className="text-cyan-400 font-mono">И-037-003525341140-1247</span></div>
                       </div>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export default function AboutPage() {
                     <div>
                       <h3 className="text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Региональное объединение работодателей строительного комплекса «Союз строителей Воронежской области»</h3>
                       <div className="text-xs lg:text-sm">
-                        <div className="text-white/60">Регистрационный номер: <span className="text-cyan-400 font-mono">195</span></div>
+                        <div className="text-[#0B1B2B]/60">Регистрационный номер: <span className="text-cyan-400 font-mono">195</span></div>
                       </div>
                     </div>
                   </div>
