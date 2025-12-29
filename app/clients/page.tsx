@@ -173,6 +173,8 @@ export default function ClientsPage() {
         </div>
       </section>
 
+      <div className="relative h-16 w-full bg-gradient-to-b from-transparent to-black"></div>
+      
       {/* Footer - Minimalist Future */}
       <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
