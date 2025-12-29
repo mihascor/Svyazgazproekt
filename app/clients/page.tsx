@@ -115,7 +115,7 @@ export default function ClientsPage() {
       </header>
 
       {/* Clients Section */}
-      <section className="relative min-h-screen pt-32 md:pt-40 pb-16">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 lg:pt-40">
         {/* Background */}
         <div className="absolute inset-0">
           {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-blue-900 to-black"></div> */}

@@ -249,7 +249,7 @@ export default function DocumentsPage() {
           </div>
 
           {/* CTA */}
-          <div className="text-center">
+          <div className="text-center mt-12 lg:mt-16">
             <a href="tel:+78172239695" 
                className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
               <span>Запросить документы</span>
