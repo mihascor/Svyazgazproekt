@@ -209,7 +209,7 @@ export default function ProjectsPage() {
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-500/20 to-cyan-400/20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-green-400/30">
                     <i className="ri-building-4-line text-xl md:text-2xl text-green-400"></i>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-green-300 bg-clip-text text-transparent mb-4">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4">
                     Объекты
                   </h2>
                 </div>
@@ -266,7 +266,7 @@ export default function ProjectsPage() {
                       >
                         <i className={`${type.icon} text-xl md:text-2xl text-${type.color}`}></i>
                       </div>
-                      <h3 className="text-sm md:text-lg font-semibold text-white/90 leading-tight group-hover:text-cyan-300 transition-colors">
+                      <h3 className="text-sm md:text-lg font-semibold text-[#0B1B2B]/70 leading-tight group-hover:text-[#0B1B2B]/30 transition-colors">
                         {type.title}
                       </h3>
                     </div>
