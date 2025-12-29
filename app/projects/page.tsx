@@ -144,7 +144,7 @@ export default function ProjectsPage() {
                     <div className="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-cyan-400/30">
                       <i className="ri-trophy-line text-2xl md:text-3xl text-[#0B1B2B]/70"></i>
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent mb-4 md:mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B] mb-4 md:mb-6">
                       Опыт работы
                     </h2>
                   </div>
