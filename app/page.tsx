@@ -423,7 +423,7 @@ export default function Home() {
                       <i className={`${contact.icon} text-xl lg:text-2xl text-gray-600`}></i>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-sm text-white/70 uppercase tracking-widest mb-3 font-light">{contact.label}</div>
+                      <div className="text-smtext-[#0B1B2B]/70 uppercase tracking-widest mb-3 font-light">{contact.label}</div>
                       <div className="text-lg lg:text-xl font-semibold text-white group-hover:text-cyan-400 transition-colors block leading-relaxed break-words">
                         {contact.value}
                       </div>
@@ -527,7 +527,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="inset-x-0 bottom-0 h-64 bg-gradient-to-t from-black via-transparent to-transparent"></div>
       </section>
 
       {/* Footer - Minimalist Future */}
