@@ -55,13 +55,13 @@ export default function DocumentsPage() {
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-xl border border-white/20 rounded-2xl py-4 mx-4">
             <div className="flex flex-col space-y-2">
-              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-[#0B1B2B]/70 hover:bg-white/10 transition-colors">
+              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
                 Главная
               </Link>
-              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-[#0B1B2B]/70 hover:bg-white/10 transition-colors">
+              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
                 О нас
               </Link>
-              <Link href="/clients" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-[#0B1B2B]/70 hover:bg-white/10 transition-colors">
+              <Link href="/clients" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
                 Заказчики
               </Link>
               <Link href="/documents" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-cyan-400 bg-white/10 transition-colors">
