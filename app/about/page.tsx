@@ -73,28 +73,28 @@ export default function AboutPage() {
               <Link
                 href="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 transition-colors"
+                className="px-6 py-3 text-white/70  белый hover:text-[#0B1B2B] hover:bg-white/10 transition-colors"
               >
                 Главная
               </Link>
               <Link
                 href="/about"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-[#0B1B2B]/70 bg-white/10 transition-colors"
+                className="px-6 py-3 text-cyan-400 bg-white/10 transition-colors"
               >
                 О нас
               </Link>
               <Link
                 href="/clients"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 transition-colors"
+                className="px-6 py-3 text-white/70  белый hover:text-[#0B1B2B] hover:bg-white/10 transition-colors"
               >
                 Заказчики
               </Link>
               <Link
                 href="/documents"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 transition-colors"
+                className="px-6 py-3 text-white/70  белый hover:text-[#0B1B2B] hover:bg-white/10 transition-colors"
               >
                 Документы
               </Link>
