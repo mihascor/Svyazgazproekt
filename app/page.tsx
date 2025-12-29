@@ -428,7 +428,7 @@ export default function Home() {
                         {contact.value}
                       </div>
                     </div>
-                    <i className="ri-arrow-right-line text-cyan-400 text-xl group-hover:translate-x-2 transition-transform duration-300 hidden lg:block"></i>
+                    <i className="ri-arrow-right-line text-[#0B1B2B] group-hover:text-white text-xl group-hover:translate-x-2 transition-all duration-300 hidden lg:block"></i>
                   </a>
                 </div>
               ))}
@@ -442,8 +442,8 @@ export default function Home() {
                     <i className="ri-map-2-line text-xl lg:text-2xl text-gray-600"></i>
                   </div>
                   <div>
-                    <div className="text-sm text-white/70 uppercase tracking-widest mb-2 font-light">Местоположение</div>
-                    <div className="text-lg lg:text-xl font-semibold text-white">Центральный офис и обособленные подразделения</div>
+                    <div className="text-sm text-[#0B1B2B]/70 uppercase tracking-widest mb-2 font-light">Местоположение</div>
+                    <div className="text-lg lg:text-xl font-semibold text-[#0B1B2B]/70">Центральный офис и обособленные подразделения</div>
                   </div>
                 </div>
                 <div className="rounded-xl overflow-hidden border border-white/20 mb-6">
@@ -467,8 +467,8 @@ export default function Home() {
                           <i className="ri-phone-line text-xl lg:text-2xl text-gray-600"></i>
                         </div>
                         <div>
-                          <div className="text-sm text-white/70 uppercase tracking-widest mb-1">ТЕЛЕФОН</div>
-                          <a href="tel:+78172239695" className="text-lg lg:text-xl font-semibold text-white hover:text-cyan-400 transition-colors">
+                          <div className="text-sm text-[#0B1B2B]/70 uppercase tracking-widest mb-1">ТЕЛЕФОН</div>
+                          <a href="tel:+78172239695" className="text-lg lg:text-xl font-semibold text-[#0B1B2B]/70 hover:text-white transition-colors">
                             +7 (817) 223-96-95
                           </a>
                         </div>
@@ -485,7 +485,7 @@ export default function Home() {
                       onClick={toggleOffices}
                       className="w-full flex items-center justify-between text-left hover:bg-white/5 rounded-lg p-2 transition-colors cursor-pointer"
                     >
-                      <h3 className="text-lg font-semibold text-white">Адреса офисов</h3>
+                      <h3 className="text-lg font-semibold text-[#0B1B2B]/70">Адреса офисов</h3>
                       <i className={`ri-arrow-down-s-line text-xl text-white/70 transition-transform duration-300 ${officesExpanded ? 'rotate-180' : ''}`}></i>
                     </button>
                   </div>
@@ -508,10 +508,10 @@ export default function Home() {
                             <div className={`w-3 h-3 rounded-full flex-shrink-0 ${office.isMain ? 'bg-red-400' : 'bg-blue-400'}`}></div>
                             <div className="min-w-0 flex-1">
                               <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6">
-                                <span className="text-white font-medium text-sm lg:text-base mb-1 lg:mb-0 lg:min-w-[140px]">
+                                <span className="text-[#0B1B2B]/70 font-medium text-sm lg:text-base mb-1 lg:mb-0 lg:min-w-[140px]">
                                   {office.city}
                                 </span>
-                                <span className="text-white/70 text-xs lg:text-sm leading-relaxed lg:flex-1">
+                                <span className="text-[#0B1B2B]/70 text-xs lg:text-sm leading-relaxed lg:flex-1">
                                   {office.address}
                                 </span>
                               </div>
