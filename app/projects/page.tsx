@@ -144,7 +144,7 @@ export default function ProjectsPage() {
                     <div className="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-cyan-400/30">
                       <i className="ri-trophy-line text-2xl md:text-3xl text-[#0B1B2B]/70"></i>
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B] mb-4 md:mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4 md:mb-6">
                       Опыт работы
                     </h2>
                   </div>
@@ -161,7 +161,7 @@ export default function ProjectsPage() {
               {/* Experience Stats (контент без изменений; фон секции нейтрализован чтобы не перекрывал общий фон) */}
               <div className="py-16 md:py-20">
                 <div className="text-center mb-12 md:mb-16">
-                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent mb-4">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4">
                     Наш опыт в цифрах
                   </h2>
                 </div>
@@ -195,7 +195,7 @@ export default function ProjectsPage() {
                       >
                         {stat.value}
                       </div>
-                      <div className="text-xs sm:text-sm md:text-lg font-medium text-white/80 group-hover:text-white transition-colors">
+                      <div className="text-xs sm:text-sm md:text-lg font-medium text-[#0B1B2B]/70 group-hover:text-white transition-colors">
                         {stat.label}
                       </div>
                     </div>
