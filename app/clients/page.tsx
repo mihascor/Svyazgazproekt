@@ -91,16 +91,16 @@ export default function ClientsPage() {
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-xl border border-white/20 rounded-2xl py-4 mx-4">
             <div className="flex flex-col space-y-2">
-              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
+              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 transition-colors">
                 Главная
               </Link>
-              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
+              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 transition-colors">
                 О нас
               </Link>
               <Link href="/clients" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-cyan-400 bg-white/10 transition-colors">
                 Заказчики
               </Link>
-              <Link href="/documents" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors">
+              <Link href="/documents" onClick={() => setMobileMenuOpen(false)} className="px-6 py-3 text-[#0B1B2B]/70 hover:text-[#0B1B2B] hover:bg-white/10 transition-colors">
                 Документы
               </Link>
               <div className="px-6 pt-4 border-t border-white/20">
@@ -143,7 +143,7 @@ export default function ClientsPage() {
                   <span className="block text-[#3b6a97]">ВЕДУЩИЕ КОМПАНИИ</span>
                 </h1>
               </div>
-            <p className="text-lg md:text-2xl text-white/70 max-w-3xl mx-auto px-4">
+            <p className="text-lg md:text-2xl text-[#0B1B2B]/70 max-w-3xl mx-auto px-4">
               топливно-энергетического комплекса России доверяют нам свои проекты
             </p>
           </div>
@@ -154,7 +154,7 @@ export default function ClientsPage() {
               <div key={index} className="group relative">
                 <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-xl p-4 md:p-6 hover:border-cyan-400/30 hover:bg-white/15 transition-all duration-300 cursor-pointer h-full flex items-center justify-center">
                   <div className="text-center">
-                    <h3 className="text-sm md:text-lg font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">
+                    <h3 className="text-sm md:text-lg font-semibold text-[#0B1B2B] group-hover:text-cyan-300 transition-colors duration-300">
                       {company}
                     </h3>
                   </div>
@@ -178,7 +178,7 @@ export default function ClientsPage() {
       <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="border-t border-white/10 pt-6 md:pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/50 space-y-4 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-[#0B1B2B]/50 space-y-4 md:space-y-0">
               <div>© 2025 ООО «Связьгазпроект»</div>
               <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer">Политика обработки персональных данных</Link>
             </div>
