@@ -141,7 +141,7 @@ export default function ProjectsPage() {
               <div className="max-w-5xl mx-auto">
                 <div className="bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur-xl border border-[#0B1B2B]/30 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
                   <div className="text-center mb-6 md:mb-8">
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500/20 to-cyan-400/20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-cyan-400/30">
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 backdrop-blur-sm border border-cyan-400/30">
                       <i className="ri-trophy-line text-2xl md:text-3xl text-[#0B1B2B]/70"></i>
                     </div>
                     <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent mb-4 md:mb-6">
