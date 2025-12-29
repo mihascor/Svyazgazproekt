@@ -260,12 +260,13 @@ export default function DocumentsPage() {
       </section>
 
       {/* Footer - Minimalist Future */}
-      <footer className="bg-black py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <div className="border-t border-white/10 pt-6 md:pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-[#0B1B2B]/70 space-y-4 md:space-y-0">
-              <div>© 2025 ООО «Связьгазпроект»</div>
-              <Link href="/privacy-policy" className="hover:text-[#0485c1] transition-colors cursor-pointer">Политика обработки персональных данных</Link>
+      <footer className="relative py-8 lg:py-16 bg-black">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          {/* Bottom */}
+          <div className="border-t border-white/10 pt-6">
+            <div className="flex flex-col lg:flex-row items-center justify-between text-sm text-white/50 space-y-4 lg:space-y-0">
+              <div className="text-center lg:text-left">© 2025 ООО «Связьгазпроект»</div>
+              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer text-center lg:text-right">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>
