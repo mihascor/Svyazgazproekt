@@ -128,6 +128,7 @@ export default function ClientsPage() {
                }}>
           </div>
           {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div> */}
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Header */}
@@ -173,8 +174,6 @@ export default function ClientsPage() {
         </div>
       </section>
 
-      <div className="relative h-16 w-full bg-gradient-to-b from-transparent to-black"></div>
-      
       {/* Footer - Minimalist Future */}
       <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
