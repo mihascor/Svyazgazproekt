@@ -152,7 +152,7 @@ export default function ClientsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {companies.map((company, index) => (
               <div key={index} className="group relative">
-                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-xl p-4 md:p-6 hover:border-cyan-400/30 hover:bg-white/15 transition-all duration-300 cursor-pointer h-full flex items-center justify-center">
+                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 hover:border-cyan-400/30 hover:bg-white/15 transition-all duration-300 cursor-pointer h-full flex items-center justify-center">
                   <div className="text-center">
                     <h3 className="text-sm md:text-lg font-semibold text-[#0B1B2B] group-hover:text-cyan-300 transition-colors duration-300">
                       {company}
