@@ -80,7 +80,7 @@ export default function AboutPage() {
               <Link
                 href="/about"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-cyan-400 bg-white/10 transition-colors"
+                className="px-6 py-3 text-[#0B1B2B]/70 bg-white/10 transition-colors"
               >
                 О нас
               </Link>
@@ -146,7 +146,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 lg:space-y-8">
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 lg:p-8">
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-cyan-400 mb-4">Наш опыт</h2>
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0B1B2B]/70 mb-4">Наш опыт</h2>
                 <p className="text-sm sm:text-base lg:text-lg text-white/80 leading-relaxed">
                   Компания «Связьгазпроект» основана в 2015 году. Мы специализируемся на проектировании комплексов инженерно-технических средств охраны для крупных и стратегически важных объектов
                 </p>
@@ -156,19 +156,19 @@ export default function AboutPage() {
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-400 mb-4">Виды деятельности</h2>
                 <ul className="space-y-3 text-sm sm:text-base lg:text-lg text-white/80">
                   <li className="flex items-start space-x-3">
-                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <span>выполнение комплексных инженерных изысканий</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <span>выполнение землеустроительных работ</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <span>проектирование комплексов инженерно-технических средств охраны</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <span>осуществление авторского надзора за строительством</span>
                   </li>
                 </ul>
@@ -182,7 +182,7 @@ export default function AboutPage() {
               ].map((item, index) => (
                 <div key={index} className="flex items-start space-x-4 bg-white/5 backdrop-blur-sm border border-[#0B1B2B]/30 rounded-xl p-4 lg:p-6 hover:border-cyan-400/30 transition-all duration-300">
                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <i className={`${item.icon} text-lg lg:text-xl text-cyan-400`}></i>
+                    <i className={`${item.icon} text-lg lg:text-xl text-[#0B1B2B]/70`}></i>
                   </div>
                   <div className="min-w-0">
                     <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-white mb-2">{item.title}</h3>
@@ -198,7 +198,7 @@ export default function AboutPage() {
             <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 lg:p-8">
               <div className="flex items-start space-x-4 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <i className="ri-building-line text-xl text-cyan-400"></i>
+                  <i className="ri-building-line text-xl text-[#0B1B2B]/70"></i>
                 </div>
                 <div>
                   <h2 className="text-xl lg:text-2xl font-bold text-white mb-2">Членство в саморегулируемых организациях</h2>
@@ -209,7 +209,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 lg:p-6">
                   <div className="flex items-start space-x-3 mb-3">
-                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <div>
                       <h3 className="text-base lg:text-lg font-semibold text-white mb-2">Ассоциация «Объединение проектировщиков „УниверсалПроект"»</h3>
                       <p className="text-sm lg:text-base text-white/70 mb-2">Право подготовки проектной документации</p>
@@ -223,7 +223,7 @@ export default function AboutPage() {
 
                 <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 lg:p-6">
                   <div className="flex items-start space-x-3 mb-3">
-                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <div>
                       <h3 className="text-base lg:text-lg font-semibold text-white mb-2">Ассоциация «Национальный Альянс изыскателей „ГеоЦентр"»</h3>
                       <p className="text-sm lg:text-base text-white/70 mb-2">Право выполнения инженерных изысканий</p>
@@ -237,7 +237,7 @@ export default function AboutPage() {
 
                 <div className="bg-white/5 border border-[#0B1B2B]/30 rounded-xl p-4 lg:p-6">
                   <div className="flex items-start space-x-3 mb-3">
-                    <i className="ri-checkbox-circle-fill text-cyan-400 mt-1 flex-shrink-0"></i>
+                    <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <div>
                       <h3 className="text-base lg:text-lg font-semibold text-white mb-2">Региональное объединение работодателей строительного комплекса «Союз строителей Воронежской области»</h3>
                       <div className="text-xs lg:text-sm">
