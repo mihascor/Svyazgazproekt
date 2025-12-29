@@ -529,7 +529,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+      <div className="inset-x-0 bottom-0 h-64 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
       {/* Footer - Minimalist Future */}
       <footer className="relative py-8 lg:py-16 bg-black">
