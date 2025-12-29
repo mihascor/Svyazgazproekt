@@ -147,14 +147,14 @@ export default function AboutPage() {
             <div className="space-y-6 lg:space-y-8">
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 lg:p-8">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0B1B2B]/70 mb-4">Наш опыт</h2>
-                <p className="text-sm sm:text-base lg:text-lg text-white/80 leading-relaxed">
+                <p className="text-sm sm:text-base lg:text-lg text-[#0B1B2B]/70 leading-relaxed">
                   Компания «Связьгазпроект» основана в 2015 году. Мы специализируемся на проектировании комплексов инженерно-технических средств охраны для крупных и стратегически важных объектов
                 </p>
               </div>
 
               <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 lg:p-8">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-400 mb-4">Виды деятельности</h2>
-                <ul className="space-y-3 text-sm sm:text-base lg:text-lg text-white/80">
+                <ul className="space-y-3 text-sm sm:text-base lg:text-lg text-[#0B1B2B]/70">
                   <li className="flex items-start space-x-3">
                     <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <span>выполнение комплексных инженерных изысканий</span>
