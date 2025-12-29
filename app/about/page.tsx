@@ -73,7 +73,7 @@ export default function AboutPage() {
               <Link
                 href="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-white hover:bg-white/10 transition-colors"
               >
                 Главная
               </Link>
@@ -87,14 +87,14 @@ export default function AboutPage() {
               <Link
                 href="/clients"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-white hover:bg-white/10 transition-colors"
               >
                 Заказчики
               </Link>
               <Link
                 href="/documents"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-6 py-3 text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                className="px-6 py-3 text-[#0B1B2B]/70 hover:text-white hover:bg-white/10 transition-colors"
               >
                 Документы
               </Link>
@@ -185,8 +185,8 @@ export default function AboutPage() {
                     <i className={`${item.icon} text-lg lg:text-xl text-[#0B1B2B]/70`}></i>
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-white mb-2">{item.title}</h3>
-                    <p className="text-xs sm:text-sm lg:text-base text-white/70 leading-relaxed">{item.desc}</p>
+                    <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">{item.title}</h3>
+                    <p className="text-xs sm:text-sm lg:text-base text-[#0B1B2B]/70 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -201,8 +201,8 @@ export default function AboutPage() {
                   <i className="ri-building-line text-xl text-[#0B1B2B]/70"></i>
                 </div>
                 <div>
-                  <h2 className="text-xl lg:text-2xl font-bold text-white mb-2">Членство в саморегулируемых организациях</h2>
-                  <p className="text-sm lg:text-base text-white/70">ООО «Связьгазпроект» входит в ряд профильных СРО, подтверждающих право на выполнение проектных и изыскательских работ:</p>
+                  <h2 className="text-xl lg:text-2xl font-bold text-[#0B1B2B]/70 mb-2">Членство в саморегулируемых организациях</h2>
+                  <p className="text-sm lg:text-base text-[#0B1B2B]/70">ООО «Связьгазпроект» входит в ряд профильных СРО, подтверждающих право на выполнение проектных и изыскательских работ:</p>
                 </div>
               </div>
 
@@ -211,8 +211,8 @@ export default function AboutPage() {
                   <div className="flex items-start space-x-3 mb-3">
                     <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <div>
-                      <h3 className="text-base lg:text-lg font-semibold text-white mb-2">Ассоциация «Объединение проектировщиков „УниверсалПроект"»</h3>
-                      <p className="text-sm lg:text-base text-white/70 mb-2">Право подготовки проектной документации</p>
+                      <h3 className="text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Ассоциация «Объединение проектировщиков „УниверсалПроект"»</h3>
+                      <p className="text-sm lg:text-base text-[#0B1B2B]/70 mb-2">Право подготовки проектной документации</p>
                       <div className="space-y-1 text-xs lg:text-sm">
                         <div className="text-white/60">СРО: <span className="text-cyan-400 font-mono">СРО-П-179-12122012</span></div>
                         <div className="text-white/60">Регистрационный номер: <span className="text-cyan-400 font-mono">П-179-003525341140-0598</span></div>
@@ -225,8 +225,8 @@ export default function AboutPage() {
                   <div className="flex items-start space-x-3 mb-3">
                     <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <div>
-                      <h3 className="text-base lg:text-lg font-semibold text-white mb-2">Ассоциация «Национальный Альянс изыскателей „ГеоЦентр"»</h3>
-                      <p className="text-sm lg:text-base text-white/70 mb-2">Право выполнения инженерных изысканий</p>
+                      <h3 className="text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Ассоциация «Национальный Альянс изыскателей „ГеоЦентр"»</h3>
+                      <p className="text-sm lg:text-base text-[#0B1B2B]/70 mb-2">Право выполнения инженерных изысканий</p>
                       <div className="space-y-1 text-xs lg:text-sm">
                         <div className="text-white/60">СРО: <span className="text-cyan-400 font-mono">СРО-И-037-18122012</span></div>
                         <div className="text-white/60">Регистрационный номер: <span className="text-cyan-400 font-mono">И-037-003525341140-1247</span></div>
@@ -239,7 +239,7 @@ export default function AboutPage() {
                   <div className="flex items-start space-x-3 mb-3">
                     <i className="ri-checkbox-circle-fill text-[#0B1B2B]/70 mt-1 flex-shrink-0"></i>
                     <div>
-                      <h3 className="text-base lg:text-lg font-semibold text-white mb-2">Региональное объединение работодателей строительного комплекса «Союз строителей Воронежской области»</h3>
+                      <h3 className="text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Региональное объединение работодателей строительного комплекса «Союз строителей Воронежской области»</h3>
                       <div className="text-xs lg:text-sm">
                         <div className="text-white/60">Регистрационный номер: <span className="text-cyan-400 font-mono">195</span></div>
                       </div>
@@ -265,7 +265,7 @@ export default function AboutPage() {
       <footer className="bg-black py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="border-t border-white/10 pt-6 md:pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/50 space-y-4 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center justify-between text-sm text-[#0B1B2B]/70/50 space-y-4 md:space-y-0">
               <div>© 2025 ООО «Связьгазпроект»</div>
               <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer">Политика обработки персональных данных</Link>
             </div>
