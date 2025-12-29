@@ -214,8 +214,8 @@ export default function AboutPage() {
                       <h3 className="text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Ассоциация «Объединение проектировщиков „УниверсалПроект"»</h3>
                       <p className="text-sm lg:text-base text-[#0B1B2B]/70 mb-2">Право подготовки проектной документации</p>
                       <div className="space-y-1 text-xs lg:text-sm">
-                        <div className="text-[#0B1B2B]/60">СРО: <span className="text-cyan-400 font-mono">СРО-П-179-12122012</span></div>
-                        <div className="text-[#0B1B2B]/60">Регистрационный номер: <span className="text-cyan-400 font-mono">П-179-003525341140-0598</span></div>
+                        <div className="text-[#0B1B2B]/60">СРО: <span className="text-[#0485c1] font-mono">СРО-П-179-12122012</span></div>
+                        <div className="text-[#0B1B2B]/60">Регистрационный номер: <span className="text-[#0485c1] font-mono">П-179-003525341140-0598</span></div>
                       </div>
                     </div>
                   </div>
@@ -228,8 +228,8 @@ export default function AboutPage() {
                       <h3 className="text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Ассоциация «Национальный Альянс изыскателей „ГеоЦентр"»</h3>
                       <p className="text-sm lg:text-base text-[#0B1B2B]/70 mb-2">Право выполнения инженерных изысканий</p>
                       <div className="space-y-1 text-xs lg:text-sm">
-                        <div className="text-[#0B1B2B]/60">СРО: <span className="text-cyan-400 font-mono">СРО-И-037-18122012</span></div>
-                        <div className="text-[#0B1B2B]/60">Регистрационный номер: <span className="text-cyan-400 font-mono">И-037-003525341140-1247</span></div>
+                        <div className="text-[#0B1B2B]/60">СРО: <span className="text-[#0485c1] font-mono">СРО-И-037-18122012</span></div>
+                        <div className="text-[#0B1B2B]/60">Регистрационный номер: <span className="text-[#0485c1] font-mono">И-037-003525341140-1247</span></div>
                       </div>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export default function AboutPage() {
                     <div>
                       <h3 className="text-base lg:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Региональное объединение работодателей строительного комплекса «Союз строителей Воронежской области»</h3>
                       <div className="text-xs lg:text-sm">
-                        <div className="text-[#0B1B2B]/60">Регистрационный номер: <span className="text-cyan-400 font-mono">195</span></div>
+                        <div className="text-[#0B1B2B]/60">Регистрационный номер: <span className="text-[#0485c1] font-mono">195</span></div>
                       </div>
                     </div>
                   </div>
@@ -267,7 +267,7 @@ export default function AboutPage() {
           <div className="border-t border-white/10 pt-6 md:pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between text-sm text-[#0B1B2B]/70/50 space-y-4 md:space-y-0">
               <div>© 2025 ООО «Связьгазпроект»</div>
-              <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors cursor-pointer">Политика обработки персональных данных</Link>
+              <Link href="/privacy-policy" className="hover:text-[#0485c1] transition-colors cursor-pointer">Политика обработки персональных данных</Link>
             </div>
           </div>
         </div>
