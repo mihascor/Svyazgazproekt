@@ -92,7 +92,7 @@ export default function DocumentsPage() {
                }}>
           </div>
           {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div> */}
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
+          {/* <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-black pointer-events-none"></div> */}
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
@@ -188,7 +188,7 @@ export default function DocumentsPage() {
                         href={doc.file} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex-1 flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-cyan-400/5 text-[#0B1B2B]/70 px-4 py-3 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 cursor-pointer whitespace-nowrap"
+                        className="flex-1 flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 border border-[#0B1B2B]/30 hover:border-cyan-400/5 text-[#0B1B2B]/70 px-4 py-3 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 cursor-pointer whitespace-nowrap"
                       >
                         <i className="ri-eye-line"></i>
                         <span>Просмотреть</span>
@@ -251,7 +251,7 @@ export default function DocumentsPage() {
           {/* CTA */}
           <div className="text-center mt-12 lg:mt-16">
             <a href="tel:+78172239695" 
-               className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
+               className="inline-flex items-center space-x-2 bg-[#7d9ab2] text-black px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
               <span>Запросить документы</span>
               <i className="ri-arrow-right-line"></i>
             </a>

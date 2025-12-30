@@ -473,7 +473,7 @@ export default function Home() {
                           </a>
                         </div>
                       </div>
-                      <a href="tel:+78172239695" className="bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-4 lg:px-6 py-2 lg:py-3 rounded-full text-sm lg:text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
+                      <a href="tel:+78172239695" className="bg-[#7d9ab2] text-black px-4 lg:px-6 py-2 lg:py-3 rounded-full text-sm lg:text-base font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
                         Позвонить
                       </a>
                     </div>
@@ -486,7 +486,7 @@ export default function Home() {
                       className="w-full flex items-center justify-between text-left hover:bg-white/5 rounded-lg p-2 transition-colors cursor-pointer"
                     >
                       <h3 className="text-lg font-semibold text-[#0B1B2B]/70">Адреса офисов</h3>
-                      <i className={`ri-arrow-down-s-line text-xl text-white/70 transition-transform duration-300 ${officesExpanded ? 'rotate-180' : ''}`}></i>
+                      <i className={`ri-arrow-down-s-line text-xl text-[#7d9ab2] transition-transform duration-300 ${officesExpanded ? 'rotate-180' : ''}`}></i>
                     </button>
                   </div>
 

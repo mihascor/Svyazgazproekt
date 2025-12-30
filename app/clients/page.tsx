@@ -128,7 +128,7 @@ export default function ClientsPage() {
                }}>
           </div>
           {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div> */}
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
+          {/* <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-black pointer-events-none"></div> */}
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Header */}
@@ -152,9 +152,9 @@ export default function ClientsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {companies.map((company, index) => (
               <div key={index} className="group relative">
-                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 hover:border-cyan-400/30 hover:bg-white/15 transition-all duration-300 cursor-pointer h-full flex items-center justify-center">
+                <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-xl p-4 md:p-6 hover:border-cyan-400/30 hover:bg-white/15 transition-all duration-300 h-full flex items-center justify-center">
                   <div className="text-center">
-                    <h3 className="text-sm md:text-lg font-semibold text-[#0B1B2B] group-hover:text-[#0B1B2B]/30 transition-colors duration-300">
+                    <h3 className="text-sm md:text-lg font-semibold text-[#0B1B2B]/70 group-hover:text-[#0B1B2B]/30 transition-colors duration-300">
                       {company}
                     </h3>
                   </div>
@@ -166,7 +166,7 @@ export default function ClientsPage() {
           {/* CTA */}
           <div className="text-center mt-12 md:mt-16">
             <a href="tel:+78172239695" 
-               className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-black px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
+               className="inline-flex items-center space-x-2 bg-[#7d9ab2] text-black px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 cursor-pointer whitespace-nowrap">
               <span>Связаться с нами</span>
               <i className="ri-arrow-right-line"></i>
             </a>
