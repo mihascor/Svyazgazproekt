@@ -137,10 +137,10 @@ export default function DataCollectionPage() {
       )}
 
       {/* Hero Section */}
-      <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-blue-50 to-cyan-50">
+      <section className="relative pt-32 md:pt-40 pb-8 md:pb-12 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="absolute inset-0"
              style={{
-               backgroundImage: `url(https://readdy.ai/api/search-image?query=professional%20land%20surveying%20and%20data%20collection%20office%20with%20modern%20GIS%20mapping%20systems%2C%20geodetic%20equipment%20and%20digital%20cadastral%20documentation%2C%20technical%20specialists%20analyzing%20topographic%20maps%20and%20satellite%20imagery%2C%20advanced%20surveying%20instruments%20and%20computer%20workstations%20with%20geographic%20information%20systems&width=1920&height=800&seq=data-collection-hero&orientation=landscape)`,
+               backgroundImage: `url('/data-collection_fon.webp')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
                opacity: '0.15'
@@ -155,9 +155,11 @@ export default function DataCollectionPage() {
                 ДЕЯТЕЛЬНОСТЬ
               </span>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-6 md:mb-8 text-gray-900">
-              Выполнение землеустроительных работ<br />
-            </h1>
+            <div className="mx-auto max-w-full lg:max-w-[1000px]">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-none tracking-tight">
+                <span className="block text-[#3b6a97]">ВЫПОЛНЕНИЕ ЗЕМЛЕУСТРОИТЕЛЬНЫХ РАБОТ</span>
+              </h1>
+            </div>
           </div>
         </div>
       </section>
@@ -168,7 +170,7 @@ export default function DataCollectionPage() {
           <div className="max-w-5xl mx-auto">
             <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl p-8 md:p-12 mb-12 md:mb-16">
               <div className="prose prose-lg max-w-none text-center">
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                <p className="text-lg md:text-xl text-[#0B1B2B]/70 leading-relaxed">
                   ООО «Связьгазпроект» выполняет комплексное сопровождение проектов, связанных с оформлением имущественных прав, землеустроительной и градостроительной деятельностью
                 </p>
               </div>
@@ -181,7 +183,7 @@ export default function DataCollectionPage() {
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4">
               Основные направления деятельности
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto"></div>
@@ -192,11 +194,11 @@ export default function DataCollectionPage() {
             <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-start space-x-6">
                 <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <i className="ri-file-text-line text-2xl text-white"></i>
+                  <i className="ri-file-text-line text-2xl text-[#0B1B2B]/70"></i>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">1. Проектно-документационное обеспечение</h3>
-                  <ul className="space-y-3 text-base md:text-lg text-gray-700">
+                  <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B]/70 mb-4">1. Проектно-документационное обеспечение</h3>
+                  <ul className="space-y-3 text-base md:text-lg text-[#0B1B2B]/70">
                     <li className="flex items-start">
                       <i className="ri-checkbox-circle-fill text-cyan-500 mt-1 mr-3 flex-shrink-0"></i>
                       <span>Подготовка разделов проектно-сметной документации и исходно-разрешительных материалов.</span>
@@ -225,8 +227,8 @@ export default function DataCollectionPage() {
                   <i className="ri-file-check-line text-2xl text-white"></i>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">2. Согласовательная деятельность</h3>
-                  <ul className="space-y-3 text-base md:text-lg text-gray-700">
+                  <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B]/70 mb-4">2. Согласовательная деятельность</h3>
+                  <ul className="space-y-3 text-base md:text-lg text-[#0B1B2B]/70">
                     <li className="flex items-start">
                       <i className="ri-checkbox-circle-fill text-cyan-500 mt-1 mr-3 flex-shrink-0"></i>
                       <span>Согласование проектных материалов с ведомствами, органами власти и землепользователями.</span>
@@ -251,8 +253,8 @@ export default function DataCollectionPage() {
                   <i className="ri-search-line text-2xl text-white"></i>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">3. Техническая экспертиза</h3>
-                  <ul className="space-y-3 text-base md:text-lg text-gray-700">
+                  <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B]/70 mb-4">3. Техническая экспертиза</h3>
+                  <ul className="space-y-3 text-base md:text-lg text-[#0B1B2B]/70">
                     <li className="flex items-start">
                       <i className="ri-checkbox-circle-fill text-cyan-500 mt-1 mr-3 flex-shrink-0"></i>
                       <span>Определение методов и средств проведения землеустроительных работ.</span>
@@ -277,8 +279,8 @@ export default function DataCollectionPage() {
                   <i className="ri-folder-settings-line text-2xl text-white"></i>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">4. Документационное обеспечение и специальные работы</h3>
-                  <ul className="space-y-3 text-base md:text-lg text-gray-700">
+                  <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B]/70 mb-4">4. Документационное обеспечение и специальные работы</h3>
+                  <ul className="space-y-3 text-base md:text-lg text-[#0B1B2B]/70">
                     <li className="flex items-start">
                       <i className="ri-checkbox-circle-fill text-cyan-500 mt-1 mr-3 flex-shrink-0"></i>
                       <span>Подготовка материалов для установления ЗОУИТ.</span>
@@ -307,8 +309,8 @@ export default function DataCollectionPage() {
                   <i className="ri-map-pin-line text-2xl text-white"></i>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">5. Кадастровые работы</h3>
-                  <ul className="space-y-3 text-base md:text-lg text-gray-700">
+                  <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B]/70 mb-4">5. Кадастровые работы</h3>
+                  <ul className="space-y-3 text-base md:text-lg text-[#0B1B2B]/70">
                     <li className="flex items-start">
                       <i className="ri-checkbox-circle-fill text-cyan-500 mt-1 mr-3 flex-shrink-0"></i>
                       <span>Разработка схем расположения земельных участков.</span>
@@ -337,7 +339,7 @@ export default function DataCollectionPage() {
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4">
               Ключевые компетенции отдела
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto"></div>
@@ -350,8 +352,8 @@ export default function DataCollectionPage() {
                   <i className="ri-team-line text-xl text-white"></i>
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">Комплексный подход</h3>
-                  <p className="text-base text-gray-700">Профессиональное взаимодействие с органами власти</p>
+                  <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-2">Комплексный подход</h3>
+                  <p className="text-base text-[#0B1B2B]/70">Профессиональное взаимодействие с органами власти</p>
                 </div>
               </div>
             </div>
@@ -362,8 +364,8 @@ export default function DataCollectionPage() {
                   <i className="ri-shield-check-line text-xl text-white"></i>
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">Соблюдение требований</h3>
-                  <p className="text-base text-gray-700">Строгое соблюдение нормативно-правовых требований</p>
+                  <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-2">Соблюдение требований</h3>
+                  <p className="text-base text-[#0B1B2B]/70">Строгое соблюдение нормативно-правовых требований</p>
                 </div>
               </div>
             </div>
@@ -374,8 +376,8 @@ export default function DataCollectionPage() {
                   <i className="ri-file-check-line text-xl text-white"></i>
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">Высокое качество</h3>
-                  <p className="text-base text-gray-700">Качественная документация и выполнение работ в срок</p>
+                  <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-2">Высокое качество</h3>
+                  <p className="text-base text-[#0B1B2B]/70">Качественная документация и выполнение работ в срок</p>
                 </div>
               </div>
             </div>
@@ -386,8 +388,8 @@ export default function DataCollectionPage() {
                   <i className="ri-refresh-line text-xl text-white"></i>
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">Актуализация</h3>
-                  <p className="text-base text-gray-700">Актуализация документов до момента их утверждения</p>
+                  <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-2">Актуализация</h3>
+                  <p className="text-base text-[#0B1B2B]/70">Актуализация документов до момента их утверждения</p>
                 </div>
               </div>
             </div>
@@ -399,7 +401,7 @@ export default function DataCollectionPage() {
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4">
               Преимущества
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto"></div>
@@ -410,48 +412,48 @@ export default function DataCollectionPage() {
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-4">
                 <i className="ri-user-star-line text-2xl text-white"></i>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">Опытные специалисты</h3>
-              <p className="text-base text-gray-700">Штат опытных специалистов и действующих кадастровых инженеров</p>
+              <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-3">Опытные специалисты</h3>
+              <p className="text-base text-[#0B1B2B]/70">Штат опытных специалистов и действующих кадастровых инженеров</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-4">
                 <i className="ri-graduation-cap-line text-2xl text-white"></i>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">Повышение квалификации</h3>
-              <p className="text-base text-gray-700">Регулярное повышение квалификации сотрудников</p>
+              <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-3">Повышение квалификации</h3>
+              <p className="text-base text-[#0B1B2B]/70">Регулярное повышение квалификации сотрудников</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-4">
                 <i className="ri-settings-3-line text-2xl text-white"></i>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">Методология работы</h3>
-              <p className="text-base text-gray-700">Совершенная методология работы и система контроля</p>
+              <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-3">Методология работы</h3>
+              <p className="text-base text-[#0B1B2B]/70">Совершенная методология работы и система контроля</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-4">
                 <i className="ri-file-list-3-line text-2xl text-white"></i>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">Стандарты качества</h3>
-              <p className="text-base text-gray-700">Применение чек-листов, актуальных шаблонов и стандартов</p>
+              <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-3">Стандарты качества</h3>
+              <p className="text-base text-[#0B1B2B]/70">Применение чек-листов, актуальных шаблонов и стандартов</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-4">
                 <i className="ri-user-heart-line text-2xl text-white"></i>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">Индивидуальный подход</h3>
-              <p className="text-base text-gray-700">Индивидуальный подход к каждому проекту</p>
+              <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-3">Индивидуальный подход</h3>
+              <p className="text-base text-[#0B1B2B]/70">Индивидуальный подход к каждому проекту</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-4">
                 <i className="ri-robot-line text-2xl text-white"></i>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">Инновации</h3>
-              <p className="text-base text-gray-700">Перспективное внедрение нейросетей для оптимизации процессов</p>
+              <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-3">Инновации</h3>
+              <p className="text-base text-[#0B1B2B]/70">Перспективное внедрение нейросетей для оптимизации процессов</p>
             </div>
           </div>
         </div>
@@ -467,8 +469,8 @@ export default function DataCollectionPage() {
                   <i className="ri-shield-check-line text-2xl md:text-3xl text-blue-600"></i>
                 </div>
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Полный цикл работ</h3>
-                  <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                  <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B]/70 mb-4">Полный цикл работ</h3>
+                  <p className="text-base md:text-lg text-[#0B1B2B]/70 leading-relaxed">
                     ООО «Связьгазпроект» обеспечивает полный цикл работ — от сбора и анализа исходных данных до получения всех необходимых согласований и утверждения документации. Это гарантирует своевременную и успешную реализацию инвестиционных проектов в сфере землеустройства, градостроительства и оформления имущественных прав.
                   </p>
                 </div>
@@ -478,21 +480,33 @@ export default function DataCollectionPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-blue-600 to-cyan-500">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 md:mb-8">
+      {/* CTA Section (оставляем как есть) */}
+      <section className="py-16 md:py-20 relative overflow-hidden" style={{ backgroundColor: '#749dc5' }}>
+        <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 md:mb-8">
             Нужна консультация по сбору исходных данных?
           </h2>
-          <p className="text-lg md:text-xl text-blue-100 mb-8 md:mb-12 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 md:mb-12 max-w-3xl mx-auto">
             Свяжитесь с нашими специалистами для обсуждения вашего проекта
           </p>
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
-            <a href="tel:+78172239695" className="bg-white text-blue-600 px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-blue-50 transition-colors cursor-pointer whitespace-nowrap">
-              Позвонить сейчас
+            <a
+              href="tel:+78172239695"
+              className="group bg-white/10 backdrop-blur-xl border border-white/20 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 cursor-pointer whitespace-nowrap"
+            >
+              <span className="flex items-center justify-center space-x-2">
+                <i className="ri-phone-line"></i>
+                <span>Позвонить сейчас</span>
+              </span>
             </a>
-            <a href="mailto:post@issgp.ru?subject=&body=" className="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
-              Написать письмо
+            <a
+              href="mailto:post@issgp.ru?subject=&body="
+              className="group bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/30 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-white/20 transition-all duration-300 cursor-pointer whitespace-nowrap"
+            >
+              <span className="flex items-center justify-center space-x-2">
+                <i className="ri-mail-line"></i>
+                <span>Написать письмо</span>
+              </span>
             </a>
           </div>
         </div>

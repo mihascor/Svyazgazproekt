@@ -188,7 +188,7 @@ export default function DocumentsPage() {
                         href={doc.file} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex-1 flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 border border-[#0B1B2B]/30 hover:border-cyan-400/5 text-[#0B1B2B]/70 px-4 py-3 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 cursor-pointer whitespace-nowrap"
+                        className="flex-1 flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 border border-[#0B1B2B]/30 hover:border-[#0B1B2B]/70 text-[#0B1B2B]/70 px-4 py-3 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 cursor-pointer whitespace-nowrap"
                       >
                         <i className="ri-eye-line"></i>
                         <span>Просмотреть</span>

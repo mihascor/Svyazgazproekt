@@ -16,7 +16,7 @@ export default function AuthorSupervision() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-white text-[#0B1B2B]/70">
       {/* Header */}
       <header className="hidden lg:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-full px-8 py-4">
         <div className="flex items-center justify-between md:min-w-[900px]">
@@ -137,10 +137,10 @@ export default function AuthorSupervision() {
       )}
 
       {/* Hero Section */}
-      <section className="relative pt-32 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-blue-50 to-cyan-50">
+      <section className="relative pt-32 md:pt-40 pb-8 md:pb-12 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="absolute inset-0"
              style={{
-               backgroundImage: `url(https://readdy.ai/api/search-image?query=construction%20supervision%20and%20quality%20control%20with%20engineers%20reviewing%20architectural%20blueprints%20and%20monitoring%20building%20progress%2C%20professional%20construction%20oversight%20team%20with%20hard%20hats%20examining%20structural%20elements%2C%20quality%20assurance%20specialists%20inspecting%20infrastructure%20projects%20with%20modern%20measuring%20equipment%20and%20documentation%20tools%20in%20industrial%20construction%20environment&width=1920&height=800&seq=author-supervision-hero&orientation=landscape)`,
+               backgroundImage: `url('/author-supervision_fon.webp')`,
                backgroundSize: 'cover',
                backgroundPosition: 'center',
                opacity: '0.15'
@@ -155,11 +155,13 @@ export default function AuthorSupervision() {
                 ДЕЯТЕЛЬНОСТЬ
               </span>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-6 md:mb-8 text-gray-900">
-              Осуществление<br />
-              <span className="text-blue-600">авторского надзора</span><br />
-              <span className="text-blue-600">за строительством</span>
-            </h1>
+            <div className="mx-auto max-w-full lg:max-w-[1000px]">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-none tracking-tight">
+                <span className="block text-[#3b6a97]">ОСУЩЕСТВЛЕНИЕ</span>
+                <span className="block text-[#3b6a97]">АВТОРСКОГО НАДЗОРА</span>
+                <span className="block text-[#3b6a97]">ЗА СТРОИТЕЛЬСТВОМ</span>
+              </h1>
+            </div>
           </div>
         </div>
       </section>
@@ -173,13 +175,13 @@ export default function AuthorSupervision() {
                 <div className="w-16 h-16 md:w-20 md:h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
                   <i className="ri-shield-check-line text-2xl md:text-3xl text-blue-600"></i>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4 md:mb-6">
                   Профессиональный контроль качества
                 </h2>
               </div>
               
               <div className="prose prose-lg max-w-none text-center">
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                <p className="text-lg md:text-xl text-[#0B1B2B]/70 leading-relaxed">
                   ООО «Связьгазпроект» осуществляется авторский надзор за ходом строительства комплексов инженерно-технических средства охраны в соответствии с требованиями действующей нормативной документации
                 </p>
               </div>
@@ -196,7 +198,7 @@ export default function AuthorSupervision() {
             <div className="w-12 h-12 md:w-16 md:h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
               <i className="ri-tools-line text-xl md:text-2xl text-orange-600"></i>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4">
               Функционал авторского надзора
             </h2>
           </div>
@@ -210,7 +212,7 @@ export default function AuthorSupervision() {
                   <i className="ri-organization-chart text-2xl md:text-3xl text-green-600"></i>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">
+                  <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B]/70 mb-4 md:mb-6">
                     Организация выполнения работ
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
@@ -218,28 +220,28 @@ export default function AuthorSupervision() {
                       <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <i className="ri-file-text-line text-green-600 text-sm md:text-lg"></i>
                       </div>
-                      <span className="text-xs md:text-sm font-medium text-gray-800">Оформление договоров</span>
+                      <span className="text-xs md:text-sm font-medium text-[#0B1B2B]/70">Оформление договоров</span>
                     </div>
                     
                     <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                       <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <i className="ri-shield-check-line text-green-600 text-sm md:text-lg"></i>
                       </div>
-                      <span className="text-xs md:text-sm font-medium text-gray-800">Подготовка разрешительной документации</span>
+                      <span className="text-xs md:text-sm font-medium text-[#0B1B2B]/70">Подготовка разрешительной документации</span>
                     </div>
                     
                     <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                       <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <i className="ri-clipboard-line text-green-600 text-sm md:text-lg"></i>
                       </div>
-                      <span className="text-xs md:text-sm font-medium text-gray-800">Рассмотрение и подписание актов освидетельствования скрытых работ</span>
+                      <span className="text-xs md:text-sm font-medium text-[#0B1B2B]/70">Рассмотрение и подписание актов освидетельствования скрытых работ</span>
                     </div>
                     
                     <div className="flex items-start space-x-3 bg-gray-50 rounded-xl p-3 md:p-4">
                       <div className="w-6 h-6 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <i className="ri-check-double-line text-green-600 text-sm md:text-lg"></i>
                       </div>
-                      <span className="text-xs md:text-sm font-medium text-gray-800">Акты промежуточной приёмки ответственных конструкций, участков сетей инженерно-технического обеспечения</span>
+                      <span className="text-xs md:text-sm font-medium text-[#0B1B2B]/70">Акты промежуточной приёмки ответственных конструкций, участков сетей инженерно-технического обеспечения</span>
                     </div>
                   </div>
                 </div>
@@ -253,10 +255,10 @@ export default function AuthorSupervision() {
                   <i className="ri-search-eye-line text-2xl md:text-3xl text-blue-600"></i>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B]/70 mb-4">
                     Контроль соответствия работ
                   </h3>
-                  <p className="text-base md:text-lg text-gray-700 leading-relaxed bg-gray-50 rounded-xl p-4 md:p-6">
+                  <p className="text-base md:text-lg text-[#0B1B2B]/70 leading-relaxed bg-gray-50 rounded-xl p-4 md:p-6">
                     Контроль соответствия выполняемых строительно-монтажных работ разработанной рабочей документации, с соблюдением технологии производства работ
                   </p>
                 </div>
@@ -270,10 +272,10 @@ export default function AuthorSupervision() {
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
                   <i className="ri-book-line text-xl md:text-2xl text-purple-600"></i>
                 </div>
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">
+                <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-3 md:mb-4">
                   Ведение документации
                 </h3>
-                <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                <p className="text-sm md:text-base text-[#0B1B2B]/70 leading-relaxed">
                   Ведение отчетной документации по авторскому надзору (журналы)
                 </p>
               </div>
@@ -282,10 +284,10 @@ export default function AuthorSupervision() {
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
                   <i className="ri-error-warning-line text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">
+                <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-3 md:mb-4">
                   Контроль устранения замечаний
                 </h3>
-                <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                <p className="text-sm md:text-base text-[#0B1B2B]/70 leading-relaxed">
                   Контроль своевременного устранения замечаний
                 </p>
               </div>
@@ -299,10 +301,10 @@ export default function AuthorSupervision() {
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4 md:mb-6">
                   <i className="ri-question-answer-line text-lg md:text-xl text-orange-600"></i>
                 </div>
-                <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2 md:mb-3">
+                <h3 className="text-base md:text-lg font-bold text-[#0B1B2B]/70 mb-2 md:mb-3">
                   Решение технических вопросов
                 </h3>
-                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                <p className="text-xs md:text-sm text-[#0B1B2B]/70 leading-relaxed">
                   Оперативное решение технических вопросов, возникающих в процессе реализации стройки
                 </p>
               </div>
@@ -311,10 +313,10 @@ export default function AuthorSupervision() {
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-cyan-100 rounded-xl flex items-center justify-center mb-4 md:mb-6">
                   <i className="ri-settings-3-line text-lg md:text-xl text-cyan-600"></i>
                 </div>
-                <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2 md:mb-3">
+                <h3 className="text-base md:text-lg font-bold text-[#0B1B2B]/70 mb-2 md:mb-3">
                   Согласование изменений
                 </h3>
-                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                <p className="text-xs md:text-sm text-[#0B1B2B]/70 leading-relaxed">
                   Согласование изменение технических решений
                 </p>
               </div>
@@ -323,10 +325,10 @@ export default function AuthorSupervision() {
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4 md:mb-6">
                   <i className="ri-notification-4-line text-lg md:text-xl text-yellow-600"></i>
                 </div>
-                <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2 md:mb-3">
+                <h3 className="text-base md:text-lg font-bold text-[#0B1B2B]/70 mb-2 md:mb-3">
                   Информирование заказчика
                 </h3>
-                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                <p className="text-xs md:text-sm text-[#0B1B2B]/70 leading-relaxed">
                   Информирование заказчика о некачественном выполнении работ и о срывах сроков устранения замечений подрядчиком
                 </p>
               </div>
@@ -341,10 +343,10 @@ export default function AuthorSupervision() {
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4">
               Преимущества авторского надзора
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-[#0B1B2B]/70 max-w-3xl mx-auto">
               Наш авторский надзор гарантирует соответствие строительства проектной документации и нормативным требованиям
             </p>
           </div>
@@ -380,10 +382,10 @@ export default function AuthorSupervision() {
                 <div className={`w-16 h-16 md:w-20 md:h-20 bg-${benefit.color}-100 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <i className={`${benefit.icon} text-2xl md:text-3xl text-${benefit.color}-600`}></i>
                 </div>
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
+                <h3 className="text-lg md:text-xl font-bold text-[#0B1B2B]/70 mb-2 md:mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                <p className="text-sm md:text-base text-[#0B1B2B]/70 leading-relaxed">
                   {benefit.desc}
                 </p>
               </div>
@@ -392,21 +394,33 @@ export default function AuthorSupervision() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-blue-600 to-cyan-500">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 md:mb-8">
+      {/* CTA Section (оставляем как есть) */}
+      <section className="py-16 md:py-20 relative overflow-hidden" style={{ backgroundColor: '#749dc5' }}>
+        <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 md:mb-8">
             Нужен профессиональный авторский надзор?
           </h2>
-          <p className="text-lg md:text-xl text-blue-100 mb-8 md:mb-12 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 md:mb-12 max-w-3xl mx-auto">
             Обеспечим качественный контроль строительства в соответствии с проектной документацией и нормативными требованиями
           </p>
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
-            <a href="tel:+78172239695" className="bg-white text-blue-600 px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-blue-50 transition-colors cursor-pointer whitespace-nowrap">
-              Позвонить сейчас
+            <a
+              href="tel:+78172239695"
+              className="group bg-white/10 backdrop-blur-xl border border-white/20 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 cursor-pointer whitespace-nowrap"
+            >
+              <span className="flex items-center justify-center space-x-2">
+                <i className="ri-phone-line"></i>
+                <span>Позвонить сейчас</span>
+              </span>
             </a>
-            <a href="mailto:post@issgp.ru?subject=&body=" className="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
-              Написать письмо
+            <a
+              href="mailto:post@issgp.ru?subject=&body="
+              className="group bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/30 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-white/20 transition-all duration-300 cursor-pointer whitespace-nowrap"
+            >
+              <span className="flex items-center justify-center space-x-2">
+                <i className="ri-mail-line"></i>
+                <span>Написать письмо</span>
+              </span>
             </a>
           </div>
         </div>

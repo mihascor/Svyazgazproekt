@@ -158,7 +158,7 @@ export default function ProjectsPage() {
                 </div>
               </div>
 
-              {/* Experience Stats (контент без изменений; фон секции нейтрализован чтобы не перекрывал общий фон) */}
+              {/* Experience Stats */}
               <div className="py-16 md:py-20">
                 <div className="text-center mb-12 md:mb-16">
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0B1B2B]/70 mb-4">
@@ -191,11 +191,11 @@ export default function ProjectsPage() {
                         <i className={`${stat.icon} text-2xl md:text-3xl text-${stat.color}`}></i>
                       </div>
                       <div
-                        className={`text-2xl sm:text-3xl md:text-4xl font-black text-${stat.color} mb-2 group-hover:text-cyan-300 transition-colors`}
+                        className={`text-2xl sm:text-3xl md:text-4xl font-black text-${stat.color} mb-2 `}
                       >
                         {stat.value}
                       </div>
-                      <div className="text-xs sm:text-sm md:text-lg font-medium text-[#0B1B2B]/70 group-hover:text-white transition-colors">
+                      <div className="text-xs sm:text-sm md:text-lg font-medium text-[#0B1B2B]/70 ">
                         {stat.label}
                       </div>
                     </div>
