@@ -158,7 +158,7 @@ export default function EngineeringSurveys() {
             <div className="mx-auto max-w-full lg:max-w-[1000px]">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-none tracking-tight">
                 <span className="block text-[#3b6a97]">ВЫПОЛНЕНИЕ КОМПЛЕКСНЫХ</span>
-                <span className="block text-[#3b6a97]">ИНЖЕНЕРНЫХ РАБОТ</span>
+                <span className="block text-[#3b6a97]">ИНЖЕНЕРНЫХ ИЗЫСКАНИЙ</span>
               </h1>
             </div>
           </div>
