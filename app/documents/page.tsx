@@ -213,7 +213,7 @@ export default function DocumentsPage() {
           <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-[#0B1B2B]/30 rounded-2xl p-6 md:p-8 mb-8 md:mb-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B] mb-4">Правовая информация</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-[#0B1B2B]/70 mb-4">Правовая информация</h3>
                 <div className="space-y-3 text-[#0B1B2B]/70">
                   <div className="flex items-start space-x-3">
                     <i className="ri-building-line text-[#0B1B2B] mt-1"></i>
@@ -243,7 +243,7 @@ export default function DocumentsPage() {
                   <i className="ri-verified-badge-line text-3xl md:text-4xl text-[#0B1B2B]"></i>
                 </div>
                 <div className="text-base md:text-lg font-semibold text-[#0B1B2B]/70 mb-2">Сертифицированная организация</div>
-                <div className="text-sm md:text-base text-[#0B1B2B]">Все документы актуальны и соответствуют требованиям законодательства РФ</div>
+                <div className="text-sm md:text-base text-[#0B1B2B]/70">Все документы актуальны и соответствуют требованиям законодательства РФ</div>
               </div>
             </div>
           </div>
